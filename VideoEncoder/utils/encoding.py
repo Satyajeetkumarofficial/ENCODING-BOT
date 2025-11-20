@@ -325,6 +325,11 @@ async def encode(filepath, message, msg):
     LOGGER.info(e_response)
     LOGGER.info(t_response)
     await proc.communicate()
+
+    if not os.path.isfile(output_filepath):
+        LOGGER.error(f"Encoding failed: {output_filepath} not created.")
+        return None
+
     return output_filepath
 
 

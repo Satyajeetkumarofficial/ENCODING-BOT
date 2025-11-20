@@ -76,7 +76,11 @@ async def handle_tasks(message, mode):
         await msg.edit('Download Cancelled!')
     except FileNotFoundError:
         LOGGER.error('[FileNotFoundError]: Maybe due to cancel, hmm')
+        import traceback
+        LOGGER.error(traceback.format_exc())
     except Exception as e:
+        import traceback
+        LOGGER.error(traceback.format_exc())
         await message.reply(text=f"Error! <code>{e}</code>")
     finally:
         await on_task_complete()
