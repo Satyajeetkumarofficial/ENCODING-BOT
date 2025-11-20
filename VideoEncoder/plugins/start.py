@@ -181,13 +181,19 @@ def delete_downloads():
         try:
             shutil.rmtree(path)
         except OSError:
-            os.remove(path)
+            try:
+                os.remove(path)
+            except PermissionError:
+                pass
     for files in os.listdir(dir2):
         path = os.path.join(dir2, files)
         try:
             shutil.rmtree(path)
         except OSError:
-            os.remove(path)
+            try:
+                os.remove(path)
+            except PermissionError:
+                pass
 
 
 @Client.on_message(filters.command('restart'))

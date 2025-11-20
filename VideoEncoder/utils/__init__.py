@@ -16,7 +16,7 @@
 
 from pyrogram import Client, filters
 from .. import LOGGER
-from . import (direct_link_generator, display_progress, ffmpeg, helper,
+from . import (direct_link_generator, display_progress, encoding, helper,
                settings, tasks)
 
 LOGGER.info('Imported Utils!')
