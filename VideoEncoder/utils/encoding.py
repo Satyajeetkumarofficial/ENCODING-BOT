@@ -34,10 +34,14 @@ from .display_progress import TimeFormatter
 
 
 def get_codec(filepath, channel='v:0'):
-    output = subprocess.check_output(['ffprobe', '-v', 'error', '-select_streams', channel,
-                                      '-show_entries', 'stream=codec_name,codec_tag_string', '-of',
-                                      'default=nokey=1:noprint_wrappers=1', filepath])
-    return output.decode('utf-8').split()
+    try:
+        output = subprocess.check_output(['ffprobe', '-v', 'error', '-select_streams', channel,
+                                          '-show_entries', 'stream=codec_name,codec_tag_string', '-of',
+                                          'default=nokey=1:noprint_wrappers=1', filepath])
+        return output.decode('utf-8').split()
+    except subprocess.CalledProcessError as e:
+        LOGGER.error(f"ffprobe failed for {filepath}: {e}")
+        return []
 
 
 async def extract_subs(filepath, msg, user_id):
