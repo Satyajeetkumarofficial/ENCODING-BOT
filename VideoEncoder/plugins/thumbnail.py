@@ -29,47 +29,56 @@ async def thumb_command(client, message):
         logging.error(f"Error in thumb_command: {e}")
         await message.reply_text(f"An error occurred: {str(e)}")
 
-@Client.on_callback_query(filters.regex("^set_thumb"))
-async def set_thumb_callback(client, callback_query: CallbackQuery):
+@Client.on_callback_query()
+async def cb_handler(client, query: CallbackQuery):
+    """
+    Single callback handler that processes both set_thumb and del_thumb
+    Using the same logic pattern for both actions
+    """
+    data = query.data
+    user_id = query.from_user.id
+    
     try:
-        await callback_query.answer("Wait a sec...")
-        await callback_query.message.reply_text(
-            "Send me a photo to set as your custom thumbnail."
-        )
+        if data == "set_thumb":
+            # Same logic as set_thumb: Just prompt the user to send a photo
+            await query.answer("Please send a photo now", show_alert=False)
+            await query.message.edit_text(
+                "Send me a photo to set as your custom thumbnail."
+            )
+            
+        elif data == "del_thumb":
+            # Same logic pattern: Direct action with confirmation
+            await db.set_thumbnail(user_id, None)
+            await query.answer("Thumbnail deleted!", show_alert=True)
+            await query.message.delete()
+            
     except Exception as e:
-        logging.error(f"Error in set_thumb_callback: {e}")
+        logging.error(f"Error in cb_handler for {data}: {e}")
         try:
-            await callback_query.answer(f"Error: {str(e)}", show_alert=True)
+            await query.answer(f"Error: {str(e)}", show_alert=True)
         except:
             pass
 
-@Client.on_callback_query(filters.regex("^del_thumb"))
-async def del_thumb_callback(client, callback_query: CallbackQuery):
-    try:
-        user_id = callback_query.from_user.id
-        await db.set_thumbnail(user_id, None)
-        await callback_query.answer("Thumbnail deleted!", show_alert=True)
-        await callback_query.message.delete()
-    except Exception as e:
-        logging.error(f"Error in del_thumb_callback: {e}")
-        try:
-            await callback_query.answer(f"Error: {str(e)}", show_alert=True)
-        except:
-            pass
-
-@Client.on_message(filters.photo)
+@Client.on_message(filters.photo & filters.private)
 async def save_thumb(client, message):
+    """
+    Handles photo uploads for setting thumbnails
+    This connects with the set_thumb callback through message reply checking
+    """
     try:
+        user_id = message.from_user.id
+        file_id = message.photo.file_id
+        
+        # Method 1: Photo sent with /thumb or /setthumb caption
         if message.caption and (message.caption == "/thumb" or message.caption == "/setthumb"):
-            user_id = message.from_user.id
-            file_id = message.photo.file_id
             await db.set_thumbnail(user_id, file_id)
-            await message.reply_text("Custom thumbnail saved!")
+            await message.reply_text("✅ Custom thumbnail saved!")
+            
+        # Method 2: Photo sent as a reply to the prompt message (connects to set_thumb callback)
         elif message.reply_to_message and message.reply_to_message.text == "Send me a photo to set as your custom thumbnail.":
-            user_id = message.from_user.id
-            file_id = message.photo.file_id
             await db.set_thumbnail(user_id, file_id)
-            await message.reply_text("Custom thumbnail saved!")
+            await message.reply_text("✅ Custom thumbnail saved!")
+            
     except Exception as e:
         logging.error(f"Error in save_thumb: {e}")
-        await message.reply_text(f"An error occurred: {str(e)}")
+        await message.reply_text(f"❌ An error occurred: {str(e)}")
