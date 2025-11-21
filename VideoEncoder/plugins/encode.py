@@ -24,15 +24,19 @@ from ..utils.helper import check_chat
 from ..utils.tasks import handle_tasks
 
 
-@Client.on_message(filters.incoming & (filters.video | filters.document))
+@Client.on_message(filters.command('dl'))
 async def encode_video(app, message):
     c = await check_chat(message, chat='Both')
     if not c:
         return
     await AddUserToDatabase(app, message)
-    if message.document:
-        if not message.document.mime_type in video_mimetype:
-            return
+
+    # Check if replying to a file or file is attached
+    if not (message.reply_to_message and (message.reply_to_message.video or message.reply_to_message.document)) and \
+       not (message.video or message.document):
+           await message.reply("Please reply to a video or document, or attach one with the command.")
+           return
+
     data.append(message)
     if len(data) == 1:
         await handle_tasks(message, 'tg')
@@ -40,6 +44,25 @@ async def encode_video(app, message):
         await message.reply("📔 Waiting for queue...")
     await asyncio.sleep(1)
 
+@Client.on_message(filters.command('af'))
+async def audio_features(app, message):
+    c = await check_chat(message, chat='Both')
+    if not c:
+        return
+    await AddUserToDatabase(app, message)
+
+    # Check if replying to a file or file is attached
+    if not (message.reply_to_message and (message.reply_to_message.video or message.reply_to_message.document)) and \
+       not (message.video or message.document):
+           await message.reply("Please reply to a video or document, or attach one with the command.")
+           return
+
+    data.append(message)
+    if len(data) == 1:
+        await handle_tasks(message, 'af')
+    else:
+        await message.reply("📔 Waiting for queue...")
+    await asyncio.sleep(1)
 
 @Client.on_message(filters.command('ddl'))
 async def url_encode(app, message):

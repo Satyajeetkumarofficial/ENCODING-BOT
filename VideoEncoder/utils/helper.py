@@ -73,13 +73,13 @@ async def handle_url(url, filepath, msg):
         await progress_for_url(downloader, msg)
 
 
-async def handle_encode(filepath, message, msg):
+async def handle_encode(filepath, message, msg, audio_map=None):
     if await db.get_hardsub(message.from_user.id):
         subs = await extract_subs(filepath, msg, message.from_user.id)
         if not subs:
             await msg.edit("Something went wrong while extracting the subtitles!")
             return
-    new_file = await encode(filepath, message, msg)
+    new_file = await encode(filepath, message, msg, audio_map=audio_map)
     if new_file:
         await msg.edit("<code>Video Encoded, getting metadata...</code>")
         link = await upload_worker(new_file, message, msg)

@@ -36,22 +36,44 @@ from .display_progress import progress_for_pyrogram
 from .helper import get_zip_folder, handle_encode, handle_extract, handle_url
 from .uploads.drive import _get_file_id
 from .uploads.drive.download import Downloader
-
+from .encoding import get_media_streams
+from ..video_utils.audio_selector import AudioSelect
 
 async def on_task_complete():
     delete_downloads()
+    if not data:
+        return
     del data[0]
     if not len(data) > 0:
         return
     message = data[0]
-    if message.text:
-        text = message.text.split(None, 1)
-        command = text.pop(0).lower()
-        if 'ddl' in command:
+
+    # Determine text content (message text or caption)
+    text_content = message.text or message.caption
+
+    if text_content:
+        text = text_content.split(None, 1)
+        command = text[0].lower()
+        if '/ddl' in command:
             await handle_tasks(message, 'url')
-        else:
+        elif '/batch' in command:
             await handle_tasks(message, 'batch')
+        elif '/dl' in command:
+            await handle_tasks(message, 'tg')
+        elif '/af' in command:
+            await handle_tasks(message, 'af')
+        else:
+             # If has text but not a known command, check if it's a file
+            if message.document or message.video:
+                 if message.document and not message.document.mime_type in video_mimetype:
+                    await on_task_complete()
+                    return
+                 await handle_tasks(message, 'tg')
+            else:
+                 # Just text, maybe a link but without command? Or unhandled
+                 pass
     else:
+        # Fallback for any other file message if somehow added
         if message.document:
             if not message.document.mime_type in video_mimetype:
                 await on_task_complete()
@@ -66,6 +88,8 @@ async def handle_tasks(message, mode):
             await tg_task(message, msg)
         elif mode == 'url':
             await url_task(message, msg)
+        elif mode == 'af':
+            await af_task(message, msg)
         else:
             await batch_task(message, msg)
     except MessageNotModified:
@@ -88,8 +112,38 @@ async def handle_tasks(message, mode):
 
 async def tg_task(message, msg):
     filepath = await handle_tg_down(message, msg)
+    if not filepath:
+        await msg.edit("Download failed or no file found.")
+        return
     await msg.edit('Encoding...')
     await handle_encode(filepath, message, msg)
+
+
+async def af_task(message, msg):
+    filepath = await handle_tg_down(message, msg)
+    if not filepath:
+        await msg.edit("Download failed or no file found.")
+        return
+
+    # Probe for streams
+    streams = get_media_streams(filepath)
+    if not streams:
+         await msg.edit("Could not retrieve media streams.")
+         return
+
+    selector = AudioSelect(message._client, message)
+    await msg.delete() # Delete the downloading message as AudioSelect will send its own interface
+
+    # AudioSelect expects streams list
+    audio_map, _ = await selector.get_buttons(streams)
+
+    if audio_map == -1:
+        # Cancelled or error
+        return
+
+    # Proceed to encode with the new map
+    msg = await message.reply("Encoding with new audio arrangement...")
+    await handle_encode(filepath, message, msg, audio_map)
 
 
 async def url_task(message, msg):
@@ -188,17 +242,24 @@ async def handle_download_url(message, msg, batch):
 
 async def handle_tg_down(message, msg, mode='no_reply'):
     c_time = time.time()
-    if mode == 'no_reply':
-        path = await message.download(
-            file_name=os.path.join(download_dir, ""),
-            progress=progress_for_pyrogram,
-            progress_args=("Downloading...", msg, c_time))
+
+    # Determine what to download
+    target_msg = message
+    if message.reply_to_message and (message.reply_to_message.video or message.reply_to_message.document):
+        target_msg = message.reply_to_message
+    elif message.video or message.document:
+        target_msg = message
+    elif mode == 'reply' and message.reply_to_message:
+        target_msg = message.reply_to_message
     else:
-        if message.reply_to_message:
-            path = await message.reply_to_message.download(
-                file_name=os.path.join(download_dir, ""),
-                progress=progress_for_pyrogram,
-                progress_args=("Downloading...", msg, c_time))
-        else:
-            return None
+        # If command was just /dl without reply and without attachment, and mode is not explicit reply
+        if not (message.reply_to_message and (message.reply_to_message.video or message.reply_to_message.document)):
+             return None
+        target_msg = message.reply_to_message
+
+    path = await target_msg.download(
+        file_name=os.path.join(download_dir, ""),
+        progress=progress_for_pyrogram,
+        progress_args=("Downloading...", msg, c_time))
+
     return path
