@@ -27,6 +27,7 @@ from ..utils.database.access_db import db
 from ..utils.settings import (AudioSettings, ExtraSettings, OpenSettings,
                               VideoSettings)
 from .start import showw_status
+from ..video_utils.audio_selector import sessions
 
 
 @app.on_callback_query()
@@ -307,6 +308,14 @@ async def callback_handlers(bot: Client, cb: CallbackQuery):
         else:
             await db.set_crf(cb.from_user.id, crf=nextcrf)
         await VideoSettings(cb.message, user_id=cb.from_user.id)
+
+    # Audio Selector Callbacks
+    elif "audiosel" in cb.data:
+        user_id = cb.from_user.id
+        if user_id in sessions:
+            await sessions[user_id].resolve_callback(cb)
+        else:
+            await cb.answer("Session expired. Please try again.", show_alert=True)
 
     # Cancel
 

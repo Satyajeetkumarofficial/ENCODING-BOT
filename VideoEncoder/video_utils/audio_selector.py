@@ -1,14 +1,15 @@
 import asyncio
-from asyncio import Event, wait_for, create_task
+from asyncio import Event, wait_for
 from time import time
 
-from pyrogram import filters
 from pyrogram.types import CallbackQuery
-from pyrogram.handlers import CallbackQueryHandler
 
 from ..utils.button_maker import ButtonMaker
 from ..utils.display_progress import TimeFormatter
 from .. import LOGGER
+
+# Global registry for active sessions
+sessions = {}
 
 class AudioSelect:
     def __init__(self, client, message):
@@ -21,29 +22,6 @@ class AudioSelect:
         self.event = Event()
         self.streams = -1
         self.stream_view_msg = None
-
-    async def _event_waiter(self):
-        LOGGER.info("AudioSelect: Registering callback handler")
-        # Register the handler
-        # Group -1 ensures it runs before other handlers if any overlap exists.
-        handler = self.client.add_handler(
-            CallbackQueryHandler(
-                self._cb_audiosel,
-                filters=filters.regex(r'^audiosel') & filters.user(self.message.from_user.id)
-            ),
-            group=-1
-        )
-        try:
-            LOGGER.info("AudioSelect: Waiting for event")
-            await wait_for(self.event.wait(), timeout=180)
-            LOGGER.info("AudioSelect: Event set or timeout reached")
-        except asyncio.TimeoutError:
-            LOGGER.warning("AudioSelect: Timeout")
-            self._is_cancelled = True
-            self.event.set()
-        finally:
-            LOGGER.info("AudioSelect: Removing callback handler")
-            self.client.remove_handler(*handler)
 
     async def get_buttons(self, streams):
         self.streams = streams
@@ -61,14 +39,25 @@ class AudioSelect:
             LOGGER.info("AudioSelect: Not enough audio streams")
             return -1, -1
 
-        # Start the event waiter task
-        waiter_task = create_task(self._event_waiter())
+        user_id = self.message.from_user.id
+        sessions[user_id] = self
+        LOGGER.info(f"AudioSelect: Registered session for user {user_id}")
 
-        # Send the initial message
-        await self._send_message()
+        try:
+            # Send the initial message
+            await self._send_message()
 
-        # Wait for user interaction or timeout
-        await waiter_task
+            LOGGER.info("AudioSelect: Waiting for event")
+            await wait_for(self.event.wait(), timeout=180)
+            LOGGER.info("AudioSelect: Event set or timeout reached")
+
+        except asyncio.TimeoutError:
+            LOGGER.warning("AudioSelect: Timeout")
+            self._is_cancelled = True
+        finally:
+            if user_id in sessions:
+                del sessions[user_id]
+                LOGGER.info(f"AudioSelect: Unregistered session for user {user_id}")
 
         if self._is_cancelled:
             if self._reply:
@@ -112,7 +101,7 @@ class AudioSelect:
         elif not self.stream_view_msg:
              self.stream_view_msg = await self.message.reply(text)
 
-    async def _cb_audiosel(self, client, query: CallbackQuery):
+    async def resolve_callback(self, query: CallbackQuery):
         LOGGER.info(f"AudioSelect: Received callback {query.data}")
         data = query.data.split()
         cmd = data[1]
