@@ -1,6 +1,6 @@
 import asyncio
 from pyrogram import filters
-from speedtest import Speedtest
+import speedtest
 
 from .. import app, LOGGER, sudo_users, owner
 from ..utils.display_progress import humanbytes
@@ -9,10 +9,10 @@ async def sync_to_async(func, *args, **kwargs):
     return await asyncio.get_running_loop().run_in_executor(None, func, *args, **kwargs)
 
 @app.on_message(filters.command("speedtest") & filters.user(sudo_users + owner))
-async def speedtest(_, message):
+async def speedtest_handler(_, message):
     msg = await message.reply('<i>Running speed test...</i>')
     try:
-        test = Speedtest()
+        test = speedtest.Speedtest()
         await sync_to_async(test.get_best_server)
         await sync_to_async(test.download)
         await sync_to_async(test.upload)
