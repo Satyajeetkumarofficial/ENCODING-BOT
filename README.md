@@ -64,10 +64,35 @@ The bot is configured via environment variables (or `config.env`).
 - `LOG_CHANNEL`: Channel ID for logging tasks.
 - `DOWNLOAD_DIR`, `ENCODE_DIR`: Paths for working directories.
 
+## 🏃 How to Run
+
+### Normal Execution
+
+To run the bot normally, ensure you have Python 3.9+ and FFmpeg installed.
+
+1. Install dependencies:
+   ```bash
+   pip3 install -r requirements.txt
+   ```
+2. Start the bot:
+   ```bash
+   python3 -m VideoEncoder
+   ```
+
+### Docker
+
+To run the bot using Docker:
+
+1. Build the image:
+   ```bash
+   docker build -t video-encoder .
+   ```
+2. Run the container:
+   ```bash
+   docker run -d --env-file config.env video-encoder
+   ```
+
 ## 📝 Notes
 
 - **Task Limit**: Each user is limited to one active task at a time to ensure fair usage.
 - **Settings Isolation**: Users cannot modify each other's settings via the interactive menu.
-
-
-
