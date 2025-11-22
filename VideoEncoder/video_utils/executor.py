@@ -10,19 +10,6 @@ from natsort import natsorted
 from os import path as ospath, walk
 from time import time
 
-from bot import config_dict, task_dict, task_dict_lock, queue_dict_lock, non_queued_dl, LOGGER, VID_MODE, FFMPEG_NAME
-from bot.helper.ext_utils.bot_utils import sync_to_async, cmd_exec, new_task
-from bot.helper.ext_utils.files_utils import get_path_size, clean_target
-from bot.helper.ext_utils.links_utils import get_url_name
-from bot.helper.ext_utils.media_utils import get_document_type, get_media_info, FFProgress
-from bot.helper.ext_utils.task_manager import check_running_tasks
-from bot.helper.listeners import tasks_listener as task
-from bot.helper.mirror_utils.status_utils.ffmpeg_status import FFMpegStatus
-from bot.helper.mirror_utils.status_utils.queue_status import QueueStatus
-from bot.helper.telegram_helper.message_utils import sendStatusMessage, update_status_message
-from bot.helper.video_utils.audio_selector import AudioSelect
-from bot.helper.video_utils.extra_selector import ExtraSelect
-
 
 async def get_metavideo(video_file):
     stdout, stderr, rcode = await cmd_exec(['ffprobe', '-hide_banner', '-print_format', 'json', '-show_format', '-show_streams', video_file])
