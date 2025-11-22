@@ -2,7 +2,7 @@
 
 import dns.resolver
 from pyrogram import idle
-
+from VideoEncoder.utils.lk21_patch import *
 from . import app, log
 
 dns.resolver.default_resolver = dns.resolver.Resolver(configure=False)
