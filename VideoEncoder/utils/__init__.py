@@ -1,4 +1,5 @@
 
+from .lk21_patch import *   # ⭐ MUST BE FIRST LINE ⭐
 
 from pyrogram import Client, filters
 from .. import LOGGER
