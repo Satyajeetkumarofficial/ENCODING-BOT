@@ -15,11 +15,10 @@ from pyrogram.types import Message
 from requests.utils import unquote
 
 from .. import LOGGER, data, download_dir, video_mimetype
-from ..plugins.start import delete_downloads
 from .database.access_db import db
 from .direct_link_generator import direct_link_generator
 from .display_progress import progress_for_pyrogram
-from .helper import get_zip_folder, handle_encode, handle_extract, handle_url
+from .helper import delete_downloads, get_zip_folder, handle_encode, handle_extract, handle_url
 from .uploads.drive import _get_file_id
 from .uploads.drive.download import Downloader
 from .encoding import get_media_streams
