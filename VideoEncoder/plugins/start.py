@@ -17,7 +17,7 @@ from .. import botStartTime, download_dir, encode_dir
 from ..utils.database.access_db import db
 from ..utils.database.add_user import AddUserToDatabase
 from ..utils.display_progress import TimeFormatter, humanbytes
-from ..utils.helper import check_chat, start_but
+from ..utils.helper import check_chat, delete_downloads, start_but
 
 SIZE_UNITS = ['B', 'KB', 'MB', 'GB', 'TB', 'PB']
 
@@ -157,29 +157,6 @@ async def delete_files(_, message):
         return
     delete_downloads()
     await message.reply_text('Deleted all junk files!')
-
-
-def delete_downloads():
-    dir = encode_dir
-    dir2 = download_dir
-    for files in os.listdir(dir):
-        path = os.path.join(dir, files)
-        try:
-            shutil.rmtree(path)
-        except OSError:
-            try:
-                os.remove(path)
-            except PermissionError:
-                pass
-    for files in os.listdir(dir2):
-        path = os.path.join(dir2, files)
-        try:
-            shutil.rmtree(path)
-        except OSError:
-            try:
-                os.remove(path)
-            except PermissionError:
-                pass
 
 
 @Client.on_message(filters.command('restart'))

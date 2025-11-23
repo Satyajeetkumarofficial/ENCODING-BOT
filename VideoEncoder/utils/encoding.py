@@ -401,19 +401,46 @@ def get_thumbnail(in_filename, path, ttl):
 
 
 def get_duration(filepath):
-    metadata = extractMetadata(createParser(filepath))
-    if metadata.has("duration"):
-        return metadata.get('duration').seconds
-    else:
-        return 0
+    try:
+        # Try using ffprobe first
+        cmd = [
+            'ffprobe', '-v', 'error', '-show_entries',
+            'format=duration', '-of',
+            'default=noprint_wrappers=1:nokey=1', filepath
+        ]
+        output = subprocess.check_output(cmd).decode('utf-8').strip()
+        return int(float(output))
+    except Exception as e:
+        LOGGER.warning(f"ffprobe duration failed: {e}, falling back to hachoir")
+        try:
+            metadata = extractMetadata(createParser(filepath))
+            if metadata and metadata.has("duration"):
+                return metadata.get('duration').seconds
+        except Exception as e:
+            LOGGER.error(f"hachoir duration failed: {e}")
+    return 0
 
 
 def get_width_height(filepath):
-    metadata = extractMetadata(createParser(filepath))
-    if metadata.has("width") and metadata.has("height"):
-        return metadata.get("width"), metadata.get("height")
-    else:
-        return (1280, 720)
+    try:
+        # Try using ffprobe first
+        cmd = [
+            'ffprobe', '-v', 'error', '-select_streams', 'v:0',
+            '-show_entries', 'stream=width,height', '-of',
+            'csv=s=x:p=0', filepath
+        ]
+        output = subprocess.check_output(cmd).decode('utf-8').strip()
+        width, height = map(int, output.split('x'))
+        return width, height
+    except Exception as e:
+        LOGGER.warning(f"ffprobe width/height failed: {e}, falling back to hachoir")
+        try:
+            metadata = extractMetadata(createParser(filepath))
+            if metadata and metadata.has("width") and metadata.has("height"):
+                return metadata.get("width"), metadata.get("height")
+        except Exception as e:
+            LOGGER.error(f"hachoir width/height failed: {e}")
+    return (1280, 720)
 
 
 async def media_info(saved_file_path):

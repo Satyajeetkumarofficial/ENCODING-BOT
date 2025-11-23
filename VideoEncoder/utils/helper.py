@@ -2,12 +2,13 @@
 
 import asyncio
 import os
+import shutil
 
 from pyrogram.errors.exceptions.bad_request_400 import MessageNotModified
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 from pySmartDL import SmartDL
 
-from .. import all, everyone, owner, sudo_users
+from .. import all, everyone, owner, sudo_users, download_dir, encode_dir
 from .database.access_db import db
 from .display_progress import progress_for_url
 from .encoding import encode, extract_subs
@@ -68,8 +69,12 @@ async def handle_encode(filepath, message, msg, audio_map=None):
     new_file = await encode(filepath, message, msg, audio_map=audio_map)
     if new_file:
         await msg.edit("<code>Video Encoded, getting metadata...</code>")
-        link = await upload_worker(new_file, message, msg)
-        await msg.edit('Video Encoded Successfully! Link: {}'.format(link))
+        try:
+            link = await upload_worker(new_file, message, msg)
+            await msg.edit('Video Encoded Successfully! Link: {}'.format(link))
+        except Exception as e:
+            await msg.edit(f"Error while uploading: {e}")
+            link = None
 
         # Immediate cleanup after upload
         try:
@@ -84,6 +89,7 @@ async def handle_encode(filepath, message, msg, audio_map=None):
             os.remove(filepath)
         except Exception:
             pass
+        link = None
 
     return link
 
@@ -176,3 +182,26 @@ async def get_zip_folder(orig_path: str):
         return orig_path.rsplit(".xar", 1)[0]
     else:
         raise IndexError("File format not supported for extraction!")
+
+
+def delete_downloads():
+    dir = encode_dir
+    dir2 = download_dir
+    for files in os.listdir(dir):
+        path = os.path.join(dir, files)
+        try:
+            shutil.rmtree(path)
+        except OSError:
+            try:
+                os.remove(path)
+            except PermissionError:
+                pass
+    for files in os.listdir(dir2):
+        path = os.path.join(dir2, files)
+        try:
+            shutil.rmtree(path)
+        except OSError:
+            try:
+                os.remove(path)
+            except PermissionError:
+                pass
