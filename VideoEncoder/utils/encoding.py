@@ -30,6 +30,14 @@ def get_codec(filepath, channel='v:0'):
         LOGGER.error(f"ffprobe exception for {filepath}: {e}")
         return []
 
+def get_media_streams(filepath):
+    try:
+        cmd = ['ffprobe', '-hide_banner', '-print_format', 'json', '-show_streams', filepath]
+        output = subprocess.check_output(cmd, stderr=subprocess.DEVNULL)
+        return json.loads(output.decode('utf-8')).get('streams', [])
+    except Exception as e:
+        LOGGER.error(f"Failed to get media streams: {e}")
+        return []
 
 async def extract_subs(filepath, msg, user_id):
 
@@ -69,7 +77,7 @@ async def extract_subs(filepath, msg, user_id):
         return None
 
 
-async def encode(filepath, message, msg):
+async def encode(filepath, message, msg, audio_map=None):
 
     ex = await db.get_extensions(message.from_user.id)
     path, extension = os.path.splitext(filepath)
@@ -291,17 +299,41 @@ async def encode(filepath, message, msg):
         audio_opts = ''
     else:
         if a == 'dd':
-            audio_opts = f'-c:a ac3 {sample} {bitrate} -map 0:a?'
+            audio_opts = f'-c:a ac3 {sample} {bitrate}'
         elif a == 'aac':
-            audio_opts = f'-c:a aac {sample} {bitrate} -map 0:a?'
+            audio_opts = f'-c:a aac {sample} {bitrate}'
         elif a == 'vorbis':
-            audio_opts = f'-c:a libvorbis {sample} {bitrate} -map 0:a?'
+            audio_opts = f'-c:a libvorbis {sample} {bitrate}'
         elif a == 'alac':
-            audio_opts = f'-c:a alac {sample} {bitrate} -map 0:a?'
+            audio_opts = f'-c:a alac {sample} {bitrate}'
         elif a == 'opus':
-            audio_opts = f'-c:a libopus -vbr on {sample} {bitrate} -map 0:a?'
+            audio_opts = f'-c:a libopus -vbr on {sample} {bitrate}'
         else:
-            audio_opts = '-c:a copy -map 0:a?'
+            audio_opts = '-c:a copy'
+
+        if audio_map:
+            # If audio_map is provided (e.g. [0:1, 0:2]), we use it to map audio streams.
+            # We need to make sure we map all audio streams in the desired order.
+            # The audio_opts above sets the codec for all audio streams.
+            # We need to construct the map part.
+            # Note: The previous code had `-map 0:a?` attached to audio_opts.
+            # If we have specific mapping, we shouldn't use generic `-map 0:a?`.
+
+            # The `audio_map` contains indices of audio streams in the original file.
+            # e.g. [1, 2] means map 0:1 then map 0:2.
+
+            map_opts = ""
+            for idx in audio_map:
+                map_opts += f" -map 0:{idx}"
+
+            # Explicitly set the default disposition for the first audio stream in the new order
+            # This ensures the first audio track in the list is the default one
+            disposition_opts = " -disposition:a:0 default"
+
+            audio_opts = f"{audio_opts} {map_opts} {disposition_opts}"
+        else:
+             audio_opts += " -map 0:a?"
+
 
     # Audio Channel
     c = await db.get_channels(message.from_user.id)
@@ -369,19 +401,46 @@ def get_thumbnail(in_filename, path, ttl):
 
 
 def get_duration(filepath):
-    metadata = extractMetadata(createParser(filepath))
-    if metadata.has("duration"):
-        return metadata.get('duration').seconds
-    else:
-        return 0
+    try:
+        # Try using ffprobe first
+        cmd = [
+            'ffprobe', '-v', 'error', '-show_entries',
+            'format=duration', '-of',
+            'default=noprint_wrappers=1:nokey=1', filepath
+        ]
+        output = subprocess.check_output(cmd).decode('utf-8').strip()
+        return int(float(output))
+    except Exception as e:
+        LOGGER.warning(f"ffprobe duration failed: {e}, falling back to hachoir")
+        try:
+            metadata = extractMetadata(createParser(filepath))
+            if metadata and metadata.has("duration"):
+                return metadata.get('duration').seconds
+        except Exception as e:
+            LOGGER.error(f"hachoir duration failed: {e}")
+    return 0
 
 
 def get_width_height(filepath):
-    metadata = extractMetadata(createParser(filepath))
-    if metadata.has("width") and metadata.has("height"):
-        return metadata.get("width"), metadata.get("height")
-    else:
-        return (1280, 720)
+    try:
+        # Try using ffprobe first
+        cmd = [
+            'ffprobe', '-v', 'error', '-select_streams', 'v:0',
+            '-show_entries', 'stream=width,height', '-of',
+            'csv=s=x:p=0', filepath
+        ]
+        output = subprocess.check_output(cmd).decode('utf-8').strip()
+        width, height = map(int, output.split('x'))
+        return width, height
+    except Exception as e:
+        LOGGER.warning(f"ffprobe width/height failed: {e}, falling back to hachoir")
+        try:
+            metadata = extractMetadata(createParser(filepath))
+            if metadata and metadata.has("width") and metadata.has("height"):
+                return metadata.get("width"), metadata.get("height")
+        except Exception as e:
+            LOGGER.error(f"hachoir width/height failed: {e}")
+    return (1280, 720)
 
 
 async def media_info(saved_file_path):
