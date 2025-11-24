@@ -15,26 +15,26 @@ if os.path.exists('config.env'):
 
 # Variables
 
-api_id = int(os.environ.get("API_ID"))
-api_hash = os.environ.get("API_HASH")
-bot_token = os.environ.get("BOT_TOKEN")
+api_id = int(getenv("API_ID"))
+api_hash = getenv("API_HASH")
+bot_token = getenv("BOT_TOKEN")
 
-database = os.environ.get("MONGO_URI")
-session = os.environ.get("SESSION_NAME")
+database = getenv("MONGO_URI")
+session = getenv("SESSION_NAME")
 
-drive_dir = os.environ.get("DRIVE_DIR")
-index = os.environ.get("INDEX_URL")
+drive_dir = getenv("DRIVE_DIR")
+index = getenv("INDEX_URL")
 
-download_dir = os.environ.get("DOWNLOAD_DIR")
-encode_dir = os.environ.get("ENCODE_DIR")
+download_dir = getenv("DOWNLOAD_DIR")
+encode_dir = getenv("ENCODE_DIR")
 
-owner = list(set(int(x) for x in os.environ.get("OWNER_ID").split()))
-sudo_users = list(set(int(x) for x in os.environ.get("SUDO_USERS").split()))
-everyone = list(set(int(x) for x in os.environ.get("EVERYONE_CHATS").split()))
+owner = list(set(int(x) for x in getenv("OWNER_ID").split()))
+sudo_users = list(set(int(x) for x in getenv("SUDO_USERS").split()))
+everyone = list(set(int(x) for x in getenv("EVERYONE_CHATS").split()))
 all = everyone + sudo_users + owner
 
 try:
-    log = int(os.environ.get("LOG_CHANNEL"))
+    log = int(getenv("LOG_CHANNEL"))
 except:
     log = owner
     print('Fill log or give user/channel/group id atleast!')
