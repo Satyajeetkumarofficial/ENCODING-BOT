@@ -12,7 +12,10 @@ dns.resolver.default_resolver.nameservers = [
 
 async def main():
     await app.start()
-    await app.send_message(chat_id=log, text=f'<b>Bot Started! @{(await app.get_me()).username}</b>')
+    try:
+        await app.send_message(chat_id=log, text=f'<b>Bot Started! @{(await app.get_me()).username}</b>')
+    except Exception as e:
+        print(f"Failed to send startup message: {e}")
     await idle()
     await app.stop()
 
