@@ -1,0 +1,2558 @@
+08-Jan-26 19:25:11 - requests_cache.backends - DEBUG - Initializing backend: sqlite C:\Users\abhin/.lk21-requests-cache
+08-Jan-26 19:25:11 - requests_cache.backends.base - DEBUG - Initialized SQLiteDict with serializer: SerializerPipeline(name=pickle, n_stages=2)
+08-Jan-26 19:25:11 - requests_cache.backends.sqlite - DEBUG - Opening connection to C:\Users\abhin\.lk21-requests-cache.sqlite:responses
+08-Jan-26 19:25:11 - requests_cache.backends.base - DEBUG - Initialized SQLiteDict with serializer: None
+08-Jan-26 19:25:11 - requests_cache.backends.sqlite - DEBUG - Opening connection to C:\Users\abhin\.lk21-requests-cache.sqlite:redirects
+08-Jan-26 19:25:11 - requests_cache.patcher - DEBUG - Patching requests.Session with class: _ConfiguredCachedSession
+08-Jan-26 19:25:12 - requests_cache.backends - DEBUG - Initializing backend: <SQLiteCache(name=C:\Users\abhin/.lk21-requests-cache)> C:\Users\abhin/.lk21-requests-cache
+08-Jan-26 19:25:13 - VideoEncoder - INFO - Imported Utils!
+08-Jan-26 19:25:19 - pymongo.ocsp_support - DEBUG - Peer did not staple an OCSP response
+08-Jan-26 19:25:19 - pymongo.ocsp_support - DEBUG - No OCSP URI, soft fail
+08-Jan-26 19:25:19 - pymongo.ocsp_support - DEBUG - Peer did not staple an OCSP response
+08-Jan-26 19:25:19 - pymongo.ocsp_support - DEBUG - No OCSP URI, soft fail
+08-Jan-26 19:25:19 - pymongo.ocsp_support - DEBUG - Peer did not staple an OCSP response
+08-Jan-26 19:25:19 - pymongo.ocsp_support - DEBUG - No OCSP URI, soft fail
+08-Jan-26 19:25:19 - pymongo.ocsp_support - DEBUG - Peer did not staple an OCSP response
+08-Jan-26 19:25:19 - pymongo.ocsp_support - DEBUG - No OCSP URI, soft fail
+08-Jan-26 19:25:19 - pymongo.ocsp_support - DEBUG - Peer did not staple an OCSP response
+08-Jan-26 19:25:19 - pymongo.ocsp_support - DEBUG - No OCSP URI, soft fail
+08-Jan-26 19:25:19 - pymongo.ocsp_support - DEBUG - Peer did not staple an OCSP response
+08-Jan-26 19:25:19 - pymongo.ocsp_support - DEBUG - No OCSP URI, soft fail
+08-Jan-26 19:25:19 - pymongo.ocsp_support - DEBUG - Peer did not staple an OCSP response
+08-Jan-26 19:25:19 - pymongo.ocsp_support - DEBUG - No OCSP URI, soft fail
+08-Jan-26 19:27:01 - VideoEncoder - ERROR - Failed to get media streams: [WinError 2] The system cannot find the file specified
+08-Jan-26 19:28:15 - VideoEncoder - INFO - C:\Users\abhin\Downloads\ENCODING-BOT-audioswap\ENCODING-BOT-audioswap\VideoEncoder\downloads\S01_E24_Sword_of_the_Demon_Hunter:_Kijin_Gentosho_480p_SUB_@animetelugu.mkv
+08-Jan-26 19:28:15 - VideoEncoder - ERROR - ffprobe exception for C:\Users\abhin\Downloads\ENCODING-BOT-audioswap\ENCODING-BOT-audioswap\VideoEncoder\downloads\S01_E24_Sword_of_the_Demon_Hunter:_Kijin_Gentosho_480p_SUB_@animetelugu.mkv: [WinError 2] The system cannot find the file specified
+08-Jan-26 19:28:16 - VideoEncoder - ERROR - ffprobe exception for C:\Users\abhin\Downloads\ENCODING-BOT-audioswap\ENCODING-BOT-audioswap\VideoEncoder\downloads\S01_E24_Sword_of_the_Demon_Hunter:_Kijin_Gentosho_480p_SUB_@animetelugu.mkv: [WinError 2] The system cannot find the file specified
+08-Jan-26 19:28:16 - VideoEncoder - ERROR - ffprobe exception for C:\Users\abhin\Downloads\ENCODING-BOT-audioswap\ENCODING-BOT-audioswap\VideoEncoder\downloads\S01_E24_Sword_of_the_Demon_Hunter:_Kijin_Gentosho_480p_SUB_@animetelugu.mkv: [WinError 2] The system cannot find the file specified
+08-Jan-26 19:28:16 - VideoEncoder - ERROR - [FileNotFoundError]: Maybe due to cancel, hmm
+08-Jan-26 19:28:16 - VideoEncoder - ERROR - Traceback (most recent call last):
+  File "C:\Users\abhin\Downloads\ENCODING-BOT-audioswap\ENCODING-BOT-audioswap\VideoEncoder\utils\tasks.py", line 73, in handle_tasks
+    await tg_task(message, msg)
+  File "C:\Users\abhin\Downloads\ENCODING-BOT-audioswap\ENCODING-BOT-audioswap\VideoEncoder\utils\tasks.py", line 104, in tg_task
+    await handle_encode(filepath, message, msg)
+  File "C:\Users\abhin\Downloads\ENCODING-BOT-audioswap\ENCODING-BOT-audioswap\VideoEncoder\utils\helper.py", line 69, in handle_encode
+    new_file = await encode(filepath, message, msg, audio_map=audio_map)
+  File "C:\Users\abhin\Downloads\ENCODING-BOT-audioswap\ENCODING-BOT-audioswap\VideoEncoder\utils\encoding.py", line 360, in encode
+    proc = await asyncio.create_subprocess_exec(*command, output_filepath, stdout=asyncio.subprocess.PIPE, stderr=asyncio.subprocess.PIPE)
+  File "C:\Users\abhin\AppData\Local\Programs\Python\Python310\lib\asyncio\subprocess.py", line 218, in create_subprocess_exec
+    transport, protocol = await loop.subprocess_exec(
+  File "C:\Users\abhin\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 1652, in subprocess_exec
+    transport = await self._make_subprocess_transport(
+  File "C:\Users\abhin\AppData\Local\Programs\Python\Python310\lib\asyncio\windows_events.py", line 389, in _make_subprocess_transport
+    transp = _WindowsSubprocessTransport(self, protocol, args, shell,
+  File "C:\Users\abhin\AppData\Local\Programs\Python\Python310\lib\asyncio\base_subprocess.py", line 36, in __init__
+    self._start(args=args, shell=shell, stdin=stdin, stdout=stdout,
+  File "C:\Users\abhin\AppData\Local\Programs\Python\Python310\lib\asyncio\windows_events.py", line 885, in _start
+    self._proc = windows_utils.Popen(
+  File "C:\Users\abhin\AppData\Local\Programs\Python\Python310\lib\asyncio\windows_utils.py", line 153, in __init__
+    super().__init__(args, stdin=stdin_rfd, stdout=stdout_wfd,
+  File "C:\Users\abhin\AppData\Local\Programs\Python\Python310\lib\subprocess.py", line 966, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Users\abhin\AppData\Local\Programs\Python\Python310\lib\subprocess.py", line 1435, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+FileNotFoundError: [WinError 2] The system cannot find the file specified
+
+08-Jan-26 19:29:47 - root - INFO - Stop signal received (SIGINT). Exiting...
+08-Jan-26 19:32:06 - requests_cache.backends - DEBUG - Initializing backend: sqlite C:\Users\abhin/.lk21-requests-cache
+08-Jan-26 19:32:06 - requests_cache.backends.base - DEBUG - Initialized SQLiteDict with serializer: SerializerPipeline(name=pickle, n_stages=2)
+08-Jan-26 19:32:06 - requests_cache.backends.sqlite - DEBUG - Opening connection to C:\Users\abhin\.lk21-requests-cache.sqlite:responses
+08-Jan-26 19:32:06 - requests_cache.backends.base - DEBUG - Initialized SQLiteDict with serializer: None
+08-Jan-26 19:32:06 - requests_cache.backends.sqlite - DEBUG - Opening connection to C:\Users\abhin\.lk21-requests-cache.sqlite:redirects
+08-Jan-26 19:32:06 - requests_cache.patcher - DEBUG - Patching requests.Session with class: _ConfiguredCachedSession
+08-Jan-26 19:32:07 - requests_cache.backends - DEBUG - Initializing backend: <SQLiteCache(name=C:\Users\abhin/.lk21-requests-cache)> C:\Users\abhin/.lk21-requests-cache
+08-Jan-26 19:32:08 - VideoEncoder - INFO - Imported Utils!
+08-Jan-26 19:32:10 - pymongo.ocsp_support - DEBUG - Peer did not staple an OCSP response
+08-Jan-26 19:32:10 - pymongo.ocsp_support - DEBUG - No OCSP URI, soft fail
+08-Jan-26 19:32:10 - pymongo.ocsp_support - DEBUG - Peer did not staple an OCSP response
+08-Jan-26 19:32:10 - pymongo.ocsp_support - DEBUG - No OCSP URI, soft fail
+08-Jan-26 19:32:10 - pymongo.ocsp_support - DEBUG - Peer did not staple an OCSP response
+08-Jan-26 19:32:10 - pymongo.ocsp_support - DEBUG - No OCSP URI, soft fail
+08-Jan-26 19:32:10 - pymongo.ocsp_support - DEBUG - Peer did not staple an OCSP response
+08-Jan-26 19:32:10 - pymongo.ocsp_support - DEBUG - No OCSP URI, soft fail
+08-Jan-26 19:32:10 - pymongo.ocsp_support - DEBUG - Peer did not staple an OCSP response
+08-Jan-26 19:32:10 - pymongo.ocsp_support - DEBUG - No OCSP URI, soft fail
+08-Jan-26 19:32:10 - pymongo.ocsp_support - DEBUG - Peer did not staple an OCSP response
+08-Jan-26 19:32:10 - pymongo.ocsp_support - DEBUG - No OCSP URI, soft fail
+08-Jan-26 19:32:10 - pymongo.ocsp_support - DEBUG - Peer did not staple an OCSP response
+08-Jan-26 19:32:10 - pymongo.ocsp_support - DEBUG - No OCSP URI, soft fail
+08-Jan-26 19:32:49 - VideoEncoder - INFO - C:\Users\abhin\Downloads\ENCODING-BOT-audioswap\ENCODING-BOT-audioswap\VideoEncoder\downloads\S01_E24_Sword_of_the_Demon_Hunter:_Kijin_Gentosho_480p_SUB_@animetelugu.mkv
+08-Jan-26 19:32:50 - VideoEncoder - INFO - ffmpeg_process: 24244
+08-Jan-26 19:32:55 - VideoEncoder - INFO - 
+08-Jan-26 19:32:55 - VideoEncoder - INFO - 
+08-Jan-26 19:32:56 - pymongo.ocsp_support - DEBUG - Peer did not staple an OCSP response
+08-Jan-26 19:32:56 - pymongo.ocsp_support - DEBUG - No OCSP URI, soft fail
+08-Jan-26 19:32:56 - VideoEncoder - WARNING - ffprobe duration failed: Command '['ffprobe', '-v', 'error', '-show_entries', 'format=duration', '-of', 'default=noprint_wrappers=1:nokey=1', 'VideoEncoder/encodes/S01_E24_Sword_of_the_Demon_Hunter:_Kijin_Gentosho_480p_SUB_@animetelugu.mp4']' returned non-zero exit status 1., falling back to hachoir
+08-Jan-26 19:32:56 - VideoEncoder - ERROR - hachoir duration failed: Input size is nul (source='file:VideoEncoder/encodes/S01_E24_Sword_of_the_Demon_Hunter:_Kijin_Gentosho_480p_SUB_@animetelugu.mp4')!
+08-Jan-26 19:32:56 - pyrogram.client - ERROR - Telegram says: [400 FILE_REFERENCE_EXPIRED] (caused by "upload.GetFile") Pyrogram 2.3.69 thinks: The file id contains an expired file reference, you must obtain a valid one by fetching the message from the origin context
+Traceback (most recent call last):
+  File "C:\Users\abhin\AppData\Local\Programs\Python\Python310\lib\site-packages\pyrogram\client.py", line 1235, in get_file
+    r = await session.invoke(
+  File "C:\Users\abhin\AppData\Local\Programs\Python\Python310\lib\site-packages\pyrogram\session\session.py", line 420, in invoke
+    return await self.send(query, timeout=timeout)
+  File "C:\Users\abhin\AppData\Local\Programs\Python\Python310\lib\site-packages\pyrogram\session\session.py", line 377, in send
+    RPCError.raise_it(result, type(data))
+  File "C:\Users\abhin\AppData\Local\Programs\Python\Python310\lib\site-packages\pyrogram\errors\rpc_error.py", line 93, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.FileReferenceExpired: Telegram says: [400 FILE_REFERENCE_EXPIRED] (caused by "upload.GetFile") Pyrogram 2.3.69 thinks: The file id contains an expired file reference, you must obtain a valid one by fetching the message from the origin context
+08-Jan-26 19:32:56 - VideoEncoder - WARNING - ffprobe width/height failed: Command '['ffprobe', '-v', 'error', '-select_streams', 'v:0', '-show_entries', 'stream=width,height', '-of', 'csv=s=x:p=0', 'VideoEncoder/encodes/S01_E24_Sword_of_the_Demon_Hunter:_Kijin_Gentosho_480p_SUB_@animetelugu.mp4']' returned non-zero exit status 1., falling back to hachoir
+08-Jan-26 19:32:56 - VideoEncoder - ERROR - hachoir width/height failed: Input size is nul (source='file:VideoEncoder/encodes/S01_E24_Sword_of_the_Demon_Hunter:_Kijin_Gentosho_480p_SUB_@animetelugu.mp4')!
+08-Jan-26 19:33:35 - pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [WinError 1231] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+08-Jan-26 19:33:41 - pymongo.ocsp_support - DEBUG - Peer did not staple an OCSP response
+08-Jan-26 19:33:41 - pymongo.ocsp_support - DEBUG - No OCSP URI, soft fail
+08-Jan-26 19:33:42 - pymongo.ocsp_support - DEBUG - Peer did not staple an OCSP response
+08-Jan-26 19:33:42 - pymongo.ocsp_support - DEBUG - No OCSP URI, soft fail
+08-Jan-26 19:33:42 - pymongo.ocsp_support - DEBUG - Peer did not staple an OCSP response
+08-Jan-26 19:33:42 - pymongo.ocsp_support - DEBUG - No OCSP URI, soft fail
+08-Jan-26 19:33:43 - pymongo.ocsp_support - DEBUG - Peer did not staple an OCSP response
+08-Jan-26 19:33:43 - pymongo.ocsp_support - DEBUG - No OCSP URI, soft fail
+08-Jan-26 19:33:43 - pymongo.ocsp_support - DEBUG - Peer did not staple an OCSP response
+08-Jan-26 19:33:43 - pymongo.ocsp_support - DEBUG - No OCSP URI, soft fail
+08-Jan-26 19:33:44 - pymongo.ocsp_support - DEBUG - Peer did not staple an OCSP response
+08-Jan-26 19:33:44 - pymongo.ocsp_support - DEBUG - No OCSP URI, soft fail
+08-Jan-26 19:33:46 - root - INFO - Stop signal received (SIGINT). Exiting...
+08-Jan-26 19:42:54 - requests_cache.backends - DEBUG - Initializing backend: sqlite C:\Users\abhin/.lk21-requests-cache
+08-Jan-26 19:42:54 - requests_cache.backends.base - DEBUG - Initialized SQLiteDict with serializer: SerializerPipeline(name=pickle, n_stages=2)
+08-Jan-26 19:42:54 - requests_cache.backends.sqlite - DEBUG - Opening connection to C:\Users\abhin\.lk21-requests-cache.sqlite:responses
+08-Jan-26 19:42:54 - requests_cache.backends.base - DEBUG - Initialized SQLiteDict with serializer: None
+08-Jan-26 19:42:54 - requests_cache.backends.sqlite - DEBUG - Opening connection to C:\Users\abhin\.lk21-requests-cache.sqlite:redirects
+08-Jan-26 19:42:54 - requests_cache.patcher - DEBUG - Patching requests.Session with class: _ConfiguredCachedSession
+08-Jan-26 19:42:54 - requests_cache.backends - DEBUG - Initializing backend: <SQLiteCache(name=C:\Users\abhin/.lk21-requests-cache)> C:\Users\abhin/.lk21-requests-cache
+08-Jan-26 19:42:55 - VideoEncoder - INFO - Imported Utils!
+08-Jan-26 19:42:57 - pymongo.ocsp_support - DEBUG - Peer did not staple an OCSP response
+08-Jan-26 19:42:57 - pymongo.ocsp_support - DEBUG - No OCSP URI, soft fail
+08-Jan-26 19:42:58 - pymongo.ocsp_support - DEBUG - Peer did not staple an OCSP response
+08-Jan-26 19:42:58 - pymongo.ocsp_support - DEBUG - No OCSP URI, soft fail
+08-Jan-26 19:42:58 - pymongo.ocsp_support - DEBUG - Peer did not staple an OCSP response
+08-Jan-26 19:42:58 - pymongo.ocsp_support - DEBUG - No OCSP URI, soft fail
+08-Jan-26 19:42:58 - pymongo.ocsp_support - DEBUG - Peer did not staple an OCSP response
+08-Jan-26 19:42:58 - pymongo.ocsp_support - DEBUG - No OCSP URI, soft fail
+08-Jan-26 19:42:58 - pymongo.ocsp_support - DEBUG - Peer did not staple an OCSP response
+08-Jan-26 19:42:58 - pymongo.ocsp_support - DEBUG - No OCSP URI, soft fail
+08-Jan-26 19:42:58 - pymongo.ocsp_support - DEBUG - Peer did not staple an OCSP response
+08-Jan-26 19:42:58 - pymongo.ocsp_support - DEBUG - No OCSP URI, soft fail
+08-Jan-26 19:42:58 - pymongo.ocsp_support - DEBUG - Peer did not staple an OCSP response
+08-Jan-26 19:42:58 - pymongo.ocsp_support - DEBUG - No OCSP URI, soft fail
+08-Jan-26 19:43:36 - VideoEncoder - INFO - C:\Users\abhin\Downloads\ENCODING-BOT-audioswap\ENCODING-BOT-audioswap\VideoEncoder\downloads\S01_E24_Sword_of_the_Demon_Hunter__Kijin_Gentosho_480p_SUB_@animetelugu.mkv
+08-Jan-26 19:43:37 - VideoEncoder - INFO - ffmpeg_process: 24348
+08-Jan-26 19:43:43 - VideoEncoder - INFO - 
+08-Jan-26 19:43:43 - VideoEncoder - INFO - 
+08-Jan-26 19:43:43 - VideoEncoder - WARNING - ffprobe duration failed: Command '['ffprobe', '-v', 'error', '-show_entries', 'format=duration', '-of', 'default=noprint_wrappers=1:nokey=1', 'VideoEncoder/encodes/S01_E24_Sword_of_the_Demon_Hunter__Kijin_Gentosho_480p_SUB_@animetelugu.mp4']' returned non-zero exit status 1., falling back to hachoir
+08-Jan-26 19:43:43 - VideoEncoder - ERROR - hachoir duration failed: Input size is nul (source='file:VideoEncoder/encodes/S01_E24_Sword_of_the_Demon_Hunter__Kijin_Gentosho_480p_SUB_@animetelugu.mp4')!
+08-Jan-26 19:43:43 - pyrogram.client - ERROR - Telegram says: [400 FILE_REFERENCE_EXPIRED] (caused by "upload.GetFile") Pyrogram 2.3.69 thinks: The file id contains an expired file reference, you must obtain a valid one by fetching the message from the origin context
+Traceback (most recent call last):
+  File "C:\Users\abhin\AppData\Local\Programs\Python\Python310\lib\site-packages\pyrogram\client.py", line 1235, in get_file
+    r = await session.invoke(
+  File "C:\Users\abhin\AppData\Local\Programs\Python\Python310\lib\site-packages\pyrogram\session\session.py", line 420, in invoke
+    return await self.send(query, timeout=timeout)
+  File "C:\Users\abhin\AppData\Local\Programs\Python\Python310\lib\site-packages\pyrogram\session\session.py", line 377, in send
+    RPCError.raise_it(result, type(data))
+  File "C:\Users\abhin\AppData\Local\Programs\Python\Python310\lib\site-packages\pyrogram\errors\rpc_error.py", line 93, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.FileReferenceExpired: Telegram says: [400 FILE_REFERENCE_EXPIRED] (caused by "upload.GetFile") Pyrogram 2.3.69 thinks: The file id contains an expired file reference, you must obtain a valid one by fetching the message from the origin context
+08-Jan-26 19:43:43 - VideoEncoder - WARNING - ffprobe width/height failed: Command '['ffprobe', '-v', 'error', '-select_streams', 'v:0', '-show_entries', 'stream=width,height', '-of', 'csv=s=x:p=0', 'VideoEncoder/encodes/S01_E24_Sword_of_the_Demon_Hunter__Kijin_Gentosho_480p_SUB_@animetelugu.mp4']' returned non-zero exit status 1., falling back to hachoir
+08-Jan-26 19:43:43 - VideoEncoder - ERROR - hachoir width/height failed: Input size is nul (source='file:VideoEncoder/encodes/S01_E24_Sword_of_the_Demon_Hunter__Kijin_Gentosho_480p_SUB_@animetelugu.mp4')!
+08-Jan-26 19:46:40 - VideoEncoder - INFO - AudioSelect: Registered session for user 5756495153
+08-Jan-26 19:46:40 - VideoEncoder - INFO - AudioSelect: Waiting for event
+08-Jan-26 19:46:47 - VideoEncoder - INFO - AudioSelect: Received callback audiosel up 3
+08-Jan-26 19:46:47 - VideoEncoder - INFO - AudioSelect: Processing up for index 3 at pos 2
+08-Jan-26 19:46:48 - VideoEncoder - INFO - AudioSelect: Received callback audiosel up 3
+08-Jan-26 19:46:48 - VideoEncoder - INFO - AudioSelect: Processing up for index 3 at pos 1
+08-Jan-26 19:46:50 - VideoEncoder - INFO - AudioSelect: Received callback audiosel done
+08-Jan-26 19:46:50 - VideoEncoder - INFO - AudioSelect: Event set or timeout reached
+08-Jan-26 19:46:50 - VideoEncoder - INFO - AudioSelect: Unregistered session for user 5756495153
+08-Jan-26 19:46:50 - VideoEncoder - INFO - AudioSelect: Returning maps [3, 1, 2, 4, 5]
+08-Jan-26 19:46:50 - VideoEncoder - INFO - C:\Users\abhin\Downloads\ENCODING-BOT-audioswap\ENCODING-BOT-audioswap\VideoEncoder\downloads\_Tsukimichi_Moonlit_Fantasy_S02E13_1080p_x265_10bit_BluR𝙰𝙱𝙷𝙸.mkv
+08-Jan-26 19:46:52 - VideoEncoder - INFO - ffmpeg_process: 13744
+08-Jan-26 19:46:57 - VideoEncoder - INFO - 
+08-Jan-26 19:46:57 - VideoEncoder - INFO - 
+08-Jan-26 19:46:57 - VideoEncoder - WARNING - ffprobe duration failed: Command '['ffprobe', '-v', 'error', '-show_entries', 'format=duration', '-of', 'default=noprint_wrappers=1:nokey=1', 'VideoEncoder/encodes/_Tsukimichi_Moonlit_Fantasy_S02E13_1080p_x265_10bit_BluR𝙰𝙱𝙷𝙸.mp4']' returned non-zero exit status 1., falling back to hachoir
+08-Jan-26 19:46:57 - VideoEncoder - ERROR - hachoir duration failed: Input size is nul (source='file:VideoEncoder/encodes/_Tsukimichi_Moonlit_Fantasy_S02E13_1080p_x265_10bit_BluR𝙰𝙱𝙷𝙸.mp4')!
+08-Jan-26 19:46:57 - pyrogram.client - ERROR - Telegram says: [400 FILE_REFERENCE_EXPIRED] (caused by "upload.GetFile") Pyrogram 2.3.69 thinks: The file id contains an expired file reference, you must obtain a valid one by fetching the message from the origin context
+Traceback (most recent call last):
+  File "C:\Users\abhin\AppData\Local\Programs\Python\Python310\lib\site-packages\pyrogram\client.py", line 1235, in get_file
+    r = await session.invoke(
+  File "C:\Users\abhin\AppData\Local\Programs\Python\Python310\lib\site-packages\pyrogram\session\session.py", line 420, in invoke
+    return await self.send(query, timeout=timeout)
+  File "C:\Users\abhin\AppData\Local\Programs\Python\Python310\lib\site-packages\pyrogram\session\session.py", line 377, in send
+    RPCError.raise_it(result, type(data))
+  File "C:\Users\abhin\AppData\Local\Programs\Python\Python310\lib\site-packages\pyrogram\errors\rpc_error.py", line 93, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.FileReferenceExpired: Telegram says: [400 FILE_REFERENCE_EXPIRED] (caused by "upload.GetFile") Pyrogram 2.3.69 thinks: The file id contains an expired file reference, you must obtain a valid one by fetching the message from the origin context
+08-Jan-26 19:46:57 - VideoEncoder - WARNING - ffprobe width/height failed: Command '['ffprobe', '-v', 'error', '-select_streams', 'v:0', '-show_entries', 'stream=width,height', '-of', 'csv=s=x:p=0', 'VideoEncoder/encodes/_Tsukimichi_Moonlit_Fantasy_S02E13_1080p_x265_10bit_BluR𝙰𝙱𝙷𝙸.mp4']' returned non-zero exit status 1., falling back to hachoir
+08-Jan-26 19:46:57 - VideoEncoder - ERROR - hachoir width/height failed: Input size is nul (source='file:VideoEncoder/encodes/_Tsukimichi_Moonlit_Fantasy_S02E13_1080p_x265_10bit_BluR𝙰𝙱𝙷𝙸.mp4')!
+08-Jan-26 19:47:41 - root - INFO - Stop signal received (SIGINT). Exiting...
+08-Jan-26 19:49:36 - requests_cache.backends - DEBUG - Initializing backend: sqlite C:\Users\abhin/.lk21-requests-cache
+08-Jan-26 19:49:36 - requests_cache.backends.base - DEBUG - Initialized SQLiteDict with serializer: SerializerPipeline(name=pickle, n_stages=2)
+08-Jan-26 19:49:36 - requests_cache.backends.sqlite - DEBUG - Opening connection to C:\Users\abhin\.lk21-requests-cache.sqlite:responses
+08-Jan-26 19:49:36 - requests_cache.backends.base - DEBUG - Initialized SQLiteDict with serializer: None
+08-Jan-26 19:49:36 - requests_cache.backends.sqlite - DEBUG - Opening connection to C:\Users\abhin\.lk21-requests-cache.sqlite:redirects
+08-Jan-26 19:49:36 - requests_cache.patcher - DEBUG - Patching requests.Session with class: _ConfiguredCachedSession
+08-Jan-26 19:49:37 - requests_cache.backends - DEBUG - Initializing backend: <SQLiteCache(name=C:\Users\abhin/.lk21-requests-cache)> C:\Users\abhin/.lk21-requests-cache
+08-Jan-26 19:49:37 - VideoEncoder - INFO - Imported Utils!
+08-Jan-26 19:49:49 - pymongo.ocsp_support - DEBUG - Peer did not staple an OCSP response
+08-Jan-26 19:49:49 - pymongo.ocsp_support - DEBUG - No OCSP URI, soft fail
+08-Jan-26 19:49:49 - pymongo.ocsp_support - DEBUG - Peer did not staple an OCSP response
+08-Jan-26 19:49:49 - pymongo.ocsp_support - DEBUG - No OCSP URI, soft fail
+08-Jan-26 19:49:49 - pymongo.ocsp_support - DEBUG - Peer did not staple an OCSP response
+08-Jan-26 19:49:49 - pymongo.ocsp_support - DEBUG - No OCSP URI, soft fail
+08-Jan-26 19:49:49 - pymongo.ocsp_support - DEBUG - Peer did not staple an OCSP response
+08-Jan-26 19:49:49 - pymongo.ocsp_support - DEBUG - No OCSP URI, soft fail
+08-Jan-26 19:49:49 - pymongo.ocsp_support - DEBUG - Peer did not staple an OCSP response
+08-Jan-26 19:49:49 - pymongo.ocsp_support - DEBUG - No OCSP URI, soft fail
+08-Jan-26 19:49:49 - pymongo.ocsp_support - DEBUG - Peer did not staple an OCSP response
+08-Jan-26 19:49:49 - pymongo.ocsp_support - DEBUG - No OCSP URI, soft fail
+08-Jan-26 19:49:49 - pymongo.ocsp_support - DEBUG - Peer did not staple an OCSP response
+08-Jan-26 19:49:49 - pymongo.ocsp_support - DEBUG - No OCSP URI, soft fail
+08-Jan-26 19:51:24 - VideoEncoder - INFO - C:\Users\abhin\Downloads\ENCODING-BOT-audioswap\ENCODING-BOT-audioswap\VideoEncoder\downloads\_Tsukimichi_Moonlit_Fantasy_S02E13_1080p_x265_10bit_BluRABHI.mkv
+08-Jan-26 19:51:25 - VideoEncoder - INFO - Running ffmpeg command: ffmpeg -hide_banner -loglevel quiet -progress VideoEncoder/downloads/process.txt -hwaccel auto -y -i C:\Users\abhin\Downloads\ENCODING-BOT-audioswap\ENCODING-BOT-audioswap\VideoEncoder\downloads\_Tsukimichi_Moonlit_Fantasy_S02E13_1080p_x265_10bit_BluRABHI.mkv -c:v libx264 -pix_fmt yuv420p -preset superfast -r film -tune animation -coder 0 -profile:v main -map 0:v? -map_chapters 0 -map_metadata 0 -crf 30 -vf scale=768:576,subtitles=VideoEncoder/utils/extras/watermark.ass -metadata title=ABHI -metadata:s:v title=ABHI -metadata:s:a title=ABHI -c:s copy -c:t copy -map 0:t? -map 0:s? -c:a copy -map 0:a? -threads 8
+08-Jan-26 19:51:25 - VideoEncoder - INFO - ffmpeg_process: 14808
+08-Jan-26 19:51:30 - VideoEncoder - INFO - 
+08-Jan-26 19:51:30 - VideoEncoder - INFO - 
+08-Jan-26 19:51:30 - VideoEncoder - WARNING - ffprobe duration failed: Command '['ffprobe', '-v', 'error', '-show_entries', 'format=duration', '-of', 'default=noprint_wrappers=1:nokey=1', 'VideoEncoder/encodes/_Tsukimichi_Moonlit_Fantasy_S02E13_1080p_x265_10bit_BluRABHI.mp4']' returned non-zero exit status 1., falling back to hachoir
+08-Jan-26 19:51:30 - VideoEncoder - ERROR - hachoir duration failed: Input size is nul (source='file:VideoEncoder/encodes/_Tsukimichi_Moonlit_Fantasy_S02E13_1080p_x265_10bit_BluRABHI.mp4')!
+08-Jan-26 19:51:31 - pyrogram.client - ERROR - Telegram says: [400 FILE_REFERENCE_EXPIRED] (caused by "upload.GetFile") Pyrogram 2.3.69 thinks: The file id contains an expired file reference, you must obtain a valid one by fetching the message from the origin context
+Traceback (most recent call last):
+  File "C:\Users\abhin\AppData\Local\Programs\Python\Python310\lib\site-packages\pyrogram\client.py", line 1235, in get_file
+    r = await session.invoke(
+  File "C:\Users\abhin\AppData\Local\Programs\Python\Python310\lib\site-packages\pyrogram\session\session.py", line 420, in invoke
+    return await self.send(query, timeout=timeout)
+  File "C:\Users\abhin\AppData\Local\Programs\Python\Python310\lib\site-packages\pyrogram\session\session.py", line 377, in send
+    RPCError.raise_it(result, type(data))
+  File "C:\Users\abhin\AppData\Local\Programs\Python\Python310\lib\site-packages\pyrogram\errors\rpc_error.py", line 93, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.FileReferenceExpired: Telegram says: [400 FILE_REFERENCE_EXPIRED] (caused by "upload.GetFile") Pyrogram 2.3.69 thinks: The file id contains an expired file reference, you must obtain a valid one by fetching the message from the origin context
+08-Jan-26 19:51:31 - VideoEncoder - WARNING - ffprobe width/height failed: Command '['ffprobe', '-v', 'error', '-select_streams', 'v:0', '-show_entries', 'stream=width,height', '-of', 'csv=s=x:p=0', 'VideoEncoder/encodes/_Tsukimichi_Moonlit_Fantasy_S02E13_1080p_x265_10bit_BluRABHI.mp4']' returned non-zero exit status 1., falling back to hachoir
+08-Jan-26 19:51:31 - VideoEncoder - ERROR - hachoir width/height failed: Input size is nul (source='file:VideoEncoder/encodes/_Tsukimichi_Moonlit_Fantasy_S02E13_1080p_x265_10bit_BluRABHI.mp4')!
+08-Jan-26 19:52:48 - root - INFO - Stop signal received (SIGINT). Exiting...
+08-Jan-26 19:54:00 - requests_cache.backends - DEBUG - Initializing backend: sqlite C:\Users\abhin/.lk21-requests-cache
+08-Jan-26 19:54:00 - requests_cache.backends.base - DEBUG - Initialized SQLiteDict with serializer: SerializerPipeline(name=pickle, n_stages=2)
+08-Jan-26 19:54:00 - requests_cache.backends.sqlite - DEBUG - Opening connection to C:\Users\abhin\.lk21-requests-cache.sqlite:responses
+08-Jan-26 19:54:00 - requests_cache.backends.base - DEBUG - Initialized SQLiteDict with serializer: None
+08-Jan-26 19:54:00 - requests_cache.backends.sqlite - DEBUG - Opening connection to C:\Users\abhin\.lk21-requests-cache.sqlite:redirects
+08-Jan-26 19:54:00 - requests_cache.patcher - DEBUG - Patching requests.Session with class: _ConfiguredCachedSession
+08-Jan-26 19:54:00 - requests_cache.backends - DEBUG - Initializing backend: <SQLiteCache(name=C:\Users\abhin/.lk21-requests-cache)> C:\Users\abhin/.lk21-requests-cache
+08-Jan-26 19:54:01 - VideoEncoder - INFO - Imported Utils!
+08-Jan-26 19:54:08 - pymongo.ocsp_support - DEBUG - Peer did not staple an OCSP response
+08-Jan-26 19:54:08 - pymongo.ocsp_support - DEBUG - No OCSP URI, soft fail
+08-Jan-26 19:54:08 - pymongo.ocsp_support - DEBUG - Peer did not staple an OCSP response
+08-Jan-26 19:54:08 - pymongo.ocsp_support - DEBUG - No OCSP URI, soft fail
+08-Jan-26 19:54:08 - pymongo.ocsp_support - DEBUG - Peer did not staple an OCSP response
+08-Jan-26 19:54:08 - pymongo.ocsp_support - DEBUG - No OCSP URI, soft fail
+08-Jan-26 19:54:08 - pymongo.ocsp_support - DEBUG - Peer did not staple an OCSP response
+08-Jan-26 19:54:08 - pymongo.ocsp_support - DEBUG - No OCSP URI, soft fail
+08-Jan-26 19:54:08 - pymongo.ocsp_support - DEBUG - Peer did not staple an OCSP response
+08-Jan-26 19:54:08 - pymongo.ocsp_support - DEBUG - Peer did not staple an OCSP response
+08-Jan-26 19:54:08 - pymongo.ocsp_support - DEBUG - No OCSP URI, soft fail
+08-Jan-26 19:54:08 - pymongo.ocsp_support - DEBUG - No OCSP URI, soft fail
+08-Jan-26 19:54:08 - pymongo.ocsp_support - DEBUG - Peer did not staple an OCSP response
+08-Jan-26 19:54:09 - pymongo.ocsp_support - DEBUG - No OCSP URI, soft fail
+08-Jan-26 19:54:14 - VideoEncoder - INFO - C:\Users\abhin\Downloads\ENCODING-BOT-audioswap\ENCODING-BOT-audioswap\VideoEncoder\downloads\S01_E24_Sword_of_the_Demon_Hunter__Kijin_Gentosho_480p_SUB__animetelugu.mkv
+08-Jan-26 19:54:16 - VideoEncoder - INFO - Running ffmpeg command: ffmpeg -hide_banner -progress VideoEncoder/downloads/process.txt -hwaccel auto -y -i C:\Users\abhin\Downloads\ENCODING-BOT-audioswap\ENCODING-BOT-audioswap\VideoEncoder\downloads\S01_E24_Sword_of_the_Demon_Hunter__Kijin_Gentosho_480p_SUB__animetelugu.mkv -c:v libx264 -pix_fmt yuv420p -preset superfast -r film -tune animation -coder 0 -profile:v main -map 0:v? -map_chapters 0 -map_metadata 0 -crf 30 -vf scale=768:576,subtitles=C:/Users/abhin/Downloads/ENCODING-BOT-audioswap/ENCODING-BOT-audioswap/VideoEncoder/utils/extras/watermark.ass -metadata title=ABHI -metadata:s:v title=ABHI -metadata:s:a title=ABHI -c:s copy -c:t copy -map 0:t? -map 0:s? -c:a copy -map 0:a? -threads 8
+08-Jan-26 19:54:16 - VideoEncoder - INFO - ffmpeg_process: 16672
+08-Jan-26 19:54:21 - VideoEncoder - INFO - Input #0, matroska,webm, from 'C:\Users\abhin\Downloads\ENCODING-BOT-audioswap\ENCODING-BOT-audioswap\VideoEncoder\downloads\S01_E24_Sword_of_the_Demon_Hunter__Kijin_Gentosho_480p_SUB__animetelugu.mkv':
+
+  Metadata:
+
+    title           : Animeworld [t.me/Animeworld_zone]
+
+    AUTHOR          : BOTMAKER
+
+    ENCODER         : Lavf58.45.100
+
+  Duration: 00:23:42.43, start: -0.007000, bitrate: 148 kb/s
+
+  Stream #0:0: Video: h264 (High), yuv420p(progressive), 840x480 [SAR 64:63 DAR 16:9], 24 fps, 24 tbr, 1k tbn (default)
+
+    Metadata:
+
+      title           : [Animeworld]
+
+      BPS-eng         : 5297406
+
+      DURATION-eng    : 00:23:42.417000000
+
+      NUMBER_OF_FRAMES-eng: 34138
+
+      NUMBER_OF_BYTES-eng: 941890199
+
+      _STATISTICS_WRITING_APP-eng: no_variable_data
+
+      _STATISTICS_WRITING_DATE_UTC-eng: 1970-01-01 00:00:00
+
+      _STATISTICS_TAGS-eng: BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES
+
+      ENCODER         : Lavc58.91.100 libx264
+
+      DURATION        : 00:23:42.424000000
+
+  Stream #0:1(jpn): Audio: opus, 48000 Hz, stereo, fltp (default)
+
+    Metadata:
+
+      title           : [Animeworld]
+
+      _STATISTICS_TAGS-eng: BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES
+
+      BPS-eng         : 128204
+
+      DURATION-eng    : 00:23:42.421000000
+
+      NUMBER_OF_FRAMES-eng: 66676
+
+      NUMBER_OF_BYTES-eng: 22795176
+
+      _STATISTICS_WRITING_APP-eng: no_variable_data
+
+      _STATISTICS_WRITING_DATE_UTC-eng: 1970-01-01 00:00:00
+
+      ENCODER         : Lavc58.91.100 libopus
+
+      DURATION        : 00:23:42.428000000
+
+  Stream #0:2(eng): Subtitle: ass (default) (forced)
+
+    Metadata:
+
+      title           : [Animeworld]
+
+      _STATISTICS_TAGS-eng: BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES
+
+      BPS-eng         : 102
+
+      DURATION-eng    : 00:23:32.170000000
+
+      NUMBER_OF_FRAMES-eng: 311
+
+      NUMBER_OF_BYTES-eng: 18170
+
+      _STATISTICS_WRITING_APP-eng: no_variable_data
+
+      _STATISTICS_WRITING_DATE_UTC-eng: 1970-01-01 00:00:00
+
+      DURATION        : 00:23:33.717000000
+
+[h264 @ 000002041c69ea80] Using auto hwaccel type dxva2 with new default device.
+
+Stream mapping:
+
+  Stream #0:0 -> #0:0 (h264 (native) -> h264 (libx264))
+
+  Stream #0:2 -> #0:1 (copy)
+
+  Stream #0:1 -> #0:2 (copy)
+
+Press [q] to stop, [?] for help
+
+[subtitles @ 0000020422fa5c80] Unable to parse option value "/Users/abhin/Downloads/ENCODING-BOT-audioswap/ENCODING-BOT-audioswap/VideoEncoder/utils/extras/watermark.ass" as image size
+
+    Last message repeated 1 times
+
+[subtitles @ 0000020422fa5c80] Error setting option original_size to value /Users/abhin/Downloads/ENCODING-BOT-audioswap/ENCODING-BOT-audioswap/VideoEncoder/utils/extras/watermark.ass.
+
+[Parsed_subtitles_1 @ 000002041c380900] Error applying options to the filter.
+
+[AVFilterGraph @ 0000020422c69500] Error initializing filter 'subtitles' with args 'C:/Users/abhin/Downloads/ENCODING-BOT-audioswap/ENCODING-BOT-audioswap/VideoEncoder/utils/extras/watermark.ass'
+
+Error reinitializing filters!
+
+Failed to inject frame into filter network: Invalid argument
+
+Error while processing the decoded data for stream #0:0
+
+Conversion failed!
+08-Jan-26 19:54:21 - VideoEncoder - INFO - 
+08-Jan-26 19:54:21 - VideoEncoder - ERROR - FFmpeg process failed with return code 1
+08-Jan-26 19:54:21 - VideoEncoder - ERROR - FFmpeg stderr: Input #0, matroska,webm, from 'C:\Users\abhin\Downloads\ENCODING-BOT-audioswap\ENCODING-BOT-audioswap\VideoEncoder\downloads\S01_E24_Sword_of_the_Demon_Hunter__Kijin_Gentosho_480p_SUB__animetelugu.mkv':
+
+  Metadata:
+
+    title           : Animeworld [t.me/Animeworld_zone]
+
+    AUTHOR          : BOTMAKER
+
+    ENCODER         : Lavf58.45.100
+
+  Duration: 00:23:42.43, start: -0.007000, bitrate: 148 kb/s
+
+  Stream #0:0: Video: h264 (High), yuv420p(progressive), 840x480 [SAR 64:63 DAR 16:9], 24 fps, 24 tbr, 1k tbn (default)
+
+    Metadata:
+
+      title           : [Animeworld]
+
+      BPS-eng         : 5297406
+
+      DURATION-eng    : 00:23:42.417000000
+
+      NUMBER_OF_FRAMES-eng: 34138
+
+      NUMBER_OF_BYTES-eng: 941890199
+ABHIABHIABHI
+      _STATISTICS_WRITING_APP-eng: no_variable_data
+
+      _STATISTICS_WRITING_DATE_UTC-eng: 1970-01-01 00:00:00
+
+      _STATISTICS_TAGS-eng: BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES
+
+      ENCODER         : Lavc58.91.100 libx264
+
+      DURATION        : 00:23:42.424000000
+
+  Stream #0:1(jpn): Audio: opus, 48000 Hz, stereo, fltp (default)
+
+    Metadata:
+
+      title           : [Animeworld]
+
+      _STATISTICS_TAGS-eng: BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES
+
+      BPS-eng         : 128204
+
+      DURATION-eng    : 00:23:42.421000000
+
+      NUMBER_OF_FRAMES-eng: 66676
+
+      NUMBER_OF_BYTES-eng: 22795176
+
+      _STATISTICS_WRITING_APP-eng: no_variable_data
+
+      _STATISTICS_WRITING_DATE_UTC-eng: 1970-01-01 00:00:00
+
+      ENCODER         : Lavc58.91.100 libopus
+
+      DURATION        : 00:23:42.428000000
+
+  Stream #0:2(eng): Subtitle: ass (default) (forced)
+
+    Metadata:
+
+      title           : [Animeworld]
+
+      _STATISTICS_TAGS-eng: BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES
+
+      BPS-eng         : 102
+
+      DURATION-eng    : 00:23:32.170000000
+
+      NUMBER_OF_FRAMES-eng: 311
+
+      NUMBER_OF_BYTES-eng: 18170
+
+      _STATISTICS_WRITING_APP-eng: no_variable_data
+
+      _STATISTICS_WRITING_DATE_UTC-eng: 1970-01-01 00:00:00
+
+      DURATION        : 00:23:33.717000000
+
+[h264 @ 000002041c69ea80] Using auto hwaccel type dxva2 with new default device.
+
+Stream mapping:
+
+  Stream #0:0 -> #0:0 (h264 (native) -> h264 (libx264))
+
+  Stream #0:2 -> #0:1 (copy)
+
+  Stream #0:1 -> #0:2 (copy)
+
+Press [q] to stop, [?] for help
+
+[subtitles @ 0000020422fa5c80] Unable to parse option value "/Users/abhin/Downloads/ENCODING-BOT-audioswap/ENCODING-BOT-audioswap/VideoEncoder/utils/extras/watermark.ass" as image size
+
+    Last message repeated 1 times
+
+[subtitles @ 0000020422fa5c80] Error setting option original_size to value /Users/abhin/Downloads/ENCODING-BOT-audioswap/ENCODING-BOT-audioswap/VideoEncoder/utils/extras/watermark.ass.
+
+[Parsed_subtitles_1 @ 000002041c380900] Error applying options to the filter.
+
+[AVFilterGraph @ 0000020422c69500] Error initializing filter 'subtitles' with args 'C:/Users/abhin/Downloads/ENCODING-BOT-audioswap/ENCODING-BOT-audioswap/VideoEncoder/utils/extras/watermark.ass'
+
+Error reinitializing filters!
+
+Failed to inject frame into filter network: Invalid argument
+
+Error while processing the decoded data for stream #0:0
+
+Conversion failed!
+08-Jan-26 19:54:56 - root - INFO - Stop signal received (SIGINT). Exiting...
+08-Jan-26 19:55:03 - requests_cache.backends - DEBUG - Initializing backend: sqlite C:\Users\abhin/.lk21-requests-cache
+08-Jan-26 19:55:03 - requests_cache.backends.base - DEBUG - Initialized SQLiteDict with serializer: SerializerPipeline(name=pickle, n_stages=2)
+08-Jan-26 19:55:03 - requests_cache.backends.sqlite - DEBUG - Opening connection to C:\Users\abhin\.lk21-requests-cache.sqlite:responses
+08-Jan-26 19:55:03 - requests_cache.backends.base - DEBUG - Initialized SQLiteDict with serializer: None
+08-Jan-26 19:55:03 - requests_cache.backends.sqlite - DEBUG - Opening connection to C:\Users\abhin\.lk21-requests-cache.sqlite:redirects
+08-Jan-26 19:55:03 - requests_cache.patcher - DEBUG - Patching requests.Session with class: _ConfiguredCachedSession
+08-Jan-26 19:55:04 - requests_cache.backends - DEBUG - Initializing backend: <SQLiteCache(name=C:\Users\abhin/.lk21-requests-cache)> C:\Users\abhin/.lk21-requests-cache
+08-Jan-26 19:55:04 - VideoEncoder - INFO - Imported Utils!
+08-Jan-26 19:55:18 - pymongo.ocsp_support - DEBUG - Peer did not staple an OCSP response
+08-Jan-26 19:55:18 - pymongo.ocsp_support - DEBUG - No OCSP URI, soft fail
+08-Jan-26 19:55:18 - pymongo.ocsp_support - DEBUG - Peer did not staple an OCSP response
+08-Jan-26 19:55:18 - pymongo.ocsp_support - DEBUG - No OCSP URI, soft fail
+08-Jan-26 19:55:18 - pymongo.ocsp_support - DEBUG - Peer did not staple an OCSP response
+08-Jan-26 19:55:18 - pymongo.ocsp_support - DEBUG - No OCSP URI, soft fail
+08-Jan-26 19:55:18 - pymongo.ocsp_support - DEBUG - Peer did not staple an OCSP response
+08-Jan-26 19:55:18 - pymongo.ocsp_support - DEBUG - No OCSP URI, soft fail
+08-Jan-26 19:55:18 - pymongo.ocsp_support - DEBUG - Peer did not staple an OCSP response
+08-Jan-26 19:55:18 - pymongo.ocsp_support - DEBUG - Peer did not staple an OCSP response
+08-Jan-26 19:55:18 - pymongo.ocsp_support - DEBUG - No OCSP URI, soft fail
+08-Jan-26 19:55:18 - pymongo.ocsp_support - DEBUG - No OCSP URI, soft fail
+08-Jan-26 19:55:18 - pymongo.ocsp_support - DEBUG - Peer did not staple an OCSP response
+08-Jan-26 19:55:18 - pymongo.ocsp_support - DEBUG - No OCSP URI, soft fail
+08-Jan-26 19:57:02 - VideoEncoder - INFO - C:\Users\abhin\Downloads\ENCODING-BOT-audioswap\ENCODING-BOT-audioswap\VideoEncoder\downloads\ABHi_Haikyu___S04E09_720p_x265_10bit_WEB_DL_Multi_Au.mkv
+08-Jan-26 19:57:04 - VideoEncoder - INFO - Running ffmpeg command: ffmpeg -hide_banner -progress VideoEncoder/downloads/process.txt -hwaccel auto -y -i C:\Users\abhin\Downloads\ENCODING-BOT-audioswap\ENCODING-BOT-audioswap\VideoEncoder\downloads\ABHi_Haikyu___S04E09_720p_x265_10bit_WEB_DL_Multi_Au.mkv -c:v libx264 -pix_fmt yuv420p -preset superfast -r film -tune animation -coder 0 -profile:v main -map 0:v? -map_chapters 0 -map_metadata 0 -crf 30 -vf scale=768:576,subtitles=C:/Users/abhin/Downloads/ENCODING-BOT-audioswap/ENCODING-BOT-audioswap/VideoEncoder/utils/extras/watermark.ass -metadata title=Weeb-Zone.Blogspot.com -metadata:s:v title=Weeb-Zone.Blogspot.com -metadata:s:a title=Weeb-Zone.Blogspot.com -c:s copy -c:t copy -map 0:t? -map 0:s? -c:a copy -map 0:a? -threads 8
+08-Jan-26 19:57:04 - VideoEncoder - INFO - ffmpeg_process: 25196
+08-Jan-26 19:57:09 - VideoEncoder - INFO - Input #0, matroska,webm, from 'C:\Users\abhin\Downloads\ENCODING-BOT-audioswap\ENCODING-BOT-audioswap\VideoEncoder\downloads\ABHi_Haikyu___S04E09_720p_x265_10bit_WEB_DL_Multi_Au.mkv':
+
+  Metadata:
+
+    title           : ABHI
+
+    ENCODER         : Lavf58.76.100
+
+  Duration: 00:23:57.04, start: -0.007000, bitrate: 588 kb/s
+
+  Chapters:
+
+    Chapter #0:0: start 0.007000, end 95.019000
+
+      Metadata:
+
+        title           : Episode
+
+    Chapter #0:1: start 95.019000, end 185.025000
+
+      Metadata:
+
+        title           : Intro
+
+    Chapter #0:2: start 185.025000, end 1436.943000
+
+      Metadata:
+
+        title           : Episode
+
+  Stream #0:0: Video: hevc (Main 10), yuv420p10le(tv, bt709), 1280x720 [SAR 1:1 DAR 16:9], 23.98 fps, 23.98 tbr, 1k tbn (default)
+
+    Metadata:
+
+      title           : ABHI
+
+      _STATISTICS_TAGS: BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES
+
+      BPS             : 310120
+
+      NUMBER_OF_FRAMES: 34453
+
+      NUMBER_OF_BYTES : 55704548
+
+      _STATISTICS_WRITING_APP: mkvmerge v70.0.0 ('---Brasil Tracker---') 64-bit
+
+      _STATISTICS_WRITING_DATE_UTC: 2025-11-06 00:31:48
+
+      DURATION        : 00:23:56.984000000
+
+  Stream #0:1(hin): Audio: opus, 48000 Hz, stereo, fltp (default)
+
+    Metadata:
+
+      title           : ABHI
+
+      _STATISTICS_TAGS: BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES
+
+      BPS             : 77448
+
+      NUMBER_OF_FRAMES: 71852
+
+      NUMBER_OF_BYTES : 13912053
+
+      _STATISTICS_WRITING_APP: mkvmerge v70.0.0 ('---Brasil Tracker---') 64-bit
+
+      _STATISTICS_WRITING_DATE_UTC: 2025-11-06 00:31:48
+
+      DURATION        : 00:23:57.041000000
+
+  Stream #0:2(tam): Audio: opus, 48000 Hz, stereo, fltp
+
+    Metadata:
+
+      title           : ABHI
+
+      _STATISTICS_TAGS: BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES
+
+      BPS             : 63365
+
+      NUMBER_OF_FRAMES: 71852
+
+      NUMBER_OF_BYTES : 11382295
+
+      _STATISTICS_WRITING_APP: mkvmerge v70.0.0 ('---Brasil Tracker---') 64-bit
+
+      _STATISTICS_WRITING_DATE_UTC: 2025-11-06 00:31:48
+
+      DURATION        : 00:23:57.041000000
+
+  Stream #0:3(tel): Audio: opus, 48000 Hz, stereo, fltp
+
+    Metadata:
+
+      title           : ABHI
+
+      _STATISTICS_TAGS: BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES
+
+      BPS             : 63202
+
+      NUMBER_OF_FRAMES: 71852
+
+      NUMBER_OF_BYTES : 11353110
+
+      _STATISTICS_WRITING_APP: mkvmerge v70.0.0 ('---Brasil Tracker---') 64-bit
+
+      _STATISTICS_WRITING_DATE_UTC: 2025-11-06 00:31:48
+
+      DURATION        : 00:23:57.041000000
+
+  Stream #0:4(jpn): Audio: opus, 48000 Hz, stereo, fltp
+
+    Metadata:
+
+      title           : ABHI
+
+      _STATISTICS_TAGS: BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES
+
+      BPS             : 61706
+
+      NUMBER_OF_FRAMES: 71852
+
+      NUMBER_OF_BYTES : 11084323
+
+      _STATISTICS_WRITING_APP: mkvmerge v70.0.0 ('---Brasil Tracker---') 64-bit
+
+      _STATISTICS_WRITING_DATE_UTC: 2025-11-06 00:31:48
+
+      DURATION        : 00:23:57.041000000
+
+  Stream #0:5(hin): Subtitle: ass
+
+    Metadata:
+
+      title           : ABHI
+
+      _STATISTICS_TAGS: BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES
+
+      BPS             : 13
+
+      NUMBER_OF_FRAMES: 31
+
+      NUMBER_OF_BYTES : 2455
+
+      _STATISTICS_WRITING_APP: mkvmerge v70.0.0 ('---Brasil Tracker---') 64-bit
+
+      _STATISTICS_WRITING_DATE_UTC: 2025-11-06 00:31:48
+
+      DURATION        : 00:23:56.907000000
+
+  Stream #0:6(tam): Subtitle: ass
+
+    Metadata:
+
+      title           : ABHI
+
+      _STATISTICS_TAGS: BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES
+
+      BPS             : 15
+
+      NUMBER_OF_FRAMES: 31
+
+      NUMBER_OF_BYTES : 2816
+
+      _STATISTICS_WRITING_APP: mkvmerge v70.0.0 ('---Brasil Tracker---') 64-bit
+
+      _STATISTICS_WRITING_DATE_UTC: 2025-11-06 00:31:48
+
+      DURATION        : 00:23:56.907000000
+
+  Stream #0:7(tel): Subtitle: ass
+
+    Metadata:
+
+      title           : ABHI
+
+      _STATISTICS_TAGS: BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES
+
+      BPS             : 14
+
+      NUMBER_OF_FRAMES: 31
+
+      NUMBER_OF_BYTES : 2585
+
+      _STATISTICS_WRITING_APP: mkvmerge v70.0.0 ('---Brasil Tracker---') 64-bit
+
+      _STATISTICS_WRITING_DATE_UTC: 2025-11-06 00:31:48
+
+      DURATION        : 00:23:56.907000000
+
+  Stream #0:8(eng): Subtitle: ass (default)
+ABHIABHIABHI
+    Metadata:
+
+      title           : ABHI
+
+      _STATISTICS_TAGS: BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES
+
+      BPS             : 150
+
+      NUMBER_OF_FRAMES: 380
+
+      NUMBER_OF_BYTES : 27016
+
+      _STATISTICS_WRITING_APP: mkvmerge v70.0.0 ('---Brasil Tracker---') 64-bit
+
+      _STATISTICS_WRITING_DATE_UTC: 2025-11-06 00:31:48
+
+      DURATION        : 00:23:56.957000000
+
+[hevc @ 000002206169af40] Using auto hwaccel type dxva2 with new default device.
+
+Stream mapping:
+
+  Stream #0:0 -> #0:0 (hevc (native) -> h264 (libx264))
+
+  Stream #0:5 -> #0:1 (copy)
+
+  Stream #0:6 -> #0:2 (copy)
+
+  Stream #0:7 -> #0:3 (copy)
+
+  Stream #0:8 -> #0:4 (copy)
+
+  Stream #0:1 -> #0:5 (copy)
+
+  Stream #0:2 -> #0:6 (copy)
+
+  Stream #0:3 -> #0:7 (copy)
+
+  Stream #0:4 -> #0:8 (copy)
+
+Press [q] to stop, [?] for help
+
+[subtitles @ 00000220619410c0] Unable to parse option value "/Users/abhin/Downloads/ENCODING-BOT-audioswap/ENCODING-BOT-audioswap/VideoEncoder/utils/extras/watermark.ass" as image size
+
+    Last message repeated 1 times
+
+[subtitles @ 00000220619410c0] Error setting option original_size to value /Users/abhin/Downloads/ENCODING-BOT-audioswap/ENCODING-BOT-audioswap/VideoEncoder/utils/extras/watermark.ass.
+
+[Parsed_subtitles_1 @ 00000220618ab8c0] Error applying options to the filter.
+
+[AVFilterGraph @ 0000022068e34140] Error initializing filter 'subtitles' with args 'C:/Users/abhin/Downloads/ENCODING-BOT-audioswap/ENCODING-BOT-audioswap/VideoEncoder/utils/extras/watermark.ass'
+
+Error reinitializing filters!
+
+Failed to inject frame into filter network: Invalid argument
+
+Error while processing the decoded data for stream #0:0
+
+Conversion failed!
+08-Jan-26 19:57:09 - VideoEncoder - INFO - 
+08-Jan-26 19:57:09 - VideoEncoder - ERROR - FFmpeg process failed with return code 1
+08-Jan-26 19:57:09 - VideoEncoder - ERROR - FFmpeg stderr: Input #0, matroska,webm, from 'C:\Users\abhin\Downloads\ENCODING-BOT-audioswap\ENCODING-BOT-audioswap\VideoEncoder\downloads\ABHi_Haikyu___S04E09_720p_x265_10bit_WEB_DL_Multi_Au.mkv':
+
+  Metadata:
+
+    title           : ABHI
+
+    ENCODER         : Lavf58.76.100
+
+  Duration: 00:23:57.04, start: -0.007000, bitrate: 588 kb/s
+
+  Chapters:
+
+    Chapter #0:0: start 0.007000, end 95.019000
+
+      Metadata:
+
+        title           : Episode
+
+    Chapter #0:1: start 95.019000, end 185.025000
+
+      Metadata:
+
+        title           : Intro
+
+    Chapter #0:2: start 185.025000, end 1436.943000
+
+      Metadata:
+
+        title           : Episode
+
+  Stream #0:0: Video: hevc (Main 10), yuv420p10le(tv, bt709), 1280x720 [SAR 1:1 DAR 16:9], 23.98 fps, 23.98 tbr, 1k tbn (default)
+
+    Metadata:
+
+      title           : ABHI
+
+      _STATISTICS_TAGS: BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES
+
+      BPS             : 310120
+
+      NUMBER_OF_FRAMES: 34453
+
+      NUMBER_OF_BYTES : 55704548
+
+      _STATISTICS_WRITING_APP: mkvmerge v70.0.0 ('---Brasil Tracker---') 64-bit
+
+      _STATISTICS_WRITING_DATE_UTC: 2025-11-06 00:31:48
+
+      DURATION        : 00:23:56.984000000
+
+  Stream #0:1(hin): Audio: opus, 48000 Hz, stereo, fltp (default)
+
+    Metadata:
+
+      title           : ABHI
+
+      _STATISTICS_TAGS: BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES
+
+      BPS             : 77448
+
+      NUMBER_OF_FRAMES: 71852
+
+      NUMBER_OF_BYTES : 13912053
+
+      _STATISTICS_WRITING_APP: mkvmerge v70.0.0 ('---Brasil Tracker---') 64-bit
+
+      _STATISTICS_WRITING_DATE_UTC: 2025-11-06 00:31:48
+
+      DURATION        : 00:23:57.041000000
+
+  Stream #0:2(tam): Audio: opus, 48000 Hz, stereo, fltp
+
+    Metadata:
+
+      title           : ABHI
+
+      _STATISTICS_TAGS: BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES
+
+      BPS             : 63365
+
+      NUMBER_OF_FRAMES: 71852
+
+      NUMBER_OF_BYTES : 11382295
+ABHIABHIABHI
+      _STATISTICS_WRITING_APP: mkvmerge v70.0.0 ('---Brasil Tracker---') 64-bit
+
+      _STATISTICS_WRITING_DATE_UTC: 2025-11-06 00:31:48
+
+      DURATION        : 00:23:57.041000000
+
+  Stream #0:3(tel): Audio: opus, 48000 Hz, stereo, fltp
+
+    Metadata:
+
+      title           : ABHI
+
+      _STATISTICS_TAGS: BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES
+
+      BPS             : 63202
+
+      NUMBER_OF_FRAMES: 71852
+
+      NUMBER_OF_BYTES : 11353110
+
+      _STATISTICS_WRITING_APP: mkvmerge v70.0.0 ('---Brasil Tracker---') 64-bit
+
+      _STATISTICS_WRITING_DATE_UTC: 2025-11-06 00:31:48
+
+      DURATION        : 00:23:57.041000000
+
+  Stream #0:4(jpn): Audio: opus, 48000 Hz, stereo, fltp
+
+    Metadata:
+
+      title           : ABHI
+
+      _STATISTICS_TAGS: BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES
+
+      BPS             : 61706
+
+      NUMBER_OF_FRAMES: 71852
+
+      NUMBER_OF_BYTES : 11084323
+
+      _STATISTICS_WRITING_APP: mkvmerge v70.0.0 ('---Brasil Tracker---') 64-bit
+
+      _STATISTICS_WRITING_DATE_UTC: 2025-11-06 00:31:48
+
+      DURATION        : 00:23:57.041000000
+
+  Stream #0:5(hin): Subtitle: ass
+
+    Metadata:
+
+      title           : ABHI
+
+      _STATISTICS_TAGS: BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES
+
+      BPS             : 13
+
+      NUMBER_OF_FRAMES: 31
+
+      NUMBER_OF_BYTES : 2455
+
+      _STATISTICS_WRITING_APP: mkvmerge v70.0.0 ('---Brasil Tracker---') 64-bit
+
+      _STATISTICS_WRITING_DATE_UTC: 2025-11-06 00:31:48
+
+      DURATION        : 00:23:56.907000000
+
+  Stream #0:6(tam): Subtitle: ass
+
+    Metadata:
+
+      title           : ABHI
+
+      _STATISTICS_TAGS: BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES
+
+      BPS             : 15
+
+      NUMBER_OF_FRAMES: 31
+
+      NUMBER_OF_BYTES : 2816
+
+      _STATISTICS_WRITING_APP: mkvmerge v70.0.0 ('---Brasil Tracker---') 64-bit
+
+      _STATISTICS_WRITING_DATE_UTC: 2025-11-06 00:31:48
+
+      DURATION        : 00:23:56.907000000
+
+  Stream #0:7(tel): Subtitle: ass
+
+    Metadata:
+
+      title           : ABHI
+
+      _STATISTICS_TAGS: BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES
+
+      BPS             : 14
+
+      NUMBER_OF_FRAMES: 31
+
+      NUMBER_OF_BYTES : 2585
+
+      _STATISTICS_WRITING_APP: mkvmerge v70.0.0 ('---Brasil Tracker---') 64-bit
+
+      _STATISTICS_WRITING_DATE_UTC: 2025-11-06 00:31:48
+
+      DURATION        : 00:23:56.907000000
+
+  Stream #0:8(eng): Subtitle: ass (default)
+
+    Metadata:
+
+      title           : ABHI
+
+      _STATISTICS_TAGS: BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES
+
+      BPS             : 150
+
+      NUMBER_OF_FRAMES: 380
+
+      NUMBER_OF_BYTES : 27016
+
+      _STATISTICS_WRITING_APP: mkvmerge v70.0.0 ('---Brasil Tracker---') 64-bit
+
+      _STATISTICS_WRITING_DATE_UTC: 2025-11-06 00:31:48
+
+      DURATION        : 00:23:56.957000000
+
+[hevc @ 000002206169af40] Using auto hwaccel type dxva2 with new default device.
+
+Stream mapping:
+
+  Stream #0:0 -> #0:0 (hevc (native) -> h264 (libx264))
+
+  Stream #0:5 -> #0:1 (copy)
+
+  Stream #0:6 -> #0:2 (copy)
+
+  Stream #0:7 -> #0:3 (copy)
+
+  Stream #0:8 -> #0:4 (copy)
+
+  Stream #0:1 -> #0:5 (copy)
+
+  Stream #0:2 -> #0:6 (copy)
+
+  Stream #0:3 -> #0:7 (copy)ABHIABHIABHI
+
+  Stream #0:4 -> #0:8 (copy)
+
+Press [q] to stop, [?] for help
+
+[subtitles @ 00000220619410c0] Unable to parse option value "/Users/abhin/Downloads/ENCODING-BOT-audioswap/ENCODING-BOT-audioswap/VideoEncoder/utils/extras/watermark.ass" as image size
+
+    Last message repeated 1 times
+
+[subtitles @ 00000220619410c0] Error setting option original_size to value /Users/abhin/Downloads/ENCODING-BOT-audioswap/ENCODING-BOT-audioswap/VideoEncoder/utils/extras/watermark.ass.
+
+[Parsed_subtitles_1 @ 00000220618ab8c0] Error applying options to the filter.
+
+[AVFilterGraph @ 0000022068e34140] Error initializing filter 'subtitles' with args 'C:/Users/abhin/Downloads/ENCODING-BOT-audioswap/ENCODING-BOT-audioswap/VideoEncoder/utils/extras/watermark.ass'
+
+Error reinitializing filters!
+
+Failed to inject frame into filter network: Invalid argument
+
+Error while processing the decoded data for stream #0:0
+
+Conversion failed!
+08-Jan-26 19:57:27 - root - INFO - Stop signal received (SIGINT). Exiting...
+08-Jan-26 19:57:31 - requests_cache.backends - DEBUG - Initializing backend: sqlite C:\Users\abhin/.lk21-requests-cache
+08-Jan-26 19:57:31 - requests_cache.backends.base - DEBUG - Initialized SQLiteDict with serializer: SerializerPipeline(name=pickle, n_stages=2)
+08-Jan-26 19:57:31 - requests_cache.backends.sqlite - DEBUG - Opening connection to C:\Users\abhin\.lk21-requests-cache.sqlite:responses
+08-Jan-26 19:57:31 - requests_cache.backends.base - DEBUG - Initialized SQLiteDict with serializer: None
+08-Jan-26 19:57:31 - requests_cache.backends.sqlite - DEBUG - Opening connection to C:\Users\abhin\.lk21-requests-cache.sqlite:redirects
+08-Jan-26 19:57:31 - requests_cache.patcher - DEBUG - Patching requests.Session with class: _ConfiguredCachedSession
+08-Jan-26 19:57:32 - requests_cache.backends - DEBUG - Initializing backend: <SQLiteCache(name=C:\Users\abhin/.lk21-requests-cache)> C:\Users\abhin/.lk21-requests-cache
+08-Jan-26 19:57:32 - VideoEncoder - INFO - Imported Utils!
+08-Jan-26 19:57:38 - pymongo.ocsp_support - DEBUG - Peer did not staple an OCSP response
+08-Jan-26 19:57:38 - pymongo.ocsp_support - DEBUG - Peer did not staple an OCSP response
+08-Jan-26 19:57:38 - pymongo.ocsp_support - DEBUG - No OCSP URI, soft fail
+08-Jan-26 19:57:38 - pymongo.ocsp_support - DEBUG - Peer did not staple an OCSP response
+08-Jan-26 19:57:38 - pymongo.ocsp_support - DEBUG - No OCSP URI, soft fail
+08-Jan-26 19:57:38 - pymongo.ocsp_support - DEBUG - No OCSP URI, soft fail
+08-Jan-26 19:57:38 - pymongo.ocsp_support - DEBUG - Peer did not staple an OCSP response
+08-Jan-26 19:57:38 - pymongo.ocsp_support - DEBUG - No OCSP URI, soft fail
+08-Jan-26 19:57:38 - pymongo.ocsp_support - DEBUG - Peer did not staple an OCSP response
+08-Jan-26 19:57:38 - pymongo.ocsp_support - DEBUG - No OCSP URI, soft fail
+08-Jan-26 19:57:38 - pymongo.ocsp_support - DEBUG - Peer did not staple an OCSP response
+08-Jan-26 19:57:38 - pymongo.ocsp_support - DEBUG - No OCSP URI, soft fail
+08-Jan-26 19:57:38 - pymongo.ocsp_support - DEBUG - Peer did not staple an OCSP response
+08-Jan-26 19:57:38 - pymongo.ocsp_support - DEBUG - No OCSP URI, soft fail
+08-Jan-26 19:58:55 - root - INFO - Stop signal received (SIGINT). Exiting...
+08-Jan-26 19:59:23 - requests_cache.backends - DEBUG - Initializing backend: sqlite C:\Users\abhin/.lk21-requests-cache
+08-Jan-26 19:59:23 - requests_cache.backends.base - DEBUG - Initialized SQLiteDict with serializer: SerializerPipeline(name=pickle, n_stages=2)
+08-Jan-26 19:59:23 - requests_cache.backends.sqlite - DEBUG - Opening connection to C:\Users\abhin\.lk21-requests-cache.sqlite:responses
+08-Jan-26 19:59:23 - requests_cache.backends.base - DEBUG - Initialized SQLiteDict with serializer: None
+08-Jan-26 19:59:23 - requests_cache.backends.sqlite - DEBUG - Opening connection to C:\Users\abhin\.lk21-requests-cache.sqlite:redirects
+08-Jan-26 19:59:23 - requests_cache.patcher - DEBUG - Patching requests.Session with class: _ConfiguredCachedSession
+08-Jan-26 19:59:23 - requests_cache.backends - DEBUG - Initializing backend: <SQLiteCache(name=C:\Users\abhin/.lk21-requests-cache)> C:\Users\abhin/.lk21-requests-cache
+08-Jan-26 19:59:24 - VideoEncoder - INFO - Imported Utils!
+08-Jan-26 19:59:30 - pymongo.ocsp_support - DEBUG - Peer did not staple an OCSP response
+08-Jan-26 19:59:30 - pymongo.ocsp_support - DEBUG - No OCSP URI, soft fail
+08-Jan-26 19:59:30 - pymongo.ocsp_support - DEBUG - Peer did not staple an OCSP response
+08-Jan-26 19:59:30 - pymongo.ocsp_support - DEBUG - No OCSP URI, soft fail
+08-Jan-26 19:59:30 - pymongo.ocsp_support - DEBUG - Peer did not staple an OCSP response
+08-Jan-26 19:59:30 - pymongo.ocsp_support - DEBUG - No OCSP URI, soft fail
+08-Jan-26 19:59:31 - pABHIDEBUG - Peer did not staple an OCSP response
+08-Jan-26 19:59:31 - pymongo.ocsp_support - DEBUG - No OCSP URI, soft fail
+08-Jan-26 19:59:31 - pymongo.ocsp_support - DEBUG - Peer did not staple an OCSP response
+08-Jan-26 19:59:31 - pymongo.ocsp_support - DEBUG - No OCSP URI, soft fail
+08-Jan-26 19:59:31 - pymongo.ocsp_support - DEBUG - Peer did not staple an OCSP response
+08-Jan-26 19:59:31 - pymongo.ocsp_support - DEBUG - No OCSP URI, soft fail
+08-Jan-26 19:59:31 - pymongo.ocsp_support - DEBUG - Peer did not staple an OCSP response
+08-Jan-26 19:59:31 - pymongo.ocsp_support - DEBUG - No OCSP URI, soft fail
+08-Jan-26 19:59:37 - VideoEncoder - INFO - C:\Users\abhin\Downloads\ENCODING-BOT-audioswap\ENCODING-BOT-audioswap\VideoEncoder\downloads\S01_E24_Sword_of_the_Demon_Hunter__Kijin_Gentosho_480p_SUB__animetelugu.mkv
+08-Jan-26 19:59:38 - VideoEncoder - INFO - Running ffmpeg command: ffmpeg -hide_banner -progress VideoEncoder/downloads/process.txt -hwaccel auto -y -i C:\Users\abhin\Downloads\ENCODING-BOT-audioswap\ENCODING-BOT-audioswap\VideoEncoder\downloads\S01_E24_Sword_of_the_Demon_Hunter__Kijin_Gentosho_480p_SUB__animetelugu.mkv -c:v libx264 -pix_fmt yuv420p -preset superfast -r film -tune animation -coder 0 -profile:v main -map 0:v? -map_chapters 0 -map_metadata 0 -crf 30 -vf scale=768:576,subtitles='C\:/Users/abhin/Downloads/ENCODING-BOT-audioswap/ENCODING-BOT-audioswap/VideoEncoder/utils/extras/watermark.ass' -metadata title=Weeb-Zone.Blogspot.com -metadata:s:v title=Weeb-Zone.Blogspot.com -metadata:s:a title=Weeb-Zone.Blogspot.com -c:s copy -c:t copy -map 0:t? -map 0:s? -c:a copy -map 0:a? -threads 8
+08-Jan-26 19:59:38 - VideoEncoder - INFO - ffmpeg_process: 2268
+08-Jan-26 19:59:43 - VideoEncoder - INFO - Input #0, matroska,webm, from 'C:\Users\abhin\Downloads\ENCODING-BOT-audioswap\ENCODING-BOT-audioswap\VideoEncoder\downloads\S01_E24_Sword_of_the_Demon_Hunter__Kijin_Gentosho_480p_SUB__animetelugu.mkv':
+
+  Metadata:ABHI
+
+    title           : Animeworld [t.me/Animeworld_zone]
+
+    AUTHOR          : BOTMAKER
+
+    ENCODER         : Lavf58.45.100
+
+  Duration: 00:23:42.43, start: -0.007000, bitrate: 148 kb/s
+
+  Stream #0:0: Video: h264 (High), yuv420p(progressive), 840x480 [SAR 64:63 DAR 16:9], 24 fps, 24 tbr, 1k tbn (default)
+
+    Metadata:
+
+      title           : [Animeworld]
+
+      BPS-eng         : 5297406
+
+      DURATION-eng    : 00:23:42.417000000
+
+      NUMBER_OF_FRAMES-eng: 34138
+
+      NUMBER_OF_BYTES-eng: 941890199
+
+      _STATISTICS_WRITING_APP-eng: no_variable_data
+
+      _STATISTICS_WRITING_DATE_UTC-eng: 1970-01-01 00:00:00
+ABHI
+      _STATISTICS_TAGS-eng: BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES
+
+      ENCODER         : Lavc58.91.100 libx264
+
+      DURATION        : 00:23:42.424000000
+
+  Stream #0:1(jpn): Audio: opus, 48000 Hz, stereo, fltp (default)
+
+    Metadata:
+
+      title           : [Animeworld]
+
+      _STATISTICS_TAGS-eng: BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES
+
+      BPS-eng         : 128204
+
+      DURATION-eng    : 00:23:42.421000000
+
+      NUMBER_OF_FRAMES-eng: 66676
+
+      NUMBER_OF_BYTES-eng: 22795176
+
+      _STATISTICS_WRITING_APP-eng: no_variable_data
+
+      _STATISTICS_WRITING_DATE_UTC-eng: 1970-01-01 00:00:00
+
+      ENCODER         : Lavc58.91.100 libopus
+
+      DURATION        : 00:23:42.428000000
+
+  Stream #0:2(eng): Subtitle: ass (default) (forced)
+
+    Metadata:
+
+      title           : [Animeworld]
+
+      _STATISTICS_TAGS-eng: BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES
+
+      BPS-eng         : 102
+
+      DURATION-eng    : 00:23:32.170000000
+
+      NUMBER_OF_FRAMES-eng: 311
+
+      NUMBER_OF_BYTES-eng: 18170
+
+      _STATISTICS_WRITING_APP-eng: no_variable_data
+
+      _STATISTICS_WRITING_DATE_UTC-eng: 1970-01-01 00:00:00
+
+      DURATION        : 00:23:33.717000000
+
+[h264 @ 000001d3e35ce940] Using auto hwaccel type dxva2 with new default device.ABHIABHIABHI
+
+Stream mapping:
+
+  Stream #0:0 -> #0:0 (h264 (native) -> h264 (libx264))
+
+  Stream #0:2 -> #0:1 (copy)
+
+  Stream #0:1 -> #0:2 (copy)
+
+Press [q] to stop, [?] for help
+
+[Parsed_subtitles_1 @ 000001d3e3191100] libass API version: 0x1502000
+
+[Parsed_subtitles_1 @ 000001d3e3191100] libass source: commit: 0.15.2-41-g0d170d9a1d7e7fee948141eac988c1e6391dfc62
+
+[Parsed_subtitles_1 @ 000001d3e3191100] Shaper: FriBidi 1.0.11 (SIMPLE) HarfBuzz-ng 3.2.0 (COMPLEX)
+
+[Parsed_subtitles_1 @ 000001d3e3191100] Using font provider directwrite (with GDI)
+
+[libx264 @ 000001d3e348b800] using SAR=4/3
+
+[libx264 @ 000001d3e348b800] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+
+[libx264 @ 000001d3e348b800] profile Main, level 3.1, 4:2:0, 8-bit
+
+[libx264 @ 000001d3e348b800] 264 - core 164 r3081 19856cc - H.264/MPEG-4 AVC codec - Copyleft 2003-2021 - http://www.videolan.org/x264.html - options: cabac=0 ref=1 deblock=1:1:1 analyse=0x1:0x1 me=dia subme=1 psy=1 psy_rd=0.40:0.00 mixed_ref=0 me_range=16 chroma_me=1 trellis=0 8x8dct=0 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=0 threads=8 lookahead_threads=1 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=5 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=1 keyint=250 keyint_min=24 scenecut=40 intra_refresh=0 rc=crf mbtree=0 crf=30.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 pb_ratio=1.30 aq=1:0.60
+
+[mp4 @ 000001d3e31a66c0] Could not find tag for codec ass in stream #1, codec not currently supported in container
+
+Could not write header for output file #0 (incorrect codec parameters ?): Invalid argument
+
+Error initializing output stream 0:0 -- 
+
+Conversion failed!
+08-Jan-26 19:59:43 - VideoEncoder - INFO - 
+08-Jan-26 19:59:43 - VideoEncoder - ERROR - FFmpeg process failed with return code 1
+08-Jan-26 19:59:43 - VideoEncoder - ERROR - FFmpeg stderr: Input #0, matroska,webm, from 'C:\Users\abhin\Downloads\ENCODING-BOT-audioswap\ENCODING-BOT-audioswap\VideoEncoder\downloads\S01_E24_Sword_of_the_Demon_Hunter__Kijin_Gentosho_480p_SUB__animetelugu.mkv':
+
+  Metadata:
+
+    title           : Animeworld [t.me/Animeworld_zone]
+
+    AUTHOR          : BOTMAKER
+
+    ENCODER         : Lavf58.45.100
+
+  Duration: 00:23:42.43, start: -0.007000, bitrate: 148 kb/s
+
+  Stream #0:0: Video: h264 (High), yuv420p(progressive), 840x480 [SAR 64:63 DAR 16:9], 24 fps, 24 tbr, 1k tbn (default)
+
+    Metadata:
+
+      title           : [Animeworld]
+
+      BPS-eng         : 5297406
+
+      DURATION-eng    : 00:23:42.417000000
+
+      NUMBER_OF_FRAMES-eng: 34138
+
+      NUMBER_OF_BYTES-ABHI
+
+      _STATISTICS_WRITING_APP-eng: no_variable_data
+
+      _STATISTICS_WRITING_DATE_UTC-eng: 1970-01-01 00:00:00
+
+      _STATISTICS_TAGS-eng: BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES
+
+      ENCODER         : Lavc58.91.100 libx264
+
+      DURATION        : 00:23:42.424000000
+
+  Stream #0:1(jpn): Audio: opus, 48000 Hz, stereo, fltp (default)
+ABHI
+    Metadata:
+
+      title           : [Animeworld]
+
+      _STATISTICS_TAGS-eng: BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES
+
+      BPS-eng         : 128204
+
+      DURATION-eng    : 00:23:42.421000000
+
+      NUMBER_OF_FRAMES-eng: 66676
+
+      NUMBER_OF_BYTES-eng: 22795176
+
+      _STATISTICS_WRITING_APP-eng: no_variable_data
+
+      _STATISTICS_WRITING_DATE_UTC-eng: 1970-01-01 00:00:00
+
+      ENCODER         : Lavc58.91.100 libopus
+
+      DURATION        : 00:23:42.428000000
+
+  Stream #0:2(eng): Subtitle: ass (default) (forced)
+
+    Metadata:
+
+      title           : ABHI
+
+      _STATISTICS_TAGS-eng: BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES
+
+      BPS-eng         : 102
+
+      DURATION-eng    : 00:23:32.170000000
+
+      NUMBER_OF_FRAMES-eng: 311
+
+      NUMBER_OF_BYTES-eng: 18170
+
+      _STATISTICS_WRITING_APP-eng: no_variable_data
+
+      _STATISTICS_WRITING_DATE_UTC-eng: 1970-01-01 00:00:00
+
+      DURATION        : 00:23:33.717000000
+
+[h264 @ 000001d3e35ce940] Using auto hwaccel type dxva2 with new default device.
+
+Stream mapping:
+
+  Stream #0:0 -> #0:0 (h264 (native) -> h264 (libx264))
+
+  Stream #0:2 -> #0:1 (copy)
+
+  Stream #0:1 -> #0:2 (copy)
+
+Press [q] to stop, [?] for help
+
+[Parsed_subtitles_1 @ 000001d3e3191100] libass API version: 0x1502000
+
+[Parsed_subtitles_1 @ 000001d3e3191100] libass source: commit: 0.15.2-41-g0d170d9a1d7e7fee948141eac988c1e6391dfc62
+
+[Parsed_subtitles_1 @ 000001d3e3191100] Shaper: FriBidi 1.0.11 (SIMPLE) HarfBuzz-ng 3.2.0 (COMPLEX)
+
+[Parsed_subtitles_1 @ 000001d3e3191100] Using font provider directwrite (with GDI)
+
+[libx264 @ 000001d3e348b800] using SAR=4/3
+
+[libx264 @ 000001d3e348b800] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+
+[libx264 @ 000001d3e348b800] profile Main, level 3.1, 4:2:0, 8-bit
+
+[libx264 @ 000001d3e348b800] 264 - core 164 r3081 19856cc - H.264/MPEG-4 AVC codec - Copyleft 2003-2021 - http://www.videolan.org/x264.html - options: cabac=0 ref=1 deblock=1:1:1 analyse=0x1:0x1 me=dia subme=1 psy=1 psy_rd=0.40:0.00 mixed_ref=0 me_range=16 chroma_me=1 trellis=0 8x8dct=0 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=0 threads=8 lookahead_threads=1 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=5 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=1 keyint=250 keyint_min=24 scenecut=40 intra_refresh=0 rc=crf mbtree=0 crf=30.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 pb_ratio=1.30 aq=1:0.60
+
+[mp4 @ 000001d3e31a66c0] Could not find tag for codec ass in stream #1, codec not currently supported in container
+
+Could not write header for output file #0 (incorrect codec parameters ?): Invalid argument
+
+Error initializing output stream 0:0 -- 
+
+Conversion failed!
+08-Jan-26 20:01:49 - requests_cache.backends - DEBUG - Initializing backend: sqlite C:\Users\abhin/.lk21-requests-cacheABHIABHIABHI
+08-Jan-26 20:01:49 - requests_cache.backends.base - DEBUG - Initialized SQLiteDict with serializer: SerializerPipeline(name=pickle, n_stages=2)
+08-Jan-26 20:01:49 - requests_cache.backends.sqlite - DEBUG - Opening connection to C:\Users\abhin\.lk21-requests-cache.sqlite:responses
+08-Jan-26 20:01:49 - requests_cache.backends.base - DEBUG - Initialized SQLiteDict with serializer: None
+08-Jan-26 20:01:49 - requests_cache.backends.sqlite - DEBUG - Opening connection to C:\Users\abhin\.lk21-requests-cache.sqlite:redirects
+08-Jan-26 20:01:49 - requests_cache.patcher - DEBUG - Patching requests.Session with class: _ConfiguredCachedSession
+08-Jan-26 20:01:49 - requests_cache.backends - DEBUG - Initializing backend: <SQLiteCache(name=C:\Users\abhin/.lk21-requests-cache)> C:\Users\abhin/.lk21-requests-cache
+08-Jan-26 20:01:50 - VideoEncoder - INFO - Imported Utils!
+08-Jan-26 20:01:53 - pymongo.ocsp_support - DEBUG - Peer did not staple an OCSP response
+08-Jan-26 20:01:53 - pymongo.ocsp_support - DEBUG - No OCSP URI, soft fail
+08-Jan-26 20:01:53 - pymongo.ocsp_support - DEBUG - Peer did not staple an OCSP response
+08-Jan-26 20:01:53 - pymongo.ocsp_support - DEBUG - No OCSP URI, soft fail
+08-Jan-26 20:01:53 - pymongo.ocsp_support - DEBUG - Peer did not staple an OCSP response
+08-Jan-26 20:01:53 - pymongo.ocsp_support - DEBUG - No OCSP URI, soft fail
+08-Jan-26 20:01:53 - pymongo.ocsp_support - DEBUG - Peer did not staple an OCSP response
+08-Jan-26 20:01:53 - pymongo.ocsp_support - DEBUG - No OCSP URI, soft fail
+08-Jan-26 20:01:53 - pymongo.ocsp_support - DEBUG - Peer did not staple an OCSP response
+08-Jan-26 20:01:53 - pymongo.ocsp_support - DEBUG - No OCSP URI, soft fail
+08-Jan-26 20:01:53 - pymongo.ocsp_support - DEBUG - Peer did not staple an OCSP response
+08-Jan-26 20:01:53 - pymongo.ocsp_support - DEBUG - No OCSP URI, soft fail
+08-Jan-26 20:01:53 - pymongo.ocsp_support - DEBUG - Peer did not staple an OCSP response
+08-Jan-26 20:01:53 - pymongo.ocsp_support - DEBUG - No OCSP URI, soft fail
+08-Jan-26 20:02:13 - VideoEncoder - INFO - C:\Users\abhin\Downloads\ENCODING-BOT-audioswap\ENCODING-BOT-audioswap\VideoEncoder\downloads\S01_E24_Sword_of_the_Demon_Hunter__Kijin_Gentosho_480p_SUB__animetelugu.mkv
+08-Jan-26 20:02:14 - VideoEncoder - INFO - Running ffmpeg command: ffmpeg -hide_banner -progress VideoEncoder/downloads/process.txt -hwaccel auto -y -i C:\Users\abhin\Downloads\ENCODING-BOT-audioswap\ENCODING-BOT-audioswap\VideoEncoder\downloads\S01_E24_Sword_of_the_Demon_Hunter__Kijin_Gentosho_480p_SUB__animetelugu.mkv -c:v libx264 -pix_fmt yuv420p -preset superfast -r film -tune animation -coder 0 -profile:v main -map 0:v? -map_chapters 0 -map_metadata 0 -crf 30 -vf scale=768:576,subtitles='wm_c8bf1f91.ass' -metadata title=Weeb-Zone.Blogspot.com -metadata:s:v title=Weeb-Zone.Blogspot.com -metadata:s:a title=Weeb-Zone.Blogspot.com -c:s copy -c:t copy -map 0:t? -map 0:s? -c:a copy -map 0:a? -threads 8
+08-Jan-26 20:02:14 - VideoEncoder - INFO - ffmpeg_process: 26188
+08-Jan-26 20:02:19 - VideoEncoder - INFO - Input #0, matroska,webm, from 'C:\Users\abhin\Downloads\ENCODING-BOT-audioswap\ENCODING-BOT-audioswap\VideoEncoder\downloads\S01_E24_Sword_of_the_Demon_Hunter__Kijin_Gentosho_480p_SUB__animetelugu.mkv':
+
+  Metadata:
+
+    title           : Animeworld [t.me/Animeworld_zone]
+
+    AUTHOR          : BOTMAKER
+
+    ENCODER         : Lavf58.45.100
+
+  Duration: 00:23:42.43, start: -0.007000, bitrate: 148 kb/s
+
+  Stream #0:0: Video: h264 (High), yuv420p(progressive), 840x480 [SAR 64:63 DAR 16:9], 24 fps, 24 tbr, 1k tbn (default)
+
+    Metadata:
+
+      title           : [Animeworld]
+
+      BPS-eng         : 5297406
+
+      DURATION-eng    : 00:23:42.417000000
+
+      NUMBER_OF_FRAMES-eng: 34138
+
+      NUMBER_OF_BYTES-eng: 941890199
+
+      _STATISTICS_WRITING_APP-eng: no_variable_data
+
+      _STATISTICS_WRITING_DATE_UTC-eng: 1970-01-01 00:00:00
+
+      _STATISTICS_TAGS-eng: BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES
+
+      ENCODER         : Lavc58.91.100 libx264
+
+      DURATION        : 00:23:42.424000000
+
+  Stream #0:1(jpn): Audio: opus, 48000 Hz, stereo, fltp (default)
+
+    Metadata:
+
+      title           : [Animeworld]
+
+      _STATISTICS_TAGS-eng: BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES
+
+      BPS-eng         : 128204
+
+      DURATION-eng    : 00:23:42.421000000
+
+      NUMBER_OF_FRAMES-eng: 66676
+
+      NUMBER_OF_BYTES-eng: 22795176
+
+      _STATISTICS_WRITING_APP-eng: no_variable_data
+
+      _STATISTICS_WRITING_DATE_UTC-eng: 1970-01-01 00:00:00
+
+      ENCODER         : Lavc58.91.100 libopus
+
+      DURATION        : 00:23:42.428000000
+
+  Stream #0:2(eng): Subtitle: ass (default) (forced)
+
+    Metadata:
+
+      title           : [Animeworld]
+
+      _STATISTICS_TAGS-eng: BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES
+
+      BPS-eng         : 102
+
+      DURATION-eng    : 00:23:32.170000000
+
+      NUMBER_OF_FRAMES-eng: 311
+
+      NUMBER_OF_BYTES-eng: 18170
+
+      _STATISTICS_WRITING_APP-eng: no_variable_data
+
+      _STATISTICS_WRITING_DATE_UTC-eng: 1970-01-01 00:00:00
+
+      DURATION        : 00:23:33.717000000
+
+[h264 @ 0000024e5feae700] Using auto hwaccel type dxva2 with new default device.
+
+Stream mapping:
+
+  Stream #0:0 -> #0:0 (h264 (native) -> h264 (libx264))
+
+  Stream #0:2 -> #0:1 (copy)
+
+  Stream #0:1 -> #0:2 (copy)
+
+Press [q] to stop, [?] for help
+
+[Parsed_subtitles_1 @ 0000024e5fae0200] libass API version: 0x1502000
+
+[Parsed_subtitles_1 @ 0000024e5fae0200] libass source: commit: 0.15.2-41-g0d170d9a1d7e7fee948141eac988c1e6391dfc62
+
+[Parsed_subtitles_1 @ 0000024e5fae0200] Shaper: FriBidi 1.0.11 (SIMPLE) HarfBuzz-ng 3.2.0 (COMPLEX)
+
+[Parsed_subtitles_1 @ 0000024e5fae0200] Using font provider directwrite (with GDI)
+
+[libx264 @ 0000024e5fdaca40] using SAR=4/3
+
+[libx264 @ 0000024e5fdaca40] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+
+[libx264 @ 0000024e5fdaca40] profile Main, level 3.1, 4:2:0, 8-bit
+
+[libx264 @ 0000024e5fdaca40] 264 - core 164 r3081 19856cc - H.264/MPEG-4 AVC codec - Copyleft 2003-2021 - http://www.videolan.org/x264.html - options: cabac=0 ref=1 deblock=1:1:1 analyse=0x1:0x1 me=dia subme=1 psy=1 psy_rd=0.40:0.00 mixed_ref=0 me_range=16 chroma_me=1 trellis=0 8x8dct=0 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=0 threads=8 lookahead_threads=1 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=5 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=1 keyint=250 keyint_min=24 scenecut=40 intra_refresh=0 rc=crf mbtree=0 crf=30.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 pb_ratio=1.30 aq=1:0.60
+
+[mp4 @ 0000024e5faf6040] Could not find tag for codec ass in stream #1, codec not currently supported in container
+
+Could not write header for output file #0 (incorrect codec parameters ?): Invalid argument
+
+Error initializing output stream 0:0 -- 
+
+Conversion failed!
+08-Jan-26 20:02:19 - VideoEncoder - INFO - 
+08-Jan-26 20:02:19 - VideoEncoder - ERROR - FFmpeg process failed with return code 1
+08-Jan-26 20:02:19 - VideoEncoder - ERROR - FFmpeg stderr: Input #0, matroska,webm, from 'C:\Users\abhin\Downloads\ENCODING-BOT-audioswap\ENCODING-BOT-audioswap\VideoEncoder\downloads\S01_E24_Sword_of_the_Demon_Hunter__Kijin_Gentosho_480p_SUB__animetelugu.mkv':
+
+  Metadata:
+
+    title           : Animeworld [t.me/Animeworld_zone]
+
+    AUTHOR          : BOTMAKER
+
+    ENCODER         : Lavf58.45.100
+
+  Duration: 00:23:42.43, start: -0.007000, bitrate: 148 kb/s
+
+  Stream #0:0: Video: h264 (High), yuv420p(progressive), 840x480 [SAR 64:63 DAR 16:9], 24 fps, 24 tbr, 1k tbn (default)
+
+    Metadata:
+
+      title           : [Animeworld]
+
+      BPS-eng         : 5297406
+
+      DURATION-eng    : 00:23:42.417000000
+
+      NUMBER_OF_FRAMES-eng: 34138
+
+      NUMBER_OF_BYTES-eng: 941890199
+
+      _STATISTICS_WRITING_APP-eng: no_variable_data
+
+      _STATISTICS_WRITING_DATE_UTC-eng: 1970-01-01 00:00:00
+
+      _STATISTICS_TAGS-eng: BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES
+
+      ENCODER         : Lavc58.91.100 libx264
+
+      DURATION        : 00:23:42.424000000
+
+  Stream #0:1(jpn): Audio: opus, 48000 Hz, stereo, fltp (default)
+
+    Metadata:
+
+      title           : [Animeworld]
+
+      _STATISTICS_TAGS-eng: BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES
+
+      BPS-eng         : 128204
+
+      DURATION-eng    : 00:23:42.421000000
+
+      NUMBER_OF_FRAMES-eng: 66676
+
+      NUMBER_OF_BYTES-eng: 22795176
+
+      _STATISTICS_WRITING_APP-eng: no_variable_data
+
+      _STATISTICS_WRITING_DATE_UTC-eng: 1970-01-01 00:00:00
+
+      ENCODER         : Lavc58.91.100 libopus
+
+      DURATION        : 00:23:42.428000000
+
+  Stream #0:2(eng): Subtitle: ass (default) (forced)
+
+    Metadata:
+
+      title           : [Animeworld]
+
+      _STATISTICS_TAGS-eng: BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES
+
+      BPS-eng         : 102
+
+      DURATION-eng    : 00:23:32.170000000
+
+      NUMBER_OF_FRAMES-eng: 311
+
+      NUMBER_OF_BYTES-eng: 18170
+
+      _STATISTICS_WRITING_APP-eng: no_variable_data
+
+      _STATISTICS_WRITING_DATE_UTC-eng: 1970-01-01 00:00:00
+
+      DURATION        : 00:23:33.717000000
+
+[h264 @ 0000024e5feae700] Using auto hwaccel type dxva2 with new default device.
+
+Stream mapping:
+
+  Stream #0:0 -> #0:0 (h264 (native) -> h264 (libx264))
+
+  Stream #0:2 -> #0:1 (copy)
+
+  Stream #0:1 -> #0:2 (copy)
+
+Press [q] to stop, [?] for help
+
+[Parsed_subtitles_1 @ 0000024e5fae0200] libass API version: 0x1502000
+
+[Parsed_subtitles_1 @ 0000024e5fae0200] libass source: commit: 0.15.2-41-g0d170d9a1d7e7fee948141eac988c1e6391dfc62
+
+[Parsed_subtitles_1 @ 0000024e5fae0200] Shaper: FriBidi 1.0.11 (SIMPLE) HarfBuzz-ng 3.2.0 (COMPLEX)
+
+[Parsed_subtitles_1 @ 0000024e5fae0200] Using font provider directwrite (with GDI)
+
+[libx264 @ 0000024e5fdaca40] using SAR=4/3
+
+[libx264 @ 0000024e5fdaca40] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+
+[libx264 @ 0000024e5fdaca40] profile Main, level 3.1, 4:2:0, 8-bit
+
+[libx264 @ 0000024e5fdaca40] 264 - core 164 r3081 19856cc - H.264/MPEG-4 AVC codec - Copyleft 2003-2021 - http://www.videolan.org/x264.html - options: cabac=0 ref=1 deblock=1:1:1 analyse=0x1:0x1 me=dia subme=1 psy=1 psy_rd=0.40:0.00 mixed_ref=0 me_range=16 chroma_me=1 trellis=0 8x8dct=0 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=0 threads=8 lookahead_threads=1 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=5 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=1 keyint=250 keyint_min=24 scenecut=40 intra_refresh=0 rc=crf mbtree=0 crf=30.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 pb_ratio=1.30 aq=1:0.60
+
+[mp4 @ 0000024e5faf6040] Could not find tag for codec ass in stream #1, codec not currently supported in container
+
+Could not write header for output file #0 (incorrect codec parameters ?): Invalid argument
+
+Error initializing output stream 0:0 -- 
+
+Conversion failed!
+08-Jan-26 20:04:45 - requests_cache.backends - DEBUG - Initializing backend: sqlite C:\Users\abhin/.lk21-requests-cache
+08-Jan-26 20:04:45 - requests_cache.backends.base - DEBUG - Initialized SQLiteDict with serializer: SerializerPipeline(name=pickle, n_stages=2)
+08-Jan-26 20:04:45 - requests_cache.backends.sqlite - DEBUG - Opening connection to C:\Users\abhin\.lk21-requests-cache.sqlite:responses
+08-Jan-26 20:04:45 - requests_cache.backends.base - DEBUG - Initialized SQLiteDict with serializer: None
+08-Jan-26 20:04:45 - requests_cache.backends.sqlite - DEBUG - Opening connection to C:\Users\abhin\.lk21-requests-cache.sqlite:redirects
+08-Jan-26 20:04:45 - requests_cache.patcher - DEBUG - Patching requests.Session with class: _ConfiguredCachedSession
+08-Jan-26 20:04:46 - requests_cache.backends - DEBUG - Initializing backend: <SQLiteCache(name=C:\Users\abhin/.lk21-requests-cache)> C:\Users\abhin/.lk21-requests-cache
+08-Jan-26 20:04:46 - VideoEncoder - INFO - Imported Utils!
+08-Jan-26 20:04:51 - pymongo.ocsp_support - DEBUG - Peer did not staple an OCSP response
+08-Jan-26 20:04:51 - pymongo.ocsp_support - DEBUG - Peer did not staple an OCSP response
+08-Jan-26 20:04:51 - pymongo.ocsp_support - DEBUG - No OCSP URI, soft fail
+08-Jan-26 20:04:51 - pymongo.ocsp_support - DEBUG - Peer did not staple an OCSP response
+08-Jan-26 20:04:51 - pymongo.ocsp_support - DEBUG - No OCSP URI, soft fail
+08-Jan-26 20:04:51 - pymongo.ocsp_support - DEBUG - No OCSP URI, soft fail
+08-Jan-26 20:04:51 - pymongo.ocsp_support - DEBUG - Peer did not staple an OCSP response
+08-Jan-26 20:04:51 - pymongo.ocsp_support - DEBUG - No OCSP URI, soft fail
+08-Jan-26 20:04:51 - pymongo.ocsp_support - DEBUG - Peer did not staple an OCSP response
+08-Jan-26 20:04:51 - pymongo.ocsp_support - DEBUG - Peer did not staple an OCSP response
+08-Jan-26 20:04:51 - pymongo.ocsp_support - DEBUG - No OCSP URI, soft fail
+08-Jan-26 20:04:51 - pymongo.ocsp_support - DEBUG - No OCSP URI, soft fail
+08-Jan-26 20:04:51 - pymongo.ocsp_support - DEBUG - Peer did not staple an OCSP response
+08-Jan-26 20:04:51 - pymongo.ocsp_support - DEBUG - No OCSP URI, soft fail
+08-Jan-26 20:05:09 - VideoEncoder - INFO - C:\Users\abhin\Downloads\ENCODING-BOT-audioswap\ENCODING-BOT-audioswap\VideoEncoder\downloads\S01_E24_Sword_of_the_Demon_Hunter__Kijin_Gentosho_480p_SUB__animetelugu.mkv
+08-Jan-26 20:05:11 - VideoEncoder - INFO - Running ffmpeg command: ffmpeg -hide_banner -progress VideoEncoder/downloads/process.txt -hwaccel auto -y -i C:\Users\abhin\Downloads\ENCODING-BOT-audioswap\ENCODING-BOT-audioswap\VideoEncoder\downloads\S01_E24_Sword_of_the_Demon_Hunter__Kijin_Gentosho_480p_SUB__animetelugu.mkv -c:v libx264 -pix_fmt yuv420p -preset superfast -r film -tune animation -coder 0 -profile:v main -map 0:v? -map_chapters 0 -map_metadata 0 -crf 30 -vf scale=768:576,subtitles='wm_8e89229b.ass' -metadata title=Weeb-Zone.Blogspot.com -metadata:s:v title=Weeb-Zone.Blogspot.com -metadata:s:a title=Weeb-Zone.Blogspot.com -c:s mov_text -c:t copy -map 0:t? -map 0:s? -c:a copy -map 0:a? -threads 8
+08-Jan-26 20:05:11 - VideoEncoder - INFO - ffmpeg_process: 3080
+08-Jan-26 20:05:47 - VideoEncoder - INFO - end
+08-Jan-26 20:05:47 - VideoEncoder - INFO - Input #0, matroska,webm, from 'C:\Users\abhin\Downloads\ENCODING-BOT-audioswap\ENCODING-BOT-audioswap\VideoEncoder\downloads\S01_E24_Sword_of_the_Demon_Hunter__Kijin_Gentosho_480p_SUB__animetelugu.mkv':
+
+  Metadata:
+
+    title           : Animeworld [t.me/Animeworld_zone]
+
+    AUTHOR          : BOTMAKER
+
+    ENCODER         : Lavf58.45.100
+
+  Duration: 00:23:42.43, start: -0.007000, bitrate: 148 kb/s
+
+  Stream #0:0: Video: h264 (High), yuv420p(progressive), 840x480 [SAR 64:63 DAR 16:9], 24 fps, 24 tbr, 1k tbn (default)
+
+    Metadata:
+
+      title           : [Animeworld]
+
+      BPS-eng         : 5297406
+
+      DURATION-eng    : 00:23:42.417000000
+
+      NUMBER_OF_FRAMES-eng: 34138
+
+      NUMBER_OF_BYTES-eng: 941890199
+
+      _STATISTICS_WRITING_APP-eng: no_variable_data
+
+      _STATISTICS_WRITING_DATE_UTC-eng: 1970-01-01 00:00:00
+
+      _STATISTICS_TAGS-eng: BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES
+
+      ENCODER         : Lavc58.91.100 libx264
+
+      DURATION        : 00:23:42.424000000
+
+  Stream #0:1(jpn): Audio: opus, 48000 Hz, stereo, fltp (default)
+
+    Metadata:
+
+      title           : [Animeworld]
+
+      _STATISTICS_TAGS-eng: BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES
+
+      BPS-eng         : 128204
+
+      DURATION-eng    : 00:23:42.421000000
+
+      NUMBER_OF_FRAMES-eng: 66676
+
+      NUMBER_OF_BYTES-eng: 22795176
+
+      _STATISTICS_WRITING_APP-eng: no_variable_data
+
+      _STATISTICS_WRITING_DATE_UTC-eng: 1970-01-01 00:00:00
+
+      ENCODER         : Lavc58.91.100 libopus
+
+      DURATION        : 00:23:42.428000000
+
+  Stream #0:2(eng): Subtitle: ass (default) (forced)
+
+    Metadata:
+
+      title           : [Animeworld]
+
+      _STATISTICS_TAGS-eng: BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES
+
+      BPS-eng         : 102
+
+      DURATION-eng    : 00:23:32.170000000
+
+      NUMBER_OF_FRAMES-eng: 311
+
+      NUMBER_OF_BYTES-eng: 18170
+
+      _STATISTICS_WRITING_APP-eng: no_variable_data
+
+      _STATISTICS_WRITING_DATE_UTC-eng: 1970-01-01 00:00:00
+
+      DURATION        : 00:23:33.717000000
+
+[h264 @ 000002035b09e700] Using auto hwaccel type dxva2 with new default device.
+
+Stream mapping:
+
+  Stream #0:0 -> #0:0 (h264 (native) -> h264 (libx264))
+
+  Stream #0:2 -> #0:1 (ass (ssa) -> mov_text (native))
+
+  Stream #0:1 -> #0:2 (copy)
+
+Press [q] to stop, [?] for help
+
+[Parsed_subtitles_1 @ 000002035ad41400] libass API version: 0x1502000
+
+[Parsed_subtitles_1 @ 000002035ad41400] libass source: commit: 0.15.2-41-g0d170d9a1d7e7fee948141eac988c1e6391dfc62
+
+[Parsed_subtitles_1 @ 000002035ad41400] Shaper: FriBidi 1.0.11 (SIMPLE) HarfBuzz-ng 3.2.0 (COMPLEX)
+
+[Parsed_subtitles_1 @ 000002035ad41400] Using font provider directwrite (with GDI)
+
+[libx264 @ 000002035af9ca40] using SAR=4/3
+
+[libx264 @ 000002035af9ca40] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+
+[libx264 @ 000002035af9ca40] profile Main, level 3.1, 4:2:0, 8-bit
+
+[libx264 @ 000002035af9ca40] 264 - core 164 r3081 19856cc - H.264/MPEG-4 AVC codec - Copyleft 2003-2021 - http://www.videolan.org/x264.html - options: cabac=0 ref=1 deblock=1:1:1 analyse=0x1:0x1 me=dia subme=1 psy=1 psy_rd=0.40:0.00 mixed_ref=0 me_range=16 chroma_me=1 trellis=0 8x8dct=0 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=0 threads=8 lookahead_threads=1 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=5 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=1 keyint=250 keyint_min=24 scenecut=40 intra_refresh=0 rc=crf mbtree=0 crf=30.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 pb_ratio=1.30 aq=1:0.60
+
+[mp4 @ 000002035ad56040] track 2: codec frame size is not set
+
+Output #0, mp4, to 'VideoEncoder/encodes/S01_E24_Sword_of_the_Demon_Hunter__Kijin_Gentosho_480p_SUB__animetelugu.mp4':
+
+  Metadata:
+
+    title           : Weeb-Zone.Blogspot.com
+
+    AUTHOR          : BOTMAKER
+
+    encoder         : Lavf59.16.100
+
+  Stream #0:0: Video: h264 (avc1 / 0x31637661), yuv420p(tv, progressive), 768x576 [SAR 4:3 DAR 16:9], q=2-31, 24 fps, 12288 tbn (default)
+
+    Metadata:
+
+      DURATION        : 00:23:42.424000000
+
+      BPS-eng         : 5297406
+
+      DURATION-eng    : 00:23:42.417000000
+
+      NUMBER_OF_FRAMES-eng: 34138
+
+      NUMBER_OF_BYTES-eng: 941890199
+
+      _STATISTICS_WRITING_APP-eng: no_variable_data
+
+      _STATISTICS_WRITING_DATE_UTC-eng: 1970-01-01 00:00:00
+
+      _STATISTICS_TAGS-eng: BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES
+
+      title           : Weeb-Zone.Blogspot.com
+
+      encoder         : Lavc59.18.100 libx264
+
+    Side data:
+
+      cpb: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+
+  Stream #0:1(eng): Subtitle: mov_text (tx3g / 0x67337874) (default) (forced)
+
+    Metadata:
+
+      title           : [Animeworld]
+
+      _STATISTICS_TAGS-eng: BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES
+
+      BPS-eng         : 102
+
+      DURATION-eng    : 00:23:32.170000000
+
+      NUMBER_OF_FRAMES-eng: 311
+
+      NUMBER_OF_BYTES-eng: 18170
+
+      _STATISTICS_WRITING_APP-eng: no_variable_data
+
+      _STATISTICS_WRITING_DATE_UTC-eng: 1970-01-01 00:00:00
+
+      DURATION        : 00:23:33.717000000
+
+      encoder         : Lavc59.18.100 mov_text
+
+  Stream #0:2(jpn): Audio: opus (Opus / 0x7375704F), 48000 Hz, stereo, fltp (default)
+
+    Metadata:
+
+      DURATION        : 00:23:42.428000000
+
+      _STATISTICS_TAGS-eng: BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES
+
+      BPS-eng         : 128204
+
+      DURATION-eng    : 00:23:42.421000000
+
+      NUMBER_OF_FRAMES-eng: 66676
+
+      NUMBER_OF_BYTES-eng: 22795176
+
+      _STATISTICS_WRITING_APP-eng: no_variable_data
+
+      _STATISTICS_WRITING_DATE_UTC-eng: 1970-01-01 00:00:00
+
+      ENCODER         : Lavc58.91.100 libopus
+
+      title           : Weeb-Zone.Blogspot.com
+
+frame=    1 fps=0.0 q=0.0 size=       0kB time=00:00:00.62 bitrate=   0.6kbits/s speed=29.1x    
+[Parsed_subtitles_1 @ 000002035ad41400] fontselect: (FOT-RodinMaria Pro B, 700, 0) -> Arial-BoldMT, 0, Arial-BoldMT
+
+frame=  168 fps=0.0 q=32.0 size=       0kB time=00:00:07.60 bitrate=   0.1kbits/s speed=14.5x    
+frame=  372 fps=362 q=28.0 size=     512kB time=00:00:16.10 bitrate= 260.5kbits/s speed=15.7x    
+frame=  547 fps=358 q=28.0 size=     512kB time=00:00:23.40 bitrate= 179.3kbits/s speed=15.3x    
+frame=  694 fps=342 q=30.0 size=    1024kB time=00:00:29.52 bitrate= 284.2kbits/s speed=14.5x    
+frame= 1172 fps=463 q=33.0 size=    1792kB time=00:00:49.44 bitrate= 296.9kbits/s speed=19.5x    
+frame= 1617 fps=533 q=21.0 size=    2560kB time=00:01:07.98 bitrate= 308.5kbits/s speed=22.4x    
+frame= 1854 fps=525 q=22.0 size=    2560kB time=00:01:17.84 bitrate= 269.4kbits/s speed=  22x    
+frame= 2264 fps=561 q=21.0 size=    2816kB time=00:01:34.94 bitrate= 243.0kbits/s speed=23.5x    
+frame= 2679 fps=590 q=33.0 size=    3072kB time=00:01:52.22 bitrate= 224.3kbits/s speed=24.7x    
+frame= 3115 fps=618 q=25.0 size=    4864kB time=00:02:10.40 bitrate= 305.6kbits/s speed=25.9x    
+frame= 3611 fps=652 q=25.0 size=    5632kB time=00:02:31.06 bitrate= 305.4kbits/s speed=27.3x    
+frame= 4125 fps=683 q=29.0 size=    6656kB time=00:02:52.48 bitrate= 316.1kbits/s speed=28.6x    
+frame= 4650 fps=711 q=24.0 size=    7936kB time=00:03:14.34 bitrate= 334.5kbits/s speed=29.7x    
+frame= 5191 fps=737 q=23.0 size=    8448kB time=00:03:36.90 bitrate= 319.1kbits/s speed=30.8x    
+frame= 5725 fps=759 q=20.0 size=    8960kB time=00:03:59.14 bitrate= 306.9kbits/s speed=31.7x    
+frame= 6256 fps=778 q=22.0 size=    9472kB time=00:04:21.26 bitrate= 297.0kbits/s speed=32.5x    
+frame= 6784 fps=794 q=22.0 size=    9984kB time=00:04:43.26 bitrate= 288.7kbits/s speed=33.2x    
+frame= 7301 fps=807 q=22.0 size=   10240kB time=00:05:04.80 bitrate= 275.2kbits/s speed=33.7x    
+frame= 7763 fps=813 q=21.0 size=   10752kB time=00:05:24.06 bitrate= 271.8kbits/s speed=33.9x    
+frame= 8243 fps=821 q=24.0 size=   11264kB time=00:05:44.06 bitrate= 268.2kbits/s speed=34.2x    
+frame= 8748 fps=829 q=23.0 size=   11776kB time=00:06:05.10 bitrate= 264.2kbits/s speed=34.6x    
+frame= 9249 fps=837 q=24.0 size=   12032kB time=00:06:25.98 bitrate= 255.4kbits/s speed=34.9x    
+frame= 9749 fps=844 q=26.0 size=   12544kB time=00:06:46.80 bitrate= 252.6kbits/s speed=35.2x    
+frame=10254 fps=851 q=22.0 size=   13056kB time=00:07:07.84 bitrate= 250.0kbits/s speed=35.5x    
+frame=10754 fps=857 q=21.0 size=   13312kB time=00:07:28.68 bitrate= 243.1kbits/s speed=35.8x    
+frame=11261 fps=863 q=26.0 size=   13824kB time=00:07:49.80 bitrate= 241.1kbits/s speed=  36x    
+frame=11783 fps=870 q=23.0 size=   14080kB time=00:08:11.56 bitrate= 234.6kbits/s speed=36.3x    
+frame=12293 fps=875 q=26.0 size=   14592kB time=00:08:32.80 bitrate= 233.1kbits/s speed=36.5x    
+frame=12799 fps=880 q=24.0 size=   14848kB time=00:08:53.89 bitrate= 227.8kbits/s speed=36.7x    
+frame=13341 fps=886 q=22.0 size=   15104kB time=00:09:16.48 bitrate= 222.3kbits/s speed=  37x    
+frame=13916 fps=895 q=22.0 size=   15616kB time=00:09:40.44 bitrate= 220.4kbits/s speed=37.3x    
+frame=14403 fps=897 q=21.0 size=   15872kB time=00:10:00.72 bitrate= 216.4kbits/s speed=37.4x    
+frame=14883 fps=899 q=29.0 size=   16128kB time=00:10:20.72 bitrate= 212.9kbits/s speed=37.5x    
+frame=15386 fps=902 q=24.0 size=   16640kB time=00:10:41.68 bitrate= 212.4kbits/s speed=37.6x    
+frame=15888 fps=905 q=20.0 size=   17408kB time=00:11:02.60 bitrate= 215.2kbits/s speed=37.8x    
+frame=16388 fps=908 q=23.0 size=   17920kB time=00:11:23.44 bitrate= 214.8kbits/s speed=37.9x    
+frame=16855 fps=908 q=21.0 size=   18176kB time=00:11:42.90 bitrate= 211.8kbits/s speed=37.9x    
+frame=17399 fps=913 q=21.0 size=   18688kB time=00:12:05.56 bitrate= 211.0kbits/s speed=38.1x    
+frame=17921 fps=917 q=24.0 size=   19200kB time=00:12:27.30 bitrate= 210.5kbits/s speed=38.2x    
+frame=18453 fps=920 q=20.0 size=   19456kB time=00:12:49.48 bitrate= 207.1kbits/s speed=38.4x    
+frame=18949 fps=922 q=30.0 size=   19712kB time=00:13:10.14 bitrate= 204.4kbits/s speed=38.4x    
+frame=19442 fps=923 q=28.0 size=   20736kB time=00:13:30.68 bitrate= 209.5kbits/s speed=38.5x    
+frame=19939 fps=925 q=28.0 size=   21504kB time=00:13:51.40 bitrate= 211.9kbits/s speed=38.6x    
+frame=20492 fps=929 q=23.0 size=   22016kB time=00:14:14.44 bitrate= 211.1kbits/s speed=38.7x    
+frame=21133 fps=937 q=31.0 size=   22528kB time=00:14:41.14 bitrate= 209.4kbits/s speed=39.1x    
+frame=21598 fps=937 q=17.0 size=   23040kB time=00:15:00.52 bitrate= 209.6kbits/s speed=39.1x    
+frame=22051 fps=936 q=21.0 size=   23552kB time=00:15:19.40 bitrate= 209.9kbits/s speed=  39x    
+frame=22548 fps=937 q=21.0 size=   23808kB time=00:15:40.10 bitrate= 207.5kbits/s speed=39.1x    
+frame=23060 fps=939 q=25.0 size=   24320kB time=00:16:01.44 bitrate= 207.2kbits/s speed=39.1x    
+frame=23579 fps=941 q=20.0 size=   24832kB time=00:16:23.06 bitrate= 206.9kbits/s speed=39.2x    
+frame=24081 fps=942 q=32.0 size=   25088kB time=00:16:43.98 bitrate= 204.7kbits/s speed=39.3x    
+frame=24578 fps=943 q=21.0 size=   25600kB time=00:17:04.68 bitrate= 204.7kbits/s speed=39.3x    
+frame=25074 fps=944 q=18.0 size=   25856kB time=00:17:25.34 bitrate= 202.6kbits/s speed=39.4x    
+frame=25542 fps=944 q=22.0 size=   26368kB time=00:17:44.84 bitrate= 202.9kbits/s speed=39.3x    
+frame=26016 fps=944 q=28.0 size=   26880kB time=00:18:04.60 bitrate= 203.0kbits/s speed=39.3x    
+frame=26498 fps=944 q=21.0 size=   27904kB time=00:18:24.68 bitrate= 206.9kbits/s speed=39.4x    
+frame=26985 fps=945 q=29.0 size=   28416kB time=00:18:44.98 bitrate= 206.9kbits/s speed=39.4x    
+frame=27509 fps=946 q=22.0 size=   29952kB time=00:19:06.80 bitrate= 214.0kbits/s speed=39.5x    
+frame=28032 fps=948 q=29.0 size=   30976kB time=00:19:28.60 bitrate= 217.1kbits/s speed=39.5x    
+frame=28542 fps=949 q=28.0 size=   31744kB time=00:19:49.84 bitrate= 218.6kbits/s speed=39.6x    
+frame=29040 fps=950 q=28.0 size=   32768kB time=00:20:10.60 bitrate= 221.7kbits/s speed=39.6x    
+frame=29542 fps=951 q=31.0 size=   33280kB time=00:20:31.52 bitrate= 221.4kbits/s speed=39.6x    
+frame=30037 fps=952 q=28.0 size=   33536kB time=00:20:52.14 bitrate= 219.4kbits/s speed=39.7x    
+frame=30535 fps=952 q=29.0 size=   34816kB time=00:21:12.90 bitrate= 224.1kbits/s speed=39.7x    
+frame=31026 fps=953 q=22.0 size=   35072kB time=00:21:33.34 bitrate= 222.1kbits/s speed=39.7x    
+frame=31453 fps=951 q=23.0 size=   35328kB time=00:21:51.14 bitrate= 220.7kbits/s speed=39.6x    
+frame=31972 fps=952 q=25.0 size=   35840kB time=00:22:12.76 bitrate= 220.3kbits/s speed=39.7x    
+frame=32459 fps=953 q=26.0 size=   36096kB time=00:22:33.06 bitrate= 218.5kbits/s speed=39.7x    
+frame=32961 fps=953 q=19.0 size=   36608kB time=00:22:53.98 bitrate= 218.3kbits/s speed=39.7x    
+frame=33541 fps=956 q=31.0 size=   37120kB time=00:23:18.14 bitrate= 217.5kbits/s speed=39.9x    
+frame=34009 fps=956 q=27.0 size=   37888kB time=00:23:37.64 bitrate= 218.9kbits/s speed=39.9x    
+frame=34138 fps=956 q=-1.0 Lsize=   39580kB time=00:23:42.42 bitrate= 227.9kbits/s speed=39.8x    
+
+video:32410kB audio:6064kB subtitle:20kB other streams:0kB global headers:0kB muxing overhead: 2.820088%
+
+[libx264 @ 000002035af9ca40] frame I:309   Avg QP:19.61  size: 29983
+
+[libx264 @ 000002035af9ca40] frame P:7154  Avg QP:22.61  size:  2412
+
+[libx264 @ 000002035af9ca40] frame B:26675 Avg QP:23.90  size:   250
+
+[libx264 @ 000002035af9ca40] consecutive B-frames:  2.1%  5.5%  2.5% 12.5%  3.9% 73.4%
+
+[libx264 @ 000002035af9ca40] mb I  I16..4: 35.0%  0.0% 65.0%
+
+[libx264 @ 000002035af9ca40] mb P  I16..4:  3.6%  0.0%  2.0%  P16..4: 14.2%  0.0%  0.0%  0.0%  0.0%    skip:80.1%
+
+[libx264 @ 000002035af9ca40] mb B  I16..4:  0.2%  0.0%  0.1%  B16..8:  2.5%  0.0%  0.0%  direct: 0.9%  skip:96.5%  L0:42.6% L1:50.9% BI: 6.5%
+
+[libx264 @ 000002035af9ca40] coded y,uvDC,uvAC intra: 41.2% 42.9% 18.6% inter: 1.1% 1.3% 0.0%
+
+[libx264 @ 000002035af9ca40] i16 v,h,dc,p: 46% 24% 13% 17%
+
+[libx264 @ 000002035af9ca40] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 34% 18% 16%  7%  5%  6%  4%  6%  4%
+
+[libx264 @ 000002035af9ca40] i8c dc,h,v,p: 46% 19% 27%  9%
+
+[libx264 @ 000002035af9ca40] Weighted P-Frames: Y:1.2% UV:0.6%
+
+[libx264 @ 000002035af9ca40] kb/s:186.65
+08-Jan-26 20:05:47 - VideoEncoder - INFO - 
+08-Jan-26 20:05:48 - pyrogram.client - ERROR - Telegram says: [400 FILE_REFERENCE_EXPIRED] (caused by "upload.GetFile") Pyrogram 2.3.69 thinks: The file id contains an expired file reference, you must obtain a valid one by fetching the message from the origin context
+Traceback (most recent call last):
+  File "C:\Users\abhin\AppData\Local\Programs\Python\Python310\lib\site-packages\pyrogram\client.py", line 1235, in get_file
+    r = await session.invoke(
+  File "C:\Users\abhin\AppData\Local\Programs\Python\Python310\lib\site-packages\pyrogram\session\session.py", line 420, in invoke
+    return await self.send(query, timeout=timeout)
+  File "C:\Users\abhin\AppData\Local\Programs\Python\Python310\lib\site-packages\pyrogram\session\session.py", line 377, in send
+    RPCError.raise_it(result, type(data))
+  File "C:\Users\abhin\AppData\Local\Programs\Python\Python310\lib\site-packages\pyrogram\errors\rpc_error.py", line 93, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.FileReferenceExpired: Telegram says: [400 FILE_REFERENCE_EXPIRED] (caused by "upload.GetFile") Pyrogram 2.3.69 thinks: The file id contains an expired file reference, you must obtain a valid one by fetching the message from the origin context
+08-Jan-26 20:06:34 - root - INFO - Stop signal received (SIGINT). Exiting...
+08-Jan-26 20:07:45 - requests_cache.backends - DEBUG - Initializing backend: sqlite C:\Users\abhin/.lk21-requests-cache
+08-Jan-26 20:07:45 - requests_cache.backends.base - DEBUG - Initialized SQLiteDict with serializer: SerializerPipeline(name=pickle, n_stages=2)
+08-Jan-26 20:07:45 - requests_cache.backends.sqlite - DEBUG - Opening connection to C:\Users\abhin\.lk21-requests-cache.sqlite:responses
+08-Jan-26 20:07:45 - requests_cache.backends.base - DEBUG - Initialized SQLiteDict with serializer: None
+08-Jan-26 20:07:45 - requests_cache.backends.sqlite - DEBUG - Opening connection to C:\Users\abhin\.lk21-requests-cache.sqlite:redirects
+08-Jan-26 20:07:45 - requests_cache.patcher - DEBUG - Patching requests.Session with class: _ConfiguredCachedSession
+08-Jan-26 20:07:45 - requests_cache.backends - DEBUG - Initializing backend: <SQLiteCache(name=C:\Users\abhin/.lk21-requests-cache)> C:\Users\abhin/.lk21-requests-cache
+08-Jan-26 20:07:46 - VideoEncoder - INFO - Imported Utils!
+08-Jan-26 20:07:55 - pymongo.ocsp_support - DEBUG - Peer did not staple an OCSP response
+08-Jan-26 20:07:55 - pymongo.ocsp_support - DEBUG - No OCSP URI, soft fail
+08-Jan-26 20:07:55 - pymongo.ocsp_support - DEBUG - Peer did not staple an OCSP response
+08-Jan-26 20:07:55 - pymongo.ocsp_support - DEBUG - Peer did not staple an OCSP response
+08-Jan-26 20:07:55 - pymongo.ocsp_support - DEBUG - No OCSP URI, soft fail
+08-Jan-26 20:07:55 - pymongo.ocsp_support - DEBUG - No OCSP URI, soft fail
+08-Jan-26 20:07:55 - pymongo.ocsp_support - DEBUG - Peer did not staple an OCSP response
+08-Jan-26 20:07:55 - pymongo.ocsp_support - DEBUG - No OCSP URI, soft fail
+08-Jan-26 20:07:55 - pymongo.ocsp_support - DEBUG - Peer did not staple an OCSP response
+08-Jan-26 20:07:55 - pymongo.ocsp_support - DEBUG - No OCSP URI, soft fail
+08-Jan-26 20:07:55 - pymongo.ocsp_support - DEBUG - Peer did not staple an OCSP response
+08-Jan-26 20:07:55 - pymongo.ocsp_support - DEBUG - No OCSP URI, soft fail
+08-Jan-26 20:07:55 - pymongo.ocsp_support - DEBUG - Peer did not staple an OCSP response
+08-Jan-26 20:07:55 - pymongo.ocsp_support - DEBUG - No OCSP URI, soft fail
+08-Jan-26 20:08:13 - VideoEncoder - INFO - C:\Users\abhin\Downloads\ENCODING-BOT-audioswap\ENCODING-BOT-audioswap\VideoEncoder\downloads\S01_E24_Sword_of_the_Demon_Hunter__Kijin_Gentosho_480p_SUB__animetelugu.mkv
+08-Jan-26 20:08:15 - VideoEncoder - INFO - Running ffmpeg command: ffmpeg -hide_banner -progress VideoEncoder/downloads/process.txt -hwaccel auto -y -i C:\Users\abhin\Downloads\ENCODING-BOT-audioswap\ENCODING-BOT-audioswap\VideoEncoder\downloads\S01_E24_Sword_of_the_Demon_Hunter__Kijin_Gentosho_480p_SUB__animetelugu.mkv -c:v libx264 -pix_fmt yuv420p -preset superfast -r film -tune animation -coder 0 -profile:v main -map 0:v? -map_chapters 0 -map_metadata 0 -crf 30 -vf scale=768:576,subtitles='wm_6a847306.ass' -metadata title=Weeb-Zone.Blogspot.com -metadata:s:v title=Weeb-Zone.Blogspot.com -metadata:s:a title=Weeb-Zone.Blogspot.com -c:s mov_text -c:t copy -map 0:t? -map 0:s? -c:a copy -map 0:a? -threads 8
+08-Jan-26 20:08:15 - VideoEncoder - INFO - ffmpeg_process: 2064
+08-Jan-26 20:08:51 - VideoEncoder - INFO - end
+08-Jan-26 20:08:51 - VideoEncoder - INFO - Input #0, matroska,webm, from 'C:\Users\abhin\Downloads\ENCODING-BOT-audioswap\ENCODING-BOT-audioswap\VideoEncoder\downloads\S01_E24_Sword_of_the_Demon_Hunter__Kijin_Gentosho_480p_SUB__animetelugu.mkv':
+
+  Metadata:
+
+    title           : Animeworld [t.me/Animeworld_zone]
+
+    AUTHOR          : BOTMAKER
+
+    ENCODER         : Lavf58.45.100
+
+  Duration: 00:23:42.43, start: -0.007000, bitrate: 148 kb/s
+
+  Stream #0:0: Video: h264 (High), yuv420p(progressive), 840x480 [SAR 64:63 DAR 16:9], 24 fps, 24 tbr, 1k tbn (default)
+
+    Metadata:
+
+      title           : [Animeworld]
+
+      BPS-eng         : 5297406
+
+      DURATION-eng    : 00:23:42.417000000
+
+      NUMBER_OF_FRAMES-eng: 34138
+
+      NUMBER_OF_BYTES-eng: 941890199
+
+      _STATISTICS_WRITING_APP-eng: no_variable_data
+
+      _STATISTICS_WRITING_DATE_UTC-eng: 1970-01-01 00:00:00
+
+      _STATISTICS_TAGS-eng: BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES
+
+      ENCODER         : Lavc58.91.100 libx264
+
+      DURATION        : 00:23:42.424000000
+
+  Stream #0:1(jpn): Audio: opus, 48000 Hz, stereo, fltp (default)
+
+    Metadata:
+
+      title           : [Animeworld]
+
+      _STATISTICS_TAGS-eng: BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES
+
+      BPS-eng         : 128204
+
+      DURATION-eng    : 00:23:42.421000000
+
+      NUMBER_OF_FRAMES-eng: 66676
+
+      NUMBER_OF_BYTES-eng: 22795176
+
+      _STATISTICS_WRITING_APP-eng: no_variable_data
+
+      _STATISTICS_WRITING_DATE_UTC-eng: 1970-01-01 00:00:00
+
+      ENCODER         : Lavc58.91.100 libopus
+
+      DURATION        : 00:23:42.428000000
+
+  Stream #0:2(eng): Subtitle: ass (default) (forced)
+
+    Metadata:
+
+      title           : [Animeworld]
+
+      _STATISTICS_TAGS-eng: BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES
+
+      BPS-eng         : 102
+
+      DURATION-eng    : 00:23:32.170000000
+
+      NUMBER_OF_FRAMES-eng: 311
+
+      NUMBER_OF_BYTES-eng: 18170
+
+      _STATISTICS_WRITING_APP-eng: no_variable_data
+
+      _STATISTICS_WRITING_DATE_UTC-eng: 1970-01-01 00:00:00
+
+      DURATION        : 00:23:33.717000000
+
+[h264 @ 000001b8dcf9e700] Using auto hwaccel type dxva2 with new default device.
+
+Stream mapping:
+
+  Stream #0:0 -> #0:0 (h264 (native) -> h264 (libx264))
+
+  Stream #0:2 -> #0:1 (ass (ssa) -> mov_text (native))
+
+  Stream #0:1 -> #0:2 (copy)
+
+Press [q] to stop, [?] for help
+
+[Parsed_subtitles_1 @ 000001b8db2e0a00] libass API version: 0x1502000
+
+[Parsed_subtitles_1 @ 000001b8db2e0a00] libass source: commit: 0.15.2-41-g0d170d9a1d7e7fee948141eac988c1e6391dfc62
+
+[Parsed_subtitles_1 @ 000001b8db2e0a00] Shaper: FriBidi 1.0.11 (SIMPLE) HarfBuzz-ng 3.2.0 (COMPLEX)
+
+[Parsed_subtitles_1 @ 000001b8db2e0a00] Using font provider directwrite (with GDI)
+
+[libx264 @ 000001b8dce9ca40] using SAR=4/3
+
+[libx264 @ 000001b8dce9ca40] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+
+[libx264 @ 000001b8dce9ca40] profile Main, level 3.1, 4:2:0, 8-bit
+
+[libx264 @ 000001b8dce9ca40] 264 - core 164 r3081 19856cc - H.264/MPEG-4 AVC codec - Copyleft 2003-2021 - http://www.videolan.org/x264.html - options: cabac=0 ref=1 deblock=1:1:1 analyse=0x1:0x1 me=dia subme=1 psy=1 psy_rd=0.40:0.00 mixed_ref=0 me_range=16 chroma_me=1 trellis=0 8x8dct=0 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=0 threads=8 lookahead_threads=1 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=5 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=1 keyint=250 keyint_min=24 scenecut=40 intra_refresh=0 rc=crf mbtree=0 crf=30.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 pb_ratio=1.30 aq=1:0.60
+
+[mp4 @ 000001b8db2f6040] track 2: codec frame size is not set
+
+Output #0, mp4, to 'VideoEncoder/encodes/S01_E24_Sword_of_the_Demon_Hunter__Kijin_Gentosho_480p_SUB__animetelugu.mp4':
+
+  Metadata:
+
+    title           : Weeb-Zone.Blogspot.com
+
+    AUTHOR          : BOTMAKER
+
+    encoder         : Lavf59.16.100
+
+  Stream #0:0: Video: h264 (avc1 / 0x31637661), yuv420p(tv, progressive), 768x576 [SAR 4:3 DAR 16:9], q=2-31, 24 fps, 12288 tbn (default)
+
+    Metadata:
+
+      DURATION        : 00:23:42.424000000
+
+      BPS-eng         : 5297406
+
+      DURATION-eng    : 00:23:42.417000000
+
+      NUMBER_OF_FRAMES-eng: 34138
+
+      NUMBER_OF_BYTES-eng: 941890199
+
+      _STATISTICS_WRITING_APP-eng: no_variable_data
+
+      _STATISTICS_WRITING_DATE_UTC-eng: 1970-01-01 00:00:00
+
+      _STATISTICS_TAGS-eng: BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES
+
+      title           : Weeb-Zone.Blogspot.com
+
+      encoder         : Lavc59.18.100 libx264
+
+    Side data:
+
+      cpb: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+
+  Stream #0:1(eng): Subtitle: mov_text (tx3g / 0x67337874) (default) (forced)
+
+    Metadata:
+
+      title           : [Animeworld]
+
+      _STATISTICS_TAGS-eng: BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES
+
+      BPS-eng         : 102
+
+      DURATION-eng    : 00:23:32.170000000
+
+      NUMBER_OF_FRAMES-eng: 311
+
+      NUMBER_OF_BYTES-eng: 18170
+
+      _STATISTICS_WRITING_APP-eng: no_variable_data
+
+      _STATISTICS_WRITING_DATE_UTC-eng: 1970-01-01 00:00:00
+
+      DURATION        : 00:23:33.717000000
+
+      encoder         : Lavc59.18.100 mov_text
+
+  Stream #0:2(jpn): Audio: opus (Opus / 0x7375704F), 48000 Hz, stereo, fltp (default)
+
+    Metadata:
+
+      DURATION        : 00:23:42.428000000
+
+      _STATISTICS_TAGS-eng: BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES
+
+      BPS-eng         : 128204
+
+      DURATION-eng    : 00:23:42.421000000
+
+      NUMBER_OF_FRAMES-eng: 66676
+
+      NUMBER_OF_BYTES-eng: 22795176
+
+      _STATISTICS_WRITING_APP-eng: no_variable_data
+
+      _STATISTICS_WRITING_DATE_UTC-eng: 1970-01-01 00:00:00
+
+      ENCODER         : Lavc58.91.100 libopus
+
+      title           : Weeb-Zone.Blogspot.com
+
+frame=    1 fps=0.0 q=0.0 size=       0kB time=00:00:00.62 bitrate=   0.6kbits/s speed=34.1x    
+[Parsed_subtitles_1 @ 000001b8db2e0a00] fontselect: (FOT-RodinMaria Pro B, 700, 0) -> Arial-BoldMT, 0, Arial-BoldMT
+
+frame=  545 fps=0.0 q=28.0 size=     512kB time=00:00:23.30 bitrate= 180.0kbits/s speed=44.9x    
+frame= 1179 fps=1157 q=32.0 size=    2048kB time=00:00:49.72 bitrate= 337.4kbits/s speed=48.8x    
+frame= 1823 fps=1200 q=26.0 size=    2560kB time=00:01:16.56 bitrate= 273.9kbits/s speed=50.4x    
+frame= 2431 fps=1204 q=19.0 size=    2816kB time=00:01:41.92 bitrate= 226.3kbits/s speed=50.5x    
+frame= 2935 fps=1165 q=29.0 size=    4352kB time=00:02:02.88 bitrate= 290.1kbits/s speed=48.8x    
+frame= 3517 fps=1165 q=30.0 size=    5632kB time=00:02:27.14 bitrate= 313.6kbits/s speed=48.7x    
+frame= 4002 fps=1137 q=27.0 size=    6400kB time=00:02:47.34 bitrate= 313.3kbits/s speed=47.5x    
+frame= 4468 fps=1111 q=28.0 size=    7424kB time=00:03:06.76 bitrate= 325.6kbits/s speed=46.5x    
+frame= 5001 fps=1106 q=20.0 size=    8192kB time=00:03:28.98 bitrate= 321.1kbits/s speed=46.2x    
+frame= 5539 fps=1103 q=28.0 size=    8704kB time=00:03:51.40 bitrate= 308.1kbits/s speed=46.1x    
+frame= 6060 fps=1098 q=27.0 size=    9216kB time=00:04:13.10 bitrate= 298.3kbits/s speed=45.8x    
+frame= 6592 fps=1095 q=27.0 size=    9728kB time=00:04:35.28 bitrate= 289.5kbits/s speed=45.7x    
+frame= 7141 fps=1095 q=20.0 size=   10240kB time=00:04:58.14 bitrate= 281.4kbits/s speed=45.7x    
+frame= 7685 fps=1094 q=26.0 size=   10752kB time=00:05:20.80 bitrate= 274.6kbits/s speed=45.7x    
+frame= 8163 fps=1085 q=24.0 size=   11264kB time=00:05:40.72 bitrate= 270.8kbits/s speed=45.3x    
+frame= 8664 fps=1080 q=27.0 size=   11520kB time=00:06:01.60 bitrate= 261.0kbits/s speed=45.1x    
+frame= 9137 fps=1072 q=28.0 size=   12032kB time=00:06:21.30 bitrate= 258.5kbits/s speed=44.7x    
+frame= 9630 fps=1067 q=22.0 size=   12544kB time=00:06:41.84 bitrate= 255.7kbits/s speed=44.5x    
+frame=10134 fps=1064 q=23.0 size=   12800kB time=00:07:02.84 bitrate= 248.0kbits/s speed=44.4x    
+frame=10642 fps=1061 q=22.0 size=   13312kB time=00:07:24.02 bitrate= 245.6kbits/s speed=44.3x    
+frame=11155 fps=1060 q=28.0 size=   13568kB time=00:07:45.40 bitrate= 238.8kbits/s speed=44.2x    
+frame=11658 fps=1057 q=29.0 size=   14080kB time=00:08:06.34 bitrate= 237.2kbits/s speed=44.1x    
+frame=12169 fps=1056 q=21.0 size=   14592kB time=00:08:27.64 bitrate= 235.5kbits/s speed=  44x    
+frame=12619 fps=1049 q=22.0 size=   14848kB time=00:08:46.40 bitrate= 231.1kbits/s speed=43.8x    
+frame=13114 fps=1047 q=22.0 size=   15104kB time=00:09:07.02 bitrate= 226.2kbits/s speed=43.7x    
+frame=13631 fps=1046 q=21.0 size=   15360kB time=00:09:28.56 bitrate= 221.3kbits/s speed=43.6x    
+frame=14154 fps=1046 q=27.0 size=   15616kB time=00:09:50.34 bitrate= 216.7kbits/s speed=43.6x    
+frame=14667 fps=1045 q=22.0 size=   15872kB time=00:10:11.71 bitrate= 212.6kbits/s speed=43.6x    
+frame=15122 fps=1041 q=22.0 size=   16384kB time=00:10:30.68 bitrate= 212.8kbits/s speed=43.4x    
+frame=15647 fps=1041 q=28.0 size=   17152kB time=00:10:52.56 bitrate= 215.3kbits/s speed=43.4x    
+frame=16151 fps=1040 q=24.0 size=   17664kB time=00:11:13.56 bitrate= 214.8kbits/s speed=43.4x    
+frame=16637 fps=1038 q=25.0 size=   18176kB time=00:11:33.80 bitrate= 214.6kbits/s speed=43.3x    
+frame=17129 fps=1036 q=23.0 size=   18432kB time=00:11:54.30 bitrate= 211.4kbits/s speed=43.2x    
+frame=17651 fps=1036 q=28.0 size=   18688kB time=00:12:16.06 bitrate= 208.0kbits/s speed=43.2x    
+frame=18183 fps=1037 q=21.0 size=   19200kB time=00:12:38.22 bitrate= 207.4kbits/s speed=43.2x    
+frame=18685 fps=1036 q=20.0 size=   19712kB time=00:12:59.14 bitrate= 207.3kbits/s speed=43.2x    
+frame=19154 fps=1033 q=24.0 size=   19968kB time=00:13:18.68 bitrate= 204.8kbits/s speed=43.1x    
+frame=19646 fps=1032 q=27.0 size=   20992kB time=00:13:39.18 bitrate= 209.9kbits/s speed=  43x    
+frame=20138 fps=1031 q=25.0 size=   21760kB time=00:13:59.68 bitrate= 212.3kbits/s speed=  43x    
+frame=20624 fps=1029 q=24.0 size=   22272kB time=00:14:19.94 bitrate= 212.2kbits/s speed=42.9x    
+frame=21133 fps=1029 q=31.0 size=   22528kB time=00:14:41.14 bitrate= 209.4kbits/s speed=42.9x    
+frame=21619 fps=1028 q=28.0 size=   23040kB time=00:15:01.40 bitrate= 209.4kbits/s speed=42.8x    
+frame=22103 fps=1026 q=19.0 size=   23552kB time=00:15:21.56 bitrate= 209.4kbits/s speed=42.8x    
+frame=22601 fps=1025 q=24.0 size=   24064kB time=00:15:42.30 bitrate= 209.2kbits/s speed=42.8x    
+frame=23097 fps=1025 q=21.0 size=   24320kB time=00:16:02.98 bitrate= 206.9kbits/s speed=42.7x    
+frame=23591 fps=1024 q=31.0 size=   24832kB time=00:16:23.55 bitrate= 206.8kbits/s speed=42.7x    
+frame=24082 fps=1023 q=29.0 size=   25088kB time=00:16:44.02 bitrate= 204.7kbits/s speed=42.6x    
+frame=24578 fps=1022 q=21.0 size=   25600kB time=00:17:04.68 bitrate= 204.7kbits/s speed=42.6x    
+frame=25050 fps=1021 q=19.0 size=   25856kB time=00:17:24.34 bitrate= 202.8kbits/s speed=42.6x    
+frame=25560 fps=1021 q=21.0 size=   26368kB time=00:17:45.60 bitrate= 202.7kbits/s speed=42.6x    
+frame=26057 fps=1020 q=25.0 size=   27136kB time=00:18:06.30 bitrate= 204.6kbits/s speed=42.5x    
+frame=26536 fps=1019 q=32.0 size=   27904kB time=00:18:26.26 bitrate= 206.6kbits/s speed=42.5x    
+frame=27028 fps=1018 q=27.0 size=   29184kB time=00:18:46.76 bitrate= 212.2kbits/s speed=42.4x    
+frame=27525 fps=1018 q=26.0 size=   29952kB time=00:19:07.48 bitrate= 213.8kbits/s speed=42.4x    
+frame=28014 fps=1017 q=29.0 size=   30976kB time=00:19:27.84 bitrate= 217.3kbits/s speed=42.4x    
+frame=28518 fps=1017 q=22.0 size=   31744kB time=00:19:48.84 bitrate= 218.7kbits/s speed=42.4x    
+frame=29020 fps=1017 q=26.0 size=   32768kB time=00:20:09.76 bitrate= 221.9kbits/s speed=42.4x    
+frame=29508 fps=1016 q=25.0 size=   33024kB time=00:20:30.10 bitrate= 219.9kbits/s speed=42.3x    
+frame=29999 fps=1015 q=31.0 size=   33536kB time=00:20:50.58 bitrate= 219.7kbits/s speed=42.3x    
+frame=30444 fps=1013 q=23.0 size=   34560kB time=00:21:09.10 bitrate= 223.1kbits/s speed=42.2x    
+frame=30943 fps=1013 q=22.0 size=   35072kB time=00:21:29.90 bitrate= 222.7kbits/s speed=42.2x    
+frame=31412 fps=1012 q=28.0 size=   35328kB time=00:21:49.44 bitrate= 221.0kbits/s speed=42.2x    
+frame=31916 fps=1012 q=24.0 size=   35840kB time=00:22:10.44 bitrate= 220.7kbits/s speed=42.2x    
+frame=32437 fps=1012 q=27.0 size=   36096kB time=00:22:32.14 bitrate= 218.7kbits/s speed=42.2x    
+frame=32966 fps=1013 q=30.0 size=   36608kB time=00:22:54.18 bitrate= 218.2kbits/s speed=42.2x    
+frame=33472 fps=1013 q=28.0 size=   37120kB time=00:23:15.26 bitrate= 217.9kbits/s speed=42.2x    
+frame=33994 fps=1013 q=29.0 size=   37888kB time=00:23:37.02 bitrate= 219.0kbits/s speed=42.2x    
+frame=34138 fps=1013 q=-1.0 Lsize=   39580kB time=00:23:42.42 bitrate= 227.9kbits/s speed=42.2x    
+
+video:32410kB audio:6064kB subtitle:20kB other streams:0kB global headers:0kB muxing overhead: 2.820088%
+
+[libx264 @ 000001b8dce9ca40] frame I:309   Avg QP:19.61  size: 29983
+
+[libx264 @ 000001b8dce9ca40] frame P:7154  Avg QP:22.61  size:  2412
+
+[libx264 @ 000001b8dce9ca40] frame B:26675 Avg QP:23.90  size:   250
+
+[libx264 @ 000001b8dce9ca40] consecutive B-frames:  2.1%  5.5%  2.5% 12.5%  3.9% 73.4%
+
+[libx264 @ 000001b8dce9ca40] mb I  I16..4: 35.0%  0.0% 65.0%
+
+[libx264 @ 000001b8dce9ca40] mb P  I16..4:  3.6%  0.0%  2.0%  P16..4: 14.2%  0.0%  0.0%  0.0%  0.0%    skip:80.1%
+
+[libx264 @ 000001b8dce9ca40] mb B  I16..4:  0.2%  0.0%  0.1%  B16..8:  2.5%  0.0%  0.0%  direct: 0.9%  skip:96.5%  L0:42.6% L1:50.9% BI: 6.5%
+
+[libx264 @ 000001b8dce9ca40] coded y,uvDC,uvAC intra: 41.2% 42.9% 18.6% inter: 1.1% 1.3% 0.0%
+
+[libx264 @ 000001b8dce9ca40] i16 v,h,dc,p: 46% 24% 13% 17%
+
+[libx264 @ 000001b8dce9ca40] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 34% 18% 16%  7%  5%  6%  4%  6%  4%
+
+[libx264 @ 000001b8dce9ca40] i8c dc,h,v,p: 46% 19% 27%  9%
+
+[libx264 @ 000001b8dce9ca40] Weighted P-Frames: Y:1.2% UV:0.6%
+
+[libx264 @ 000001b8dce9ca40] kb/s:186.65
+08-Jan-26 20:08:51 - VideoEncoder - INFO - 
+08-Jan-26 20:08:52 - pyrogram.client - ERROR - Telegram says: [400 FILE_REFERENCE_EXPIRED] (caused by "upload.GetFile") Pyrogram 2.3.69 thinks: The file id contains an expired file reference, you must obtain a valid one by fetching the message from the origin context
+Traceback (most recent call last):
+  File "C:\Users\abhin\AppData\Local\Programs\Python\Python310\lib\site-packages\pyrogram\client.py", line 1235, in get_file
+    r = await session.invoke(
+  File "C:\Users\abhin\AppData\Local\Programs\Python\Python310\lib\site-packages\pyrogram\session\session.py", line 420, in invoke
+    return await self.send(query, timeout=timeout)
+  File "C:\Users\abhin\AppData\Local\Programs\Python\Python310\lib\site-packages\pyrogram\session\session.py", line 377, in send
+    RPCError.raise_it(result, type(data))
+  File "C:\Users\abhin\AppData\Local\Programs\Python\Python310\lib\site-packages\pyrogram\errors\rpc_error.py", line 93, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.FileReferenceExpired: Telegram says: [400 FILE_REFERENCE_EXPIRED] (caused by "upload.GetFile") Pyrogram 2.3.69 thinks: The file id contains an expired file reference, you must obtain a valid one by fetching the message from the origin context
+08-Jan-26 20:10:01 - root - INFO - Stop signal received (SIGINT). Exiting...
+08-Jan-26 20:10:22 - requests_cache.backends - DEBUG - Initializing backend: sqlite C:\Users\abhin/.lk21-requests-cache
+08-Jan-26 20:10:22 - requests_cache.backends.base - DEBUG - Initialized SQLiteDict with serializer: SerializerPipeline(name=pickle, n_stages=2)
+08-Jan-26 20:10:22 - requests_cache.backends.sqlite - DEBUG - Opening connection to C:\Users\abhin\.lk21-requests-cache.sqlite:responses
+08-Jan-26 20:10:22 - requests_cache.backends.base - DEBUG - Initialized SQLiteDict with serializer: None
+08-Jan-26 20:10:22 - requests_cache.backends.sqlite - DEBUG - Opening connection to C:\Users\abhin\.lk21-requests-cache.sqlite:redirects
+08-Jan-26 20:10:22 - requests_cache.patcher - DEBUG - Patching requests.Session with class: _ConfiguredCachedSession
+08-Jan-26 20:10:22 - requests_cache.backends - DEBUG - Initializing backend: <SQLiteCache(name=C:\Users\abhin/.lk21-requests-cache)> C:\Users\abhin/.lk21-requests-cache
+08-Jan-26 20:10:23 - VideoEncoder - INFO - Imported Utils!
+08-Jan-26 20:10:29 - pymongo.ocsp_support - DEBUG - Peer did not staple an OCSP response
+08-Jan-26 20:10:29 - pymongo.ocsp_support - DEBUG - Peer did not staple an OCSP response
+08-Jan-26 20:10:29 - pymongo.ocsp_support - DEBUG - Peer did not staple an OCSP response
+08-Jan-26 20:10:29 - pymongo.ocsp_support - DEBUG - No OCSP URI, soft fail
+08-Jan-26 20:10:29 - pymongo.ocsp_support - DEBUG - No OCSP URI, soft fail
+08-Jan-26 20:10:29 - pymongo.ocsp_support - DEBUG - No OCSP URI, soft fail
+08-Jan-26 20:10:30 - pymongo.ocsp_support - DEBUG - Peer did not staple an OCSP response
+08-Jan-26 20:10:30 - pymongo.ocsp_support - DEBUG - Peer did not staple an OCSP response
+08-Jan-26 20:10:30 - pymongo.ocsp_support - DEBUG - Peer did not staple an OCSP response
+08-Jan-26 20:10:30 - pymongo.ocsp_support - DEBUG - No OCSP URI, soft fail
+08-Jan-26 20:10:30 - pymongo.ocsp_support - DEBUG - No OCSP URI, soft fail
+08-Jan-26 20:10:30 - pymongo.ocsp_support - DEBUG - No OCSP URI, soft fail
+08-Jan-26 20:10:30 - pymongo.ocsp_support - DEBUG - Peer did not staple an OCSP response
+08-Jan-26 20:10:30 - pymongo.ocsp_support - DEBUG - No OCSP URI, soft fail
+08-Jan-26 20:10:36 - VideoEncoder - INFO - C:\Users\abhin\Downloads\ENCODING-BOT-audioswap\ENCODING-BOT-audioswap\VideoEncoder\downloads\S01_E24_Sword_of_the_Demon_Hunter__Kijin_Gentosho_480p_SUB__animetelugu.mkv
+08-Jan-26 20:10:37 - VideoEncoder - INFO - Running ffmpeg command: ffmpeg -hide_banner -progress VideoEncoder/downloads/process.txt -hwaccel auto -y -i C:\Users\abhin\Downloads\ENCODING-BOT-audioswap\ENCODING-BOT-audioswap\VideoEncoder\downloads\S01_E24_Sword_of_the_Demon_Hunter__Kijin_Gentosho_480p_SUB__animetelugu.mkv -c:v libx264 -pix_fmt yuv420p -preset superfast -r film -tune animation -coder 0 -profile:v main -map 0:v? -map_chapters 0 -map_metadata 0 -crf 30 -vf scale=768:576,subtitles='wm_8bc0334c.ass' -metadata title=Weeb-Zone.Blogspot.com -metadata:s:v title=Weeb-Zone.Blogspot.com -metadata:s:a title=Weeb-Zone.Blogspot.com -c:s mov_text -c:t copy -map 0:t? -map 0:s? -c:a copy -map 0:a? -threads 8
+08-Jan-26 20:10:37 - VideoEncoder - INFO - ffmpeg_process: 7784
+08-Jan-26 20:11:08 - VideoEncoder - INFO - end
+08-Jan-26 20:11:08 - VideoEncoder - INFO - Input #0, matroska,webm, from 'C:\Users\abhin\Downloads\ENCODING-BOT-audioswap\ENCODING-BOT-audioswap\VideoEncoder\downloads\S01_E24_Sword_of_the_Demon_Hunter__Kijin_Gentosho_480p_SUB__animetelugu.mkv':
+
+  Metadata:
+
+    title           : Animeworld [t.me/Animeworld_zone]
+
+    AUTHOR          : BOTMAKER
+
+    ENCODER         : Lavf58.45.100
+
+  Duration: 00:23:42.43, start: -0.007000, bitrate: 148 kb/s
+
+  Stream #0:0: Video: h264 (High), yuv420p(progressive), 840x480 [SAR 64:63 DAR 16:9], 24 fps, 24 tbr, 1k tbn (default)
+
+    Metadata:
+
+      title           : [Animeworld]
+
+      BPS-eng         : 5297406
+
+      DURATION-eng    : 00:23:42.417000000
+
+      NUMBER_OF_FRAMES-eng: 34138
+
+      NUMBER_OF_BYTES-eng: 941890199
+
+      _STATISTICS_WRITING_APP-eng: no_variable_data
+
+      _STATISTICS_WRITING_DATE_UTC-eng: 1970-01-01 00:00:00
+
+      _STATISTICS_TAGS-eng: BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES
+
+      ENCODER         : Lavc58.91.100 libx264
+
+      DURATION        : 00:23:42.424000000
+
+  Stream #0:1(jpn): Audio: opus, 48000 Hz, stereo, fltp (default)
+
+    Metadata:
+
+      title           : [Animeworld]
+
+      _STATISTICS_TAGS-eng: BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES
+
+      BPS-eng         : 128204
+
+      DURATION-eng    : 00:23:42.421000000
+
+      NUMBER_OF_FRAMES-eng: 66676
+
+      NUMBER_OF_BYTES-eng: 22795176
+
+      _STATISTICS_WRITING_APP-eng: no_variable_data
+
+      _STATISTICS_WRITING_DATE_UTC-eng: 1970-01-01 00:00:00
+
+      ENCODER         : Lavc58.91.100 libopus
+
+      DURATION        : 00:23:42.428000000
+
+  Stream #0:2(eng): Subtitle: ass (default) (forced)
+
+    Metadata:
+
+      title           : [Animeworld]
+
+      _STATISTICS_TAGS-eng: BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES
+
+      BPS-eng         : 102
+
+      DURATION-eng    : 00:23:32.170000000
+
+      NUMBER_OF_FRAMES-eng: 311
+
+      NUMBER_OF_BYTES-eng: 18170
+
+      _STATISTICS_WRITING_APP-eng: no_variable_data
+
+      _STATISTICS_WRITING_DATE_UTC-eng: 1970-01-01 00:00:00
+
+      DURATION        : 00:23:33.717000000
+
+[h264 @ 00000299e6f5e700] Using auto hwaccel type dxva2 with new default device.
+
+Stream mapping:
+
+  Stream #0:0 -> #0:0 (h264 (native) -> h264 (libx264))
+
+  Stream #0:2 -> #0:1 (ass (ssa) -> mov_text (native))
+
+  Stream #0:1 -> #0:2 (copy)
+
+Press [q] to stop, [?] for help
+
+[Parsed_subtitles_1 @ 00000299e6c50400] libass API version: 0x1502000
+
+[Parsed_subtitles_1 @ 00000299e6c50400] libass source: commit: 0.15.2-41-g0d170d9a1d7e7fee948141eac988c1e6391dfc62
+
+[Parsed_subtitles_1 @ 00000299e6c50400] Shaper: FriBidi 1.0.11 (SIMPLE) HarfBuzz-ng 3.2.0 (COMPLEX)
+
+[Parsed_subtitles_1 @ 00000299e6c50400] Using font provider directwrite (with GDI)
+
+[libx264 @ 00000299e6e5ca40] using SAR=4/3
+
+[libx264 @ 00000299e6e5ca40] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+
+[libx264 @ 00000299e6e5ca40] profile Main, level 3.1, 4:2:0, 8-bit
+
+[libx264 @ 00000299e6e5ca40] 264 - core 164 r3081 19856cc - H.264/MPEG-4 AVC codec - Copyleft 2003-2021 - http://www.videolan.org/x264.html - options: cabac=0 ref=1 deblock=1:1:1 analyse=0x1:0x1 me=dia subme=1 psy=1 psy_rd=0.40:0.00 mixed_ref=0 me_range=16 chroma_me=1 trellis=0 8x8dct=0 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=0 threads=8 lookahead_threads=1 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=5 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=1 keyint=250 keyint_min=24 scenecut=40 intra_refresh=0 rc=crf mbtree=0 crf=30.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 pb_ratio=1.30 aq=1:0.60
+
+[mp4 @ 00000299e6c66040] track 2: codec frame size is not set
+
+Output #0, mp4, to 'VideoEncoder/encodes/S01_E24_Sword_of_the_Demon_Hunter__Kijin_Gentosho_480p_SUB__animetelugu.mp4':
+
+  Metadata:
+
+    title           : Weeb-Zone.Blogspot.com
+
+    AUTHOR          : BOTMAKER
+
+    encoder         : Lavf59.16.100
+
+  Stream #0:0: Video: h264 (avc1 / 0x31637661), yuv420p(tv, progressive), 768x576 [SAR 4:3 DAR 16:9], q=2-31, 24 fps, 12288 tbn (default)
+
+    Metadata:
+
+      DURATION        : 00:23:42.424000000
+
+      BPS-eng         : 5297406
+
+      DURATION-eng    : 00:23:42.417000000
+
+      NUMBER_OF_FRAMES-eng: 34138
+
+      NUMBER_OF_BYTES-eng: 941890199
+
+      _STATISTICS_WRITING_APP-eng: no_variable_data
+
+      _STATISTICS_WRITING_DATE_UTC-eng: 1970-01-01 00:00:00
+
+      _STATISTICS_TAGS-eng: BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES
+
+      title           : Weeb-Zone.Blogspot.com
+
+      encoder         : Lavc59.18.100 libx264
+
+    Side data:
+
+      cpb: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+
+  Stream #0:1(eng): Subtitle: mov_text (tx3g / 0x67337874) (default) (forced)
+
+    Metadata:
+
+      title           : [Animeworld]
+
+      _STATISTICS_TAGS-eng: BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES
+
+      BPS-eng         : 102
+
+      DURATION-eng    : 00:23:32.170000000
+
+      NUMBER_OF_FRAMES-eng: 311
+
+      NUMBER_OF_BYTES-eng: 18170
+
+      _STATISTICS_WRITING_APP-eng: no_variable_data
+
+      _STATISTICS_WRITING_DATE_UTC-eng: 1970-01-01 00:00:00
+
+      DURATION        : 00:23:33.717000000
+
+      encoder         : Lavc59.18.100 mov_text
+
+  Stream #0:2(jpn): Audio: opus (Opus / 0x7375704F), 48000 Hz, stereo, fltp (default)
+
+    Metadata:
+
+      DURATION        : 00:23:42.428000000
+
+      _STATISTICS_TAGS-eng: BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES
+
+      BPS-eng         : 128204
+
+      DURATION-eng    : 00:23:42.421000000
+
+      NUMBER_OF_FRAMES-eng: 66676
+
+      NUMBER_OF_BYTES-eng: 22795176
+
+      _STATISTICS_WRITING_APP-eng: no_variable_data
+
+      _STATISTICS_WRITING_DATE_UTC-eng: 1970-01-01 00:00:00
+
+      ENCODER         : Lavc58.91.100 libopus
+
+      title           : Weeb-Zone.Blogspot.com
+
+frame=    1 fps=0.0 q=0.0 size=       0kB time=00:00:00.62 bitrate=   0.6kbits/s speed=  35x    
+[Parsed_subtitles_1 @ 00000299e6c50400] fontselect: (FOT-RodinMaria Pro B, 700, 0) -> Arial-BoldMT, 0, Arial-BoldMT
+
+frame=  512 fps=0.0 q=28.0 size=     512kB time=00:00:21.94 bitrate= 191.2kbits/s speed=42.4x    
+frame= 1128 fps=1108 q=28.0 size=    1792kB time=00:00:47.60 bitrate= 308.4kbits/s speed=46.7x    
+frame= 1777 fps=1170 q=21.0 size=    2560kB time=00:01:14.64 bitrate= 281.0kbits/s speed=49.1x    
+frame= 2429 fps=1203 q=23.0 size=    2816kB time=00:01:41.80 bitrate= 226.6kbits/s speed=50.4x    
+frame= 2948 fps=1170 q=30.0 size=    4608kB time=00:02:03.44 bitrate= 305.8kbits/s speed=  49x    
+frame= 3511 fps=1163 q=31.0 size=    5632kB time=00:02:26.90 bitrate= 314.1kbits/s speed=48.6x    
+frame= 3984 fps=1132 q=28.0 size=    6400kB time=00:02:46.60 bitrate= 314.7kbits/s speed=47.3x    
+frame= 4376 fps=1088 q=28.0 size=    7168kB time=00:03:02.94 bitrate= 321.0kbits/s speed=45.5x    
+frame= 4852 fps=1073 q=28.0 size=    8192kB time=00:03:22.76 bitrate= 331.0kbits/s speed=44.8x    
+frame= 5378 fps=1071 q=21.0 size=    8704kB time=00:03:44.68 bitrate= 317.4kbits/s speed=44.7x    
+frame= 5962 fps=1080 q=25.0 size=    9216kB time=00:04:09.02 bitrate= 303.2kbits/s speed=45.1x    
+frame= 6588 fps=1094 q=27.0 size=    9728kB time=00:04:35.10 bitrate= 289.7kbits/s speed=45.7x    
+frame= 7226 fps=1108 q=22.0 size=   10240kB time=00:05:01.68 bitrate= 278.1kbits/s speed=46.2x    
+frame= 7764 fps=1105 q=21.0 size=   10752kB time=00:05:24.10 bitrate= 271.8kbits/s speed=46.1x    
+frame= 8361 fps=1111 q=21.0 size=   11264kB time=00:05:48.98 bitrate= 264.4kbits/s speed=46.4x    
+frame= 8948 fps=1115 q=23.0 size=   11776kB time=00:06:13.44 bitrate= 258.3kbits/s speed=46.5x    
+frame= 9516 fps=1116 q=24.0 size=   12544kB time=00:06:37.10 bitrate= 258.8kbits/s speed=46.6x    
+frame=10034 fps=1112 q=22.0 size=   12800kB time=00:06:58.68 bitrate= 250.4kbits/s speed=46.4x    
+frame=10554 fps=1108 q=22.0 size=   13312kB time=00:07:20.34 bitrate= 247.7kbits/s speed=46.2x    
+frame=10975 fps=1094 q=23.0 size=   13568kB time=00:07:37.90 bitrate= 242.7kbits/s speed=45.7x    
+frame=11307 fps=1074 q=28.0 size=   13824kB time=00:07:51.72 bitrate= 240.1kbits/s speed=44.8x    
+frame=11795 fps=1069 q=24.0 size=   14080kB time=00:08:12.06 bitrate= 234.4kbits/s speed=44.6x    
+frame=12296 fps=1066 q=22.0 size=   14592kB time=00:08:32.94 bitrate= 233.0kbits/s speed=44.5x    
+frame=12811 fps=1065 q=23.0 size=   14848kB time=00:08:54.40 bitrate= 227.6kbits/s speed=44.4x    
+frame=13298 fps=1061 q=23.0 size=   15104kB time=00:09:14.68 bitrate= 223.1kbits/s speed=44.2x    
+frame=13787 fps=1058 q=22.0 size=   15360kB time=00:09:35.06 bitrate= 218.8kbits/s speed=44.1x    
+frame=14325 fps=1058 q=22.0 size=   15872kB time=00:09:57.48 bitrate= 217.6kbits/s speed=44.1x    
+frame=14963 fps=1066 q=24.0 size=   16384kB time=00:10:24.06 bitrate= 215.1kbits/s speed=44.5x    
+frame=15580 fps=1072 q=27.0 size=   16896kB time=00:10:49.76 bitrate= 213.0kbits/s speed=44.7x    
+frame=16184 fps=1076 q=20.0 size=   17664kB time=00:11:14.94 bitrate= 214.4kbits/s speed=44.9x    
+frame=16762 fps=1079 q=19.0 size=   18176kB time=00:11:39.02 bitrate= 213.0kbits/s speed=  45x    
+frame=17338 fps=1081 q=27.0 size=   18688kB time=00:12:03.02 bitrate= 211.7kbits/s speed=45.1x    
+frame=17945 fps=1085 q=21.0 size=   19200kB time=00:12:28.30 bitrate= 210.2kbits/s speed=45.2x    
+frame=18559 fps=1089 q=23.0 size=   19456kB time=00:12:53.89 bitrate= 205.9kbits/s speed=45.4x    
+frame=19144 fps=1091 q=27.0 size=   19968kB time=00:13:18.26 bitrate= 204.9kbits/s speed=45.5x    
+frame=19717 fps=1093 q=25.0 size=   21248kB time=00:13:42.14 bitrate= 211.7kbits/s speed=45.6x    
+frame=20306 fps=1095 q=23.0 size=   22016kB time=00:14:06.68 bitrate= 213.0kbits/s speed=45.7x    
+frame=20874 fps=1096 q=26.0 size=   22528kB time=00:14:30.34 bitrate= 212.0kbits/s speed=45.7x    
+frame=21464 fps=1098 q=27.0 size=   23040kB time=00:14:54.94 bitrate= 210.9kbits/s speed=45.8x    
+frame=22007 fps=1098 q=19.0 size=   23552kB time=00:15:17.56 bitrate= 210.3kbits/s speed=45.8x    
+frame=22522 fps=1096 q=30.0 size=   23808kB time=00:15:39.02 bitrate= 207.7kbits/s speed=45.7x    
+frame=23133 fps=1099 q=20.0 size=   24320kB time=00:16:04.48 bitrate= 206.6kbits/s speed=45.8x    
+frame=23773 fps=1103 q=21.0 size=   24832kB time=00:16:31.14 bitrate= 205.2kbits/s speed=  46x    
+frame=24374 fps=1106 q=24.0 size=   25600kB time=00:16:56.18 bitrate= 206.4kbits/s speed=46.1x    
+frame=24982 fps=1108 q=22.0 size=   25856kB time=00:17:21.52 bitrate= 203.4kbits/s speed=46.2x    
+frame=25572 fps=1110 q=31.0 size=   26368kB time=00:17:46.10 bitrate= 202.6kbits/s speed=46.3x    
+frame=26120 fps=1109 q=32.0 size=   27136kB time=00:18:08.94 bitrate= 204.1kbits/s speed=46.2x    
+frame=26668 fps=1109 q=27.0 size=   28160kB time=00:18:31.76 bitrate= 207.5kbits/s speed=46.2x    
+frame=27174 fps=1107 q=30.0 size=   29440kB time=00:18:52.84 bitrate= 212.9kbits/s speed=46.1x    
+frame=27749 fps=1108 q=28.0 size=   30720kB time=00:19:16.80 bitrate= 217.5kbits/s speed=46.2x    
+frame=28279 fps=1107 q=22.0 size=   31744kB time=00:19:38.90 bitrate= 220.6kbits/s speed=46.1x    
+frame=28877 fps=1109 q=28.0 size=   32512kB time=00:20:03.80 bitrate= 221.2kbits/s speed=46.2x    
+frame=29468 fps=1110 q=22.0 size=   33024kB time=00:20:28.44 bitrate= 220.2kbits/s speed=46.3x    
+frame=30052 fps=1111 q=29.0 size=   33536kB time=00:20:52.76 bitrate= 219.3kbits/s speed=46.3x    
+frame=30631 fps=1112 q=20.0 size=   34816kB time=00:21:16.90 bitrate= 223.4kbits/s speed=46.3x    
+frame=31142 fps=1110 q=19.0 size=   35072kB time=00:21:38.17 bitrate= 221.3kbits/s speed=46.3x    
+frame=31681 fps=1110 q=27.0 size=   35584kB time=00:22:00.64 bitrate= 220.7kbits/s speed=46.3x    
+frame=32272 fps=1111 q=25.0 size=   36096kB time=00:22:25.28 bitrate= 219.8kbits/s speed=46.3x    
+frame=32936 fps=1115 q=22.0 size=   36608kB time=00:22:52.94 bitrate= 218.4kbits/s speed=46.5x    
+frame=33568 fps=1117 q=28.0 size=   37120kB time=00:23:19.26 bitrate= 217.3kbits/s speed=46.6x    
+frame=34112 fps=1116 q=21.0 size=   38144kB time=00:23:41.94 bitrate= 219.8kbits/s speed=46.5x    
+frame=34138 fps=1116 q=-1.0 Lsize=   39580kB time=00:23:42.42 bitrate= 227.9kbits/s speed=46.5x    
+
+video:32410kB audio:6064kB subtitle:20kB other streams:0kB global headers:0kB muxing overhead: 2.820088%
+
+[libx264 @ 00000299e6e5ca40] frame I:309   Avg QP:19.61  size: 29983
+
+[libx264 @ 00000299e6e5ca40] frame P:7154  Avg QP:22.61  size:  2412
+
+[libx264 @ 00000299e6e5ca40] frame B:26675 Avg QP:23.90  size:   250
+
+[libx264 @ 00000299e6e5ca40] consecutive B-frames:  2.1%  5.5%  2.5% 12.5%  3.9% 73.4%
+
+[libx264 @ 00000299e6e5ca40] mb I  I16..4: 35.0%  0.0% 65.0%
+
+[libx264 @ 00000299e6e5ca40] mb P  I16..4:  3.6%  0.0%  2.0%  P16..4: 14.2%  0.0%  0.0%  0.0%  0.0%    skip:80.1%
+
+[libx264 @ 00000299e6e5ca40] mb B  I16..4:  0.2%  0.0%  0.1%  B16..8:  2.5%  0.0%  0.0%  direct: 0.9%  skip:96.5%  L0:42.6% L1:50.9% BI: 6.5%
+
+[libx264 @ 00000299e6e5ca40] coded y,uvDC,uvAC intra: 41.2% 42.9% 18.6% inter: 1.1% 1.3% 0.0%
+
+[libx264 @ 00000299e6e5ca40] i16 v,h,dc,p: 46% 24% 13% 17%
+
+[libx264 @ 00000299e6e5ca40] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 34% 18% 16%  7%  5%  6%  4%  6%  4%
+
+[libx264 @ 00000299e6e5ca40] i8c dc,h,v,p: 46% 19% 27%  9%
+
+[libx264 @ 00000299e6e5ca40] Weighted P-Frames: Y:1.2% UV:0.6%
+
+[libx264 @ 00000299e6e5ca40] kb/s:186.65
+08-Jan-26 20:11:08 - VideoEncoder - INFO - 
+08-Jan-26 20:11:09 - pyrogram.client - ERROR - Telegram says: [400 FILE_REFERENCE_EXPIRED] (caused by "upload.GetFile") Pyrogram 2.3.69 thinks: The file id contains an expired file reference, you must obtain a valid one by fetching the message from the origin context
+Traceback (most recent call last):
+  File "C:\Users\abhin\AppData\Local\Programs\Python\Python310\lib\site-packages\pyrogram\client.py", line 1235, in get_file
+    r = await session.invoke(
+  File "C:\Users\abhin\AppData\Local\Programs\Python\Python310\lib\site-packages\pyrogram\session\session.py", line 420, in invoke
+    return await self.send(query, timeout=timeout)
+  File "C:\Users\abhin\AppData\Local\Programs\Python\Python310\lib\site-packages\pyrogram\session\session.py", line 377, in send
+    RPCError.raise_it(result, type(data))
+  File "C:\Users\abhin\AppData\Local\Programs\Python\Python310\lib\site-packages\pyrogram\errors\rpc_error.py", line 93, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.FileReferenceExpired: Telegram says: [400 FILE_REFERENCE_EXPIRED] (caused by "upload.GetFile") Pyrogram 2.3.69 thinks: The file id contains an expired file reference, you must obtain a valid one by fetching the message from the origin context
+08-Jan-26 20:11:38 - root - INFO - Stop signal received (SIGINT). Exiting...
