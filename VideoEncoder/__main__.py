@@ -1,3 +1,4 @@
+import server   # ✅ health check fix
 
 import dns.resolver
 from pyrogram import idle
