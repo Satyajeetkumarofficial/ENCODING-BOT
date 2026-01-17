@@ -35,3 +35,6 @@ httplib2==0.18.0
 
 # FFMPEG
 static-ffmpeg
+
+# Flask
+flask
